@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
 		F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715321FF14CA60016CFBF /* AppDelegate.swift */; };
 		F0D715351FF14CA60016CFBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715341FF14CA60016CFBF /* ViewController.swift */; };
 		F0D715381FF14CA60016CFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D715361FF14CA60016CFBF /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
+		8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.debug.xcconfig"; sourceTree = "<group>"; };
+		C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VillageSecurityAppIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D7152F1FF14CA60016CFBF /* VillageSecurityAppIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VillageSecurityAppIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D715321FF14CA60016CFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D715341FF14CA60016CFBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76D1D60CB79D0BD948C361CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */,
+				6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECE32DE5797E1459BC40612C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F0D715261FF14CA60016CFBF = {
 			isa = PBXGroup;
 			children = (
 				F0D715311FF14CA60016CFBF /* VillageSecurityAppIos */,
 				F0D715301FF14CA60016CFBF /* Products */,
+				76D1D60CB79D0BD948C361CB /* Pods */,
+				ECE32DE5797E1459BC40612C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0D715411FF14CA60016CFBF /* Build configuration list for PBXNativeTarget "VillageSecurityAppIos" */;
 			buildPhases = (
+				BB7063AC16A884A79350B556 /* [CP] Check Pods Manifest.lock */,
 				F0D7152B1FF14CA60016CFBF /* Sources */,
 				F0D7152C1FF14CA60016CFBF /* Frameworks */,
 				F0D7152D1FF14CA60016CFBF /* Resources */,
+				9F5680923F1968ED2ED3ECFD /* [CP] Embed Pods Frameworks */,
+				3803F983C806F235403911EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3803F983C806F235403911EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F5680923F1968ED2ED3ECFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB7063AC16A884A79350B556 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VillageSecurityAppIos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0D7152B1FF14CA60016CFBF /* Sources */ = {
@@ -272,6 +350,7 @@
 		};
 		F0D715421FF14CA60016CFBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +365,7 @@
 		};
 		F0D715431FF14CA60016CFBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
