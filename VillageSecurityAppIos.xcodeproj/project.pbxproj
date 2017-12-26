@@ -49,6 +49,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AD024C301FF231020092275E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD024C311FF231020092275E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD024C331FF231280092275E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		ECE32DE5797E1459BC40612C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +99,9 @@
 		F0D715311FF14CA60016CFBF /* VillageSecurityAppIos */ = {
 			isa = PBXGroup;
 			children = (
+				AD024C331FF231280092275E /* Controllers */,
+				AD024C301FF231020092275E /* Views */,
+				AD024C311FF231020092275E /* Models */,
 				F0D715321FF14CA60016CFBF /* AppDelegate.swift */,
 				F0D715341FF14CA60016CFBF /* ViewController.swift */,
 				F0D715361FF14CA60016CFBF /* Main.storyboard */,
