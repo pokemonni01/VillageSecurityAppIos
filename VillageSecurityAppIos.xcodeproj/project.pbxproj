@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
+		F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F531FF7556D009EA5F8 /* Generic.swift */; };
+		F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F551FFA9E08009EA5F8 /* Constants.swift */; };
+		F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F571FFB4689009EA5F8 /* ShareData.swift */; };
 		F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715321FF14CA60016CFBF /* AppDelegate.swift */; };
-		F0D715351FF14CA60016CFBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715341FF14CA60016CFBF /* ViewController.swift */; };
+		F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715341FF14CA60016CFBF /* LoginViewController.swift */; };
 		F0D715381FF14CA60016CFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D715361FF14CA60016CFBF /* Main.storyboard */; };
 		F0D7153A1FF14CA60016CFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D715391FF14CA60016CFBF /* Assets.xcassets */; };
 		F0D7153D1FF14CA60016CFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D7153B1FF14CA60016CFBF /* LaunchScreen.storyboard */; };
@@ -19,9 +22,12 @@
 		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
 		8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.debug.xcconfig"; sourceTree = "<group>"; };
 		C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VillageSecurityAppIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04D3F531FF7556D009EA5F8 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
+		F04D3F551FFA9E08009EA5F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F04D3F571FFB4689009EA5F8 /* ShareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
 		F0D7152F1FF14CA60016CFBF /* VillageSecurityAppIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VillageSecurityAppIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D715321FF14CA60016CFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0D715341FF14CA60016CFBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0D715341FF14CA60016CFBF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F0D715371FF14CA60016CFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0D715391FF14CA60016CFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0D7153C1FF14CA60016CFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 		AD024C311FF231020092275E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F04D3F521FF75550009EA5F8 /* Responses */,
+				F04D3F551FFA9E08009EA5F8 /* Constants.swift */,
+				F04D3F571FFB4689009EA5F8 /* ShareData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -66,6 +75,7 @@
 		AD024C331FF231280092275E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0D715341FF14CA60016CFBF /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -76,6 +86,14 @@
 				C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F04D3F521FF75550009EA5F8 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				F04D3F531FF7556D009EA5F8 /* Generic.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		F0D715261FF14CA60016CFBF = {
@@ -103,7 +121,6 @@
 				AD024C301FF231020092275E /* Views */,
 				AD024C311FF231020092275E /* Models */,
 				F0D715321FF14CA60016CFBF /* AppDelegate.swift */,
-				F0D715341FF14CA60016CFBF /* ViewController.swift */,
 				F0D715361FF14CA60016CFBF /* Main.storyboard */,
 				F0D715391FF14CA60016CFBF /* Assets.xcassets */,
 				F0D7153B1FF14CA60016CFBF /* LaunchScreen.storyboard */,
@@ -241,8 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0D715351FF14CA60016CFBF /* ViewController.swift in Sources */,
+				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
+				F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */,
+				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
+				F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
