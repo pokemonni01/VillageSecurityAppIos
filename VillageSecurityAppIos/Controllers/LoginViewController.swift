@@ -9,8 +9,13 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
-
+class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var mUsernameTextField: UITextField!
+    
+    @IBOutlet weak var mPasswordTextField: UITextField!
+    
+    
     @IBAction func login(_ sender: UIButton) {
         
     }
@@ -24,25 +29,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        loadGeneric()
-    }
     
-    func loadGeneric() {
-//        if (ShareData.generic) {
-//
-//        }
-        Alamofire.request(Config.baseURL).validate().responseJSON { response in
-            switch response.result {
-            case .success:
-                let jsonDecoder = JSONDecoder()
-                ShareData.generic = try! jsonDecoder.decode(Generic.self, from: response.data!)
-            case .failure(let error):
-                print(error)
-            }
-        }
-    }
-
 }
 
