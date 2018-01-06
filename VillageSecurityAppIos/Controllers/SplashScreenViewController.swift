@@ -29,18 +29,26 @@ class SplashScreenViewController: UIViewController {
     }
     
     func loadGeneric() {
-        Alamofire.request(Config.baseURL).validate().responseJSON { response in
-            switch response.result {
-            case .success:
-                self.mProgress.stopAnimating()
-                let jsonDecoder = JSONDecoder()
-                ShareData.generic = try! jsonDecoder.decode(Generic.self, from: response.data!)
-                let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-                self.present(loginViewController, animated: true)
-            case .failure(let error):
-                print(error)
-            }
-        }
+        GenericApi.getGeneric(delegate: self)
     }
+}
+
+extension SplashScreenViewController: GenericDelegate {
+    
+    func onGetGenericSuccess(generic: Generic) {
+        self.mProgress.stopAnimating()
+        ShareData.generic = generic
+        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.present(loginViewController, animated: true)
+    }
+    
+    func onGetGenericFail(generic: Generic) {
+        print(generic)
+    }
+    
+    func onGetGenericError(title: String, message: String) {
+        print(title+" "+message)
+    }
+    
     
 }

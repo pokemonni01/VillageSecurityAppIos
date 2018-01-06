@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Generic : Codable {
+public struct Generic : Codable {
     let scanCodeUrl : String?
     let listHomeUrl : String?
     let checkPointUrl : String?
@@ -58,7 +58,7 @@ struct Generic : Codable {
         case singUpUserUrl = "singUpUserUrl"
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         scanCodeUrl = try values.decodeIfPresent(String.self, forKey: .scanCodeUrl)
         listHomeUrl = try values.decodeIfPresent(String.self, forKey: .listHomeUrl)
