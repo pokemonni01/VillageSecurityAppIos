@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func login(_ sender: UIButton) {
-        
+//        mUsernameTextField.text
     }
     
     override func viewDidLoad() {
