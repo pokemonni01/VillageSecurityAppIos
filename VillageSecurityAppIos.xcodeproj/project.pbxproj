@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
 		ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */; };
+		ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA5213200460EB00E284C6 /* GenericApi.swift */; };
+		ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA5214200460EB00E284C6 /* GenericDelegate.swift */; };
 		F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F531FF7556D009EA5F8 /* Generic.swift */; };
 		F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F551FFA9E08009EA5F8 /* Constants.swift */; };
 		F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F571FFB4689009EA5F8 /* ShareData.swift */; };
@@ -23,6 +25,8 @@
 		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
 		8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.debug.xcconfig"; sourceTree = "<group>"; };
 		ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		ADEA5213200460EB00E284C6 /* GenericApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericApi.swift; sourceTree = "<group>"; };
+		ADEA5214200460EB00E284C6 /* GenericDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDelegate.swift; sourceTree = "<group>"; };
 		C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VillageSecurityAppIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04D3F531FF7556D009EA5F8 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 		F04D3F551FFA9E08009EA5F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 		AD024C311FF231020092275E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ADEA5211200460EB00E284C6 /* APIs */,
 				F04D3F521FF75550009EA5F8 /* Responses */,
 				F04D3F551FFA9E08009EA5F8 /* Constants.swift */,
 				F04D3F571FFB4689009EA5F8 /* ShareData.swift */,
@@ -81,6 +86,23 @@
 				ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ADEA5211200460EB00E284C6 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA5212200460EB00E284C6 /* GenericAPI */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		ADEA5212200460EB00E284C6 /* GenericAPI */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA5213200460EB00E284C6 /* GenericApi.swift */,
+				ADEA5214200460EB00E284C6 /* GenericDelegate.swift */,
+			);
+			path = GenericAPI;
 			sourceTree = "<group>";
 		};
 		ECE32DE5797E1459BC40612C /* Frameworks */ = {
@@ -261,12 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */,
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
 				ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */,
 				F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
 				F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */,
+				ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
