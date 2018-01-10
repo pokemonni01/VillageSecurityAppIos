@@ -17,7 +17,9 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func login(_ sender: UIButton) {
-//        mUsernameTextField.text
+        let username = mUsernameTextField.text!
+        let password = mPasswordTextField.text!
+        LoginApi.requestLogin(self, username, password)
     }
     
     override func viewDidLoad() {
@@ -30,5 +32,20 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+}
+
+
+extension LoginViewController: LoginDelegate {
+    func onRequestLoginSuccess(response: LoginResponse) {
+        print(response)
+    }
+    
+    func onRequestLoginFail(response: LoginResponse) {
+        print(response)
+    }
+    
+    func onRequestLoginError(title: String, message: String) {
+        print(title+" "+message)
+    }    
 }
 

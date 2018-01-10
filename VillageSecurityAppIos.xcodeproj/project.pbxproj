@@ -11,6 +11,12 @@
 		ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */; };
 		ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA5213200460EB00E284C6 /* GenericApi.swift */; };
 		ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA5214200460EB00E284C6 /* GenericDelegate.swift */; };
+		F0286BF72006490E00FE615C /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0286BF62006490E00FE615C /* LoginApi.swift */; };
+		F0286BF920064A0300FE615C /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0286BF820064A0300FE615C /* LoginDelegate.swift */; };
+		F0286BFE20064DEE00FE615C /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0286BFB20064DED00FE615C /* Detail.swift */; };
+		F0286C0420064F8500FE615C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0286C0120064F8400FE615C /* Home.swift */; };
+		F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0286C0220064F8500FE615C /* LoginResponse.swift */; };
+		F0286C0620064F8500FE615C /* TypeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0286C0320064F8500FE615C /* TypeUser.swift */; };
 		F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F531FF7556D009EA5F8 /* Generic.swift */; };
 		F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F551FFA9E08009EA5F8 /* Constants.swift */; };
 		F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F571FFB4689009EA5F8 /* ShareData.swift */; };
@@ -29,6 +35,12 @@
 		ADEA5213200460EB00E284C6 /* GenericApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericApi.swift; sourceTree = "<group>"; };
 		ADEA5214200460EB00E284C6 /* GenericDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDelegate.swift; sourceTree = "<group>"; };
 		C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VillageSecurityAppIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0286BF62006490E00FE615C /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
+		F0286BF820064A0300FE615C /* LoginDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDelegate.swift; sourceTree = "<group>"; };
+		F0286BFB20064DED00FE615C /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		F0286C0120064F8400FE615C /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F0286C0220064F8500FE615C /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F0286C0320064F8500FE615C /* TypeUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeUser.swift; sourceTree = "<group>"; };
 		F04D3F531FF7556D009EA5F8 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 		F04D3F551FFA9E08009EA5F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F04D3F571FFB4689009EA5F8 /* ShareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
@@ -93,6 +105,7 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				F0286BF52006472100FE615C /* LoginAPI */,
 				ADEA5212200460EB00E284C6 /* GenericAPI */,
 			);
 			path = APIs;
@@ -114,6 +127,27 @@
 				C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0286BF52006472100FE615C /* LoginAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F0286BFA20064DD000FE615C /* Response */,
+				F0286BF62006490E00FE615C /* LoginApi.swift */,
+				F0286BF820064A0300FE615C /* LoginDelegate.swift */,
+			);
+			path = LoginAPI;
+			sourceTree = "<group>";
+		};
+		F0286BFA20064DD000FE615C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F0286C0120064F8400FE615C /* Home.swift */,
+				F0286C0220064F8500FE615C /* LoginResponse.swift */,
+				F0286C0320064F8500FE615C /* TypeUser.swift */,
+				F0286BFB20064DED00FE615C /* Detail.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		F04D3F521FF75550009EA5F8 /* Responses */ = {
@@ -286,10 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0286BF920064A0300FE615C /* LoginDelegate.swift in Sources */,
 				ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */,
+				F0286BFE20064DEE00FE615C /* Detail.swift in Sources */,
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
+				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */,
+				F0286C0620064F8500FE615C /* TypeUser.swift in Sources */,
+				F0286C0420064F8500FE615C /* Home.swift in Sources */,
+				F0286BF72006490E00FE615C /* LoginApi.swift in Sources */,
 				ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */,
 				F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
