@@ -77,11 +77,7 @@
 		AD024C311FF231020092275E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
 				ADEA5211200460EB00E284C6 /* APIs */,
-=======
-				F0AF63F72003BC4200C2F748 /* APIs */,
->>>>>>> Stashed changes
 				F04D3F521FF75550009EA5F8 /* Responses */,
 				F04D3F551FFA9E08009EA5F8 /* Constants.swift */,
 				F04D3F571FFB4689009EA5F8 /* ShareData.swift */,
@@ -311,11 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
 				ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */,
-=======
-				F0AF63FC2003BC4200C2F748 /* GenericDelegate.swift in Sources */,
->>>>>>> Stashed changes
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
 				F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */,
@@ -323,11 +315,7 @@
 				F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
 				F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */,
-<<<<<<< Updated upstream
 				ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */,
-=======
-				F0AF63FB2003BC4200C2F748 /* GenericApi.swift in Sources */,
->>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
