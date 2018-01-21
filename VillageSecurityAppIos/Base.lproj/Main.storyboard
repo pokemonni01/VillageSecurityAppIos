@@ -75,14 +75,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="รหัสผ่าน" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VLX-mP-PaU">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="รหัสผ่าน" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VLX-mP-PaU">
                                         <rect key="frame" x="8" y="117" width="224" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voM-1x-4wt">
                                         <rect key="frame" x="97" y="170" width="46" height="30"/>
@@ -111,6 +110,7 @@
                     </view>
                     <connections>
                         <outlet property="mPasswordTextField" destination="VLX-mP-PaU" id="zp1-Fx-2ud"/>
+                        <outlet property="mRootView" destination="8bC-Xf-vdC" id="0NN-tF-2mk"/>
                         <outlet property="mUsernameTextField" destination="VlU-US-0vk" id="hql-0q-jst"/>
                     </connections>
                 </viewController>

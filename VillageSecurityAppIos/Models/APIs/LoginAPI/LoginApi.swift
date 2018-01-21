@@ -21,7 +21,11 @@ public class LoginApi {
             case .success:
                 do {
                     let loginResponse = try JSONDecoder().decode(LoginResponse.self, from: response.data!)
-                    delegate.onRequestLoginSuccess(response: loginResponse)
+                    if (loginResponse.status! == ApiConstants.SUCCESS) {
+                        delegate.onRequestLoginSuccess(response: loginResponse)
+                    } else {
+                        delegate.onRequestLoginFail(response: loginResponse)
+                    }
                 } catch {
                     print(error) // any decoding error will be printed here!
                 }

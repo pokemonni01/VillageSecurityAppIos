@@ -11,3 +11,8 @@ import Foundation
 enum Config {
     static let baseURL = "http://54.254.254.52/urls/"
 }
+
+enum ApiConstants {
+    static let SUCCESS = "success"
+    static let FAIL = "fail"
+}

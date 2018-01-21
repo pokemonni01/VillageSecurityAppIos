@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */; };
 		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
 		ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */; };
 		ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA5213200460EB00E284C6 /* GenericApi.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
 		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
 		8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.debug.xcconfig"; sourceTree = "<group>"; };
 		ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D78F6F820145CE2008BFE16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		76D1D60CB79D0BD948C361CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		AD024C311FF231020092275E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1D78F6F820145CE2008BFE16 /* Utils */,
 				ADEA5211200460EB00E284C6 /* APIs */,
 				F04D3F551FFA9E08009EA5F8 /* Constants.swift */,
 				F04D3F571FFB4689009EA5F8 /* ShareData.swift */,
@@ -324,6 +335,7 @@
 				ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */,
 				F0286BFE20064DEE00FE615C /* Detail.swift in Sources */,
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
+				1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */,
