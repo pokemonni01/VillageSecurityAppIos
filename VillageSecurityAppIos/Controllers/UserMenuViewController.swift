@@ -20,5 +20,9 @@ class UserMenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onGoToScanQRClick(_ sender: Any) {
+        let scanQRController = self.storyboard?.instantiateViewController(withIdentifier: "ScanQRController") as! ScanQRController
+        self.present(scanQRController, animated: true)
+    }
 }
 
