@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import PopupDialog
 
 class ViewControllerUtils {
     
@@ -56,6 +57,12 @@ class ViewControllerUtils {
         let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
         let blue = CGFloat(rgbValue & 0xFF)/256.0
         return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
+    }
+    
+    func showAlertDialogOneButton(viewController: UIViewController, title: String, message: String, buttonText: String = "ตกลง") {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        viewController.present(alert, animated: true, completion: nil)
     }
     
 }
