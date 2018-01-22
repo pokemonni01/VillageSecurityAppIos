@@ -54,6 +54,9 @@ extension LoginViewController: LoginDelegate {
     
     func onRequestLoginFail(response: LoginResponse) {
         mViewControllerUtils.hideActivityIndicator(uiView: mRootView)
+        let title = response.title!
+        let message = response.message!
+        mViewControllerUtils.showAlertDialogOneButton(viewController: self, title: title, message: message)
         print(response)
     }
     
