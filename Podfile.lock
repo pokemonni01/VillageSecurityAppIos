@@ -1,18 +1,15 @@
 PODS:
   - Alamofire (4.6.0)
-  - DynamicBlurView (2.0.2)
-  - PopupDialog (0.7.0):
-    - DynamicBlurView (~> 2.0)
+  - QRCodeReader.swift (8.0.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
-  - PopupDialog (~> 0.7)
+  - QRCodeReader.swift (~> 8.0.3)
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
-  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
-  PopupDialog: 4abc6db5b22b7c8029e2162bde8891ee6aa4b6c8
+  QRCodeReader.swift: 9730cfa7ed5f0dd839765df8cf18d41db20e4081
 
-PODFILE CHECKSUM: a9cfffd39779de5046eecd59193bfb0bb52f1dba
+PODFILE CHECKSUM: 2b1d51af25b4afdba6e954c7cb9bdb17aa7e34aa
 
 COCOAPODS: 1.4.0
