@@ -51,5 +51,10 @@ class UserMenuViewController: UIViewController {
             return false
         }
     }
+    
+    @IBAction func onNotificationButtonClick(_ sender: Any) {
+        let notificationViewController = self.storyboard?.instantiateViewController(withIdentifier: "NotificationViewController") as! NotificationViewController
+        self.navigationController?.pushViewController(notificationViewController, animated: true)
+    }
 }
 
