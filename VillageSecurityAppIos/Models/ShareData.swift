@@ -8,4 +8,5 @@
 
 class ShareData {
     static var generic: Generic? = nil
+    static var userData: UserData? = nil
 }

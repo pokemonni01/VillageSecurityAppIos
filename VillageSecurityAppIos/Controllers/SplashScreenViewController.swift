@@ -38,8 +38,14 @@ extension SplashScreenViewController: GenericDelegate {
     func onGetGenericSuccess(generic: Generic) {
         self.mProgress.stopAnimating()
         ShareData.generic = generic
-        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        self.present(loginViewController, animated: true)
+        let userData = UserDefaultsUtils.getUserData()
+        if userData != nil {
+            ShareData.userData = userData
+            print(userData!)
+        } else {
+            let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.present(loginViewController, animated: true)
+        }
     }
     
     func onGetGenericFail(generic: Generic) {

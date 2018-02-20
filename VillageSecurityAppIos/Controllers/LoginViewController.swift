@@ -49,6 +49,13 @@ extension LoginViewController: LoginDelegate {
         mViewControllerUtils.hideActivityIndicator(uiView: mRootView)
         let userMenuViewController = self.storyboard?.instantiateViewController(withIdentifier: "UserMenuNavigationViewController") as! UINavigationController
         self.present(userMenuViewController, animated: true)
+        let userData = UserData(
+            username: response.username!,
+            detail: response.detail!,
+            token: response.token!
+        )
+        ShareData.userData = userData
+        UserDefaultsUtils.saveUserData(userdata: userData)
         print(response)
     }
     

@@ -9,9 +9,9 @@
 import Foundation
 
 public struct UserData : Codable {
-    let username : String?
-    let detail : Detail?
-    let token : String?
+    var username : String?
+    var detail : Detail?
+    var token : String?
     
     enum CodingKeys: String, CodingKey {
         case username = "username"
@@ -24,5 +24,11 @@ public struct UserData : Codable {
         username = try values.decodeIfPresent(String.self, forKey: .username)
         detail = try values.decodeIfPresent(Detail.self, forKey: .detail)
         token = try values.decodeIfPresent(String.self, forKey: .token)
+    }
+    
+    init(username: String, detail: Detail, token: String) {
+        self.username = username
+        self.detail = detail
+        self.token = token
     }
 }

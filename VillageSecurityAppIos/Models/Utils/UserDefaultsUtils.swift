@@ -9,15 +9,23 @@
 import Foundation
 
 class UserDefaultsUtils {
-    static func setUserData() {
+    static func saveUserData(userdata: UserData) {
         let preferences = UserDefaults.standard
-        let currentLevelKey = "UserData"
-        let currentLevel = 2
-        preferences.set(currentLevel, forKey: currentLevelKey)
-        //  Save to disk
-        let didSave = preferences.synchronize()
-        if !didSave {
-            //  Couldn't save (I've never seen this happen in real world testing)
+        let userDataKey = "UserData"
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(userdata) {
+            print(encoded)
+            preferences.set(encoded, forKey: userDataKey)
+            preferences.synchronize()
         }
+    }
+    
+    static func getUserData() -> UserData? {
+        let userDataKey = "UserData"
+        let decoder = JSONDecoder()
+        if let rawUserData = UserDefaults.standard.data(forKey: userDataKey), let userData = try? decoder.decode(UserData.self, from: rawUserData) {
+            return userData
+        }
+        return nil
     }
 }
