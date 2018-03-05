@@ -40,10 +40,15 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        goToNotificationDetailPage()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
+    }
+    
+    func goToNotificationDetailPage() {
+        
     }
     
 }

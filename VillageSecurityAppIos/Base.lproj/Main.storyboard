@@ -322,6 +322,81 @@
             </objects>
             <point key="canvasLocation" x="2128.8000000000002" y="748.87556221889065"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="CXB-Dy-cmW">
+            <objects>
+                <viewController id="obd-gl-e6M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aKb-Eh-Xvm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jn-wO-aah">
+                                <rect key="frame" x="16" y="56" width="343" height="595"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ท่านไม่อยู่บ้าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzd-Ce-6Dk">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="wdX-QL-bdf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วันที่ 12/06/2015 เวลา 12.00 น." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydb-xm-WIg">
+                                        <rect key="frame" x="0.0" y="29" width="236.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="uBK-pc-uey"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="หมายเหตุ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbM-5P-KHO">
+                                        <rect key="frame" x="0.0" y="58" width="79.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Ock-f9-dne"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="มีบุคคลขับรถสีฟ้ามาเยี่ยมท่าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLI-Uw-N0x">
+                                        <rect key="frame" x="0.0" y="87" width="221.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="FvK-q5-7WG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ydb-xm-WIg" firstAttribute="top" secondItem="Vzd-Ce-6Dk" secondAttribute="bottom" constant="8" id="7xm-RH-mPq"/>
+                                    <constraint firstItem="KLI-Uw-N0x" firstAttribute="top" secondItem="IbM-5P-KHO" secondAttribute="bottom" constant="8" id="HqX-aE-Z6o"/>
+                                    <constraint firstItem="KLI-Uw-N0x" firstAttribute="leading" secondItem="0jn-wO-aah" secondAttribute="leading" id="ODw-Wz-RXH"/>
+                                    <constraint firstItem="IbM-5P-KHO" firstAttribute="leading" secondItem="0jn-wO-aah" secondAttribute="leading" id="TP7-Sr-mWd"/>
+                                    <constraint firstItem="Vzd-Ce-6Dk" firstAttribute="top" secondItem="0jn-wO-aah" secondAttribute="top" id="YmL-7v-Zcg"/>
+                                    <constraint firstItem="IbM-5P-KHO" firstAttribute="top" secondItem="ydb-xm-WIg" secondAttribute="bottom" constant="8" id="jU7-U2-qGm"/>
+                                    <constraint firstItem="ydb-xm-WIg" firstAttribute="leading" secondItem="0jn-wO-aah" secondAttribute="leading" id="ugs-nF-YCr"/>
+                                    <constraint firstItem="Vzd-Ce-6Dk" firstAttribute="leading" secondItem="0jn-wO-aah" secondAttribute="leading" id="zmu-He-kmK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0jn-wO-aah" firstAttribute="top" secondItem="hQZ-rN-tmT" secondAttribute="top" constant="36" id="1ta-Z2-raD"/>
+                            <constraint firstItem="0jn-wO-aah" firstAttribute="leading" secondItem="hQZ-rN-tmT" secondAttribute="leading" constant="16" id="Ebn-Zf-o7H"/>
+                            <constraint firstItem="hQZ-rN-tmT" firstAttribute="bottom" secondItem="0jn-wO-aah" secondAttribute="bottom" constant="16" id="EeH-Ob-sr2"/>
+                            <constraint firstItem="hQZ-rN-tmT" firstAttribute="trailing" secondItem="0jn-wO-aah" secondAttribute="trailing" constant="16" id="QXT-YK-CwI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hQZ-rN-tmT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BOt-uo-S8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2918" y="749"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="X6H-yG-3LG">
             <objects>
@@ -339,6 +414,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJL-II-L3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="604" y="34"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AoT-aL-WUo">
+            <objects>
+                <viewController id="TNx-fA-Yks" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kws-wX-ThZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oj2-Ul-kDw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRB-5B-7eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
