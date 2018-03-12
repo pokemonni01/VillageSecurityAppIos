@@ -41,11 +41,11 @@ extension SplashScreenViewController: GenericDelegate {
         let userData = UserDefaultsUtils.getUserData()
         if userData != nil {
             ShareData.userData = userData
-            let userMenuViewController = self.storyboard?.instantiateViewController(withIdentifier: "UserMenuNavigationViewController") as! UINavigationController
+            let userMenuViewController = self.storyboard?.instantiateViewController(withIdentifier: IdentifierNames.userMenuNavigationViewController) as! UINavigationController
             self.present(userMenuViewController, animated: true)
             print(userData!)
         } else {
-            let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: IdentifierNames.loginViewController) as! LoginViewController
             self.present(loginViewController, animated: true)
         }
     }

@@ -23,7 +23,7 @@ class UserMenuViewController: UIViewController {
     
     @IBAction func onGoToScanQRClick(_ sender: Any) {
         guard checkScanPermissions() else { return }
-        let scanQRController = self.storyboard?.instantiateViewController(withIdentifier: "ScanQRController") as! ScanQRController
+        let scanQRController = self.storyboard?.instantiateViewController(withIdentifier: IdentifierNames.scanQRController) as! ScanQRController
         self.navigationController?.pushViewController(scanQRController, animated: true)
     }
     
@@ -53,7 +53,7 @@ class UserMenuViewController: UIViewController {
     }
     
     @IBAction func onNotificationButtonClick(_ sender: Any) {
-        let notificationViewController = self.storyboard?.instantiateViewController(withIdentifier: "NotificationViewController") as! NotificationViewController
+        let notificationViewController = self.storyboard?.instantiateViewController(withIdentifier: IdentifierNames.notificationViewController) as! NotificationViewController
         self.navigationController?.pushViewController(notificationViewController, animated: true)
     }
 }
