@@ -48,7 +48,8 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func goToNotificationDetailPage() {
-        
+        let notificationDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: IdentifierNames.notificationDetailViewController) as! NotificationDetailViewController
+        self.navigationController?.pushViewController(notificationDetailViewController, animated: true)
     }
     
 }

@@ -25,4 +25,5 @@ enum IdentifierNames {
     static let scanQRController = "ScanQRController"
     static let notificationViewController = "NotificationViewController"
     static let cellReuseIdentifier = "cellReuseIdentifier"
+    static let notificationDetailViewController = "NotificationDetailViewController"
 }
