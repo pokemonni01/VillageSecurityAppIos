@@ -6,6 +6,7 @@ target 'VillageSecurityAppIos' do
   use_frameworks!
   pod 'Alamofire', '~> 4.5'
   pod 'QRCodeReader.swift', '~> 8.0.3'
+  pod 'ActionSheetPicker-3.0', '~> 2.3.0'
 
   # Pods for VillageSecurityAppIos
 

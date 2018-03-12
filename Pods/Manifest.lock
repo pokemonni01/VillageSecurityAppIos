@@ -1,15 +1,18 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
   - Alamofire (4.6.0)
   - QRCodeReader.swift (8.0.4)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 2.3.0)
   - Alamofire (~> 4.5)
   - QRCodeReader.swift (~> 8.0.3)
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   QRCodeReader.swift: 9730cfa7ed5f0dd839765df8cf18d41db20e4081
 
-PODFILE CHECKSUM: 2b1d51af25b4afdba6e954c7cb9bdb17aa7e34aa
+PODFILE CHECKSUM: 5597ef34a7c817edc17e1fb7870ce543f6684c5a
 
 COCOAPODS: 1.4.0
