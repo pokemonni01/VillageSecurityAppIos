@@ -16,3 +16,13 @@ enum ApiConstants {
     static let SUCCESS = "success"
     static let FAIL = "fail"
 }
+
+enum IdentifierNames {
+    static let loginViewController = "LoginViewController"
+    static let splashScreenViewController = "SplashScreenViewController"
+    static let userMenuViewController = "UserMenuViewController"
+    static let userMenuNavigationViewController = "UserMenuNavigationViewController"
+    static let scanQRController = "ScanQRController"
+    static let notificationViewController = "NotificationViewController"
+    static let cellReuseIdentifier = "cellReuseIdentifier"
+}

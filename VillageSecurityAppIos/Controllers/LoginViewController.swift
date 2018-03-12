@@ -43,11 +43,10 @@ class LoginViewController: UIViewController {
     
 }
 
-
 extension LoginViewController: LoginDelegate {
     func onRequestLoginSuccess(response: LoginResponse) {
         mViewControllerUtils.hideActivityIndicator(uiView: mRootView)
-        let userMenuViewController = self.storyboard?.instantiateViewController(withIdentifier: "UserMenuNavigationViewController") as! UINavigationController
+        let userMenuViewController = self.storyboard?.instantiateViewController(withIdentifier: IdentifierNames.userMenuNavigationViewController) as! UINavigationController
         self.present(userMenuViewController, animated: true)
         let userData = UserData(
             username: response.username!,

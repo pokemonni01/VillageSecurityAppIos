@@ -31,7 +31,7 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier") as! NotificationTableViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: IdentifierNames.cellReuseIdentifier) as! NotificationTableViewCell
         cell.titleLabel?.text = self.animals[indexPath.row]
         
         return cell
