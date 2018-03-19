@@ -148,6 +148,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0G-VX-dpG">
                                                 <rect key="frame" x="84.5" y="54" width="141" height="30"/>
                                                 <state key="normal" title="ประวัติการทำงาน รปภ."/>
+                                                <connections>
+                                                    <action selector="onWorkHistoryButtonClick:" destination="Y4M-pz-8nY" eventType="touchUpInside" id="YAR-oq-ZV9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tm-N0-sEE">
                                                 <rect key="frame" x="127" y="100" width="56" height="30"/>
@@ -322,44 +325,76 @@
             </objects>
             <point key="canvasLocation" x="1279" y="728"/>
         </scene>
-        <!--View Controller-->
+        <!--Work History View Controller-->
         <scene sceneID="O6T-FY-0ZB">
             <objects>
-                <viewController id="Gnz-QJ-FuQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WorkHistoryViewController" id="Gnz-QJ-FuQ" customClass="WorkHistoryViewController" customModule="VillageSecurityAppIos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9jW-Fq-OYm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuK-xQ-mwd">
-                                <rect key="frame" x="16" y="56" width="343" height="595"/>
+                                <rect key="frame" x="32" y="56" width="311" height="595"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="เวลา" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiH-kn-uoK">
-                                        <rect key="frame" x="16" y="0.0" width="311" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1 ชั่วโมงก่อนหน้า" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiH-kn-uoK">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Kkf-yo-0D9"/>
+                                            <constraint firstAttribute="height" constant="30" id="A55-WV-zpp"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="onTimePickerClick:" destination="Gnz-QJ-FuQ" eventType="touchDown" id="0Zl-Kv-LU3"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="เลือกวันที่" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r11-Kz-Q42">
+                                        <rect key="frame" x="0.0" y="38" width="140" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="onDatePickerClick:" destination="Gnz-QJ-FuQ" eventType="touchDown" id="yZq-Hn-ndZ"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="เขต" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uDi-yx-8B4">
+                                        <rect key="frame" x="171" y="38" width="140" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="onBorderClick:" destination="Gnz-QJ-FuQ" eventType="touchDown" id="Q6e-32-T8W"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="LiH-kn-uoK" secondAttribute="trailing" constant="16" id="U4J-Po-paP"/>
-                                    <constraint firstItem="LiH-kn-uoK" firstAttribute="top" secondItem="HuK-xQ-mwd" secondAttribute="top" id="bHD-j6-Bnk"/>
-                                    <constraint firstItem="LiH-kn-uoK" firstAttribute="leading" secondItem="HuK-xQ-mwd" secondAttribute="leading" constant="16" id="mm6-dR-RI4"/>
+                                    <constraint firstItem="r11-Kz-Q42" firstAttribute="leading" secondItem="HuK-xQ-mwd" secondAttribute="leading" id="8Iz-17-dLn"/>
+                                    <constraint firstItem="uDi-yx-8B4" firstAttribute="width" secondItem="HuK-xQ-mwd" secondAttribute="width" multiplier="0.45" id="8tZ-rg-vNr"/>
+                                    <constraint firstItem="r11-Kz-Q42" firstAttribute="top" secondItem="LiH-kn-uoK" secondAttribute="bottom" constant="8" id="ABy-Ym-CDC"/>
+                                    <constraint firstAttribute="trailing" secondItem="uDi-yx-8B4" secondAttribute="trailing" id="Gmj-6H-xMO"/>
+                                    <constraint firstItem="r11-Kz-Q42" firstAttribute="width" secondItem="HuK-xQ-mwd" secondAttribute="width" multiplier="0.45" id="Tu8-jB-ylp"/>
+                                    <constraint firstItem="LiH-kn-uoK" firstAttribute="top" secondItem="HuK-xQ-mwd" secondAttribute="top" id="WTu-pu-9C7"/>
+                                    <constraint firstItem="uDi-yx-8B4" firstAttribute="top" secondItem="LiH-kn-uoK" secondAttribute="bottom" constant="8" id="Zgb-IY-XQF"/>
+                                    <constraint firstAttribute="trailing" secondItem="LiH-kn-uoK" secondAttribute="trailing" id="ZoG-r9-aaD"/>
+                                    <constraint firstItem="LiH-kn-uoK" firstAttribute="leading" secondItem="HuK-xQ-mwd" secondAttribute="leading" id="ivo-fq-5Uf"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aZP-eK-tXW" firstAttribute="bottom" secondItem="HuK-xQ-mwd" secondAttribute="bottom" constant="16" id="2DL-cs-67b"/>
-                            <constraint firstItem="HuK-xQ-mwd" firstAttribute="top" secondItem="aZP-eK-tXW" secondAttribute="top" constant="36" id="ICr-uk-MlF"/>
-                            <constraint firstItem="aZP-eK-tXW" firstAttribute="trailing" secondItem="HuK-xQ-mwd" secondAttribute="trailing" constant="16" id="bXM-5c-P3h"/>
-                            <constraint firstItem="HuK-xQ-mwd" firstAttribute="leading" secondItem="aZP-eK-tXW" secondAttribute="leading" constant="16" id="xwE-1P-p9d"/>
+                            <constraint firstItem="HuK-xQ-mwd" firstAttribute="leading" secondItem="aZP-eK-tXW" secondAttribute="leading" constant="32" id="9Bc-rz-EMd"/>
+                            <constraint firstItem="aZP-eK-tXW" firstAttribute="bottom" secondItem="HuK-xQ-mwd" secondAttribute="bottom" constant="16" id="EvN-h4-EJl"/>
+                            <constraint firstItem="HuK-xQ-mwd" firstAttribute="top" secondItem="aZP-eK-tXW" secondAttribute="top" constant="36" id="NkL-Tu-yXF"/>
+                            <constraint firstItem="aZP-eK-tXW" firstAttribute="trailing" secondItem="HuK-xQ-mwd" secondAttribute="trailing" constant="32" id="Tee-Ak-Pxm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aZP-eK-tXW"/>
                     </view>
+                    <connections>
+                        <outlet property="mBorderPicker" destination="uDi-yx-8B4" id="wmZ-jd-vjh"/>
+                        <outlet property="mDatePicker" destination="r11-Kz-Q42" id="oyT-Y3-vcS"/>
+                        <outlet property="mTimePicker" destination="LiH-kn-uoK" id="iqh-Ct-9hY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12t-2J-PSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

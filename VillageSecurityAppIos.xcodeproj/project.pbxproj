@@ -12,6 +12,7 @@
 		1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */; };
 		1D34E1012035A33500FA3170 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E1002035A33500FA3170 /* UserData.swift */; };
 		1D573E6A2056744100341603 /* NotificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E692056744100341603 /* NotificationDetailViewController.swift */; };
+		1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */; };
 		1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */; };
 		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
 		ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */; };
@@ -41,6 +42,7 @@
 		1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		1D34E1002035A33500FA3170 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		1D573E692056744100341603 /* NotificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailViewController.swift; sourceTree = "<group>"; };
+		1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryViewController.swift; sourceTree = "<group>"; };
 		1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
 		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
 		8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				F0662F7520162FDB0092071D /* ScanQRController.swift */,
 				1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */,
 				1D573E692056744100341603 /* NotificationDetailViewController.swift */,
+				1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
 				1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
+				1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */,
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				1D34E1012035A33500FA3170 /* UserData.swift in Sources */,
 				F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */,

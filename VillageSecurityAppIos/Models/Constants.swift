@@ -26,4 +26,5 @@ enum IdentifierNames {
     static let notificationViewController = "NotificationViewController"
     static let cellReuseIdentifier = "cellReuseIdentifier"
     static let notificationDetailViewController = "NotificationDetailViewController"
+    static let workHistoryViewController = "WorkHistoryViewController"
 }
