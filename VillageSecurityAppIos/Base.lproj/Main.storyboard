@@ -334,9 +334,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuK-xQ-mwd">
-                                <rect key="frame" x="32" y="56" width="311" height="595"/>
+                                <rect key="frame" x="32" y="56" width="311" height="68"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1 ชั่วโมงก่อนหน้า" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiH-kn-uoK">
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1 ชั่วโมงก่อนหน้า" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiH-kn-uoK">
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="A55-WV-zpp"/>
@@ -348,7 +348,7 @@
                                             <action selector="onTimePickerClick:" destination="Gnz-QJ-FuQ" eventType="touchDown" id="0Zl-Kv-LU3"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="เลือกวันที่" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r11-Kz-Q42">
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="เลือกวันที่" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r11-Kz-Q42">
                                         <rect key="frame" x="0.0" y="38" width="140" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -357,7 +357,7 @@
                                             <action selector="onDatePickerClick:" destination="Gnz-QJ-FuQ" eventType="touchDown" id="yZq-Hn-ndZ"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="เขต" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uDi-yx-8B4">
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="เขต" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uDi-yx-8B4">
                                         <rect key="frame" x="171" y="38" width="140" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -369,24 +369,37 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="r11-Kz-Q42" firstAttribute="leading" secondItem="HuK-xQ-mwd" secondAttribute="leading" id="8Iz-17-dLn"/>
-                                    <constraint firstItem="uDi-yx-8B4" firstAttribute="width" secondItem="HuK-xQ-mwd" secondAttribute="width" multiplier="0.45" id="8tZ-rg-vNr"/>
+                                    <constraint firstAttribute="width" constant="311" id="1He-aP-cf5"/>
                                     <constraint firstItem="r11-Kz-Q42" firstAttribute="top" secondItem="LiH-kn-uoK" secondAttribute="bottom" constant="8" id="ABy-Ym-CDC"/>
-                                    <constraint firstAttribute="trailing" secondItem="uDi-yx-8B4" secondAttribute="trailing" id="Gmj-6H-xMO"/>
-                                    <constraint firstItem="r11-Kz-Q42" firstAttribute="width" secondItem="HuK-xQ-mwd" secondAttribute="width" multiplier="0.45" id="Tu8-jB-ylp"/>
-                                    <constraint firstItem="LiH-kn-uoK" firstAttribute="top" secondItem="HuK-xQ-mwd" secondAttribute="top" id="WTu-pu-9C7"/>
                                     <constraint firstItem="uDi-yx-8B4" firstAttribute="top" secondItem="LiH-kn-uoK" secondAttribute="bottom" constant="8" id="Zgb-IY-XQF"/>
-                                    <constraint firstAttribute="trailing" secondItem="LiH-kn-uoK" secondAttribute="trailing" id="ZoG-r9-aaD"/>
-                                    <constraint firstItem="LiH-kn-uoK" firstAttribute="leading" secondItem="HuK-xQ-mwd" secondAttribute="leading" id="ivo-fq-5Uf"/>
+                                    <constraint firstAttribute="height" constant="68" id="eO6-dC-WSQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JU-B1-55o">
+                                <rect key="frame" x="0.0" y="140" width="375" height="527"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ประวัติ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9C-7q-mmx">
+                                        <rect key="frame" x="4" y="0.0" width="46.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="K9C-7q-mmx" firstAttribute="top" secondItem="7JU-B1-55o" secondAttribute="top" id="1Vg-dV-p1V"/>
+                                    <constraint firstItem="K9C-7q-mmx" firstAttribute="leading" secondItem="7JU-B1-55o" secondAttribute="leading" constant="4" id="m0f-XU-MKA"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HuK-xQ-mwd" firstAttribute="leading" secondItem="aZP-eK-tXW" secondAttribute="leading" constant="32" id="9Bc-rz-EMd"/>
-                            <constraint firstItem="aZP-eK-tXW" firstAttribute="bottom" secondItem="HuK-xQ-mwd" secondAttribute="bottom" constant="16" id="EvN-h4-EJl"/>
-                            <constraint firstItem="HuK-xQ-mwd" firstAttribute="top" secondItem="aZP-eK-tXW" secondAttribute="top" constant="36" id="NkL-Tu-yXF"/>
-                            <constraint firstItem="aZP-eK-tXW" firstAttribute="trailing" secondItem="HuK-xQ-mwd" secondAttribute="trailing" constant="32" id="Tee-Ak-Pxm"/>
+                            <constraint firstItem="aZP-eK-tXW" firstAttribute="trailing" secondItem="7JU-B1-55o" secondAttribute="trailing" id="1cr-7s-a4K"/>
+                            <constraint firstItem="7JU-B1-55o" firstAttribute="top" secondItem="HuK-xQ-mwd" secondAttribute="bottom" constant="16" id="8f3-s8-uQj"/>
+                            <constraint firstItem="aZP-eK-tXW" firstAttribute="bottom" secondItem="7JU-B1-55o" secondAttribute="bottom" id="NR1-Jn-8Bp"/>
+                            <constraint firstItem="7JU-B1-55o" firstAttribute="leading" secondItem="aZP-eK-tXW" secondAttribute="leading" id="hkt-Sd-89C"/>
+                            <constraint firstItem="HuK-xQ-mwd" firstAttribute="top" secondItem="aZP-eK-tXW" secondAttribute="top" constant="36" id="pNZ-Ne-m1L"/>
+                            <constraint firstItem="HuK-xQ-mwd" firstAttribute="leading" secondItem="aZP-eK-tXW" secondAttribute="leading" constant="32" id="uKR-hq-9rG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aZP-eK-tXW"/>
                     </view>
@@ -398,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12t-2J-PSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1278" y="1426"/>
+            <point key="canvasLocation" x="1277.5999999999999" y="1425.3373313343329"/>
         </scene>
         <!--Notification Detail View Controller-->
         <scene sceneID="CXB-Dy-cmW">

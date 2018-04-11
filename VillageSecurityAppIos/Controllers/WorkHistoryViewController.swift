@@ -64,8 +64,8 @@ class WorkHistoryViewController: UIViewController {
             print("values = \(String(describing: values))")
             print("indexes = \(String(describing: indexes))")
             print("picker = \(String(describing: picker))")
-            self.mTimePicker.endEditing(true)
-            self.mTimePicker.text = values as? String
+            self.mBorderPicker.endEditing(true)
+            self.mBorderPicker.text = values as? String
             return
         }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
        
