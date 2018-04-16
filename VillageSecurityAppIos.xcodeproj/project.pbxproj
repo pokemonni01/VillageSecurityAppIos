@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D221E7220825EBB00210E52 /* ListVillageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7120825EBB00210E52 /* ListVillageAPI.swift */; };
+		1D221E742082FBFD00210E52 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E732082FBFD00210E52 /* StringUtils.swift */; };
+		1D221E7820831D2500210E52 /* Village.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7620831D2500210E52 /* Village.swift */; };
+		1D221E7920831D2500210E52 /* ListVillageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7720831D2500210E52 /* ListVillageResponse.swift */; };
 		1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */; };
 		1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */; };
 		1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */; };
@@ -37,6 +41,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D221E7120825EBB00210E52 /* ListVillageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVillageAPI.swift; sourceTree = "<group>"; };
+		1D221E732082FBFD00210E52 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		1D221E7620831D2500210E52 /* Village.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Village.swift; sourceTree = "<group>"; };
+		1D221E7720831D2500210E52 /* ListVillageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVillageResponse.swift; sourceTree = "<group>"; };
 		1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationTableViewCell.swift; path = VillageSecurityAppIos/Views/Notification/NotificationTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
@@ -82,6 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D221E7020825E7A00210E52 /* ListVillageAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1D221E7520831CFA00210E52 /* Response */,
+				1D221E7120825EBB00210E52 /* ListVillageAPI.swift */,
+			);
+			path = ListVillageAPI;
+			sourceTree = "<group>";
+		};
+		1D221E7520831CFA00210E52 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1D221E7720831D2500210E52 /* ListVillageResponse.swift */,
+				1D221E7620831D2500210E52 /* Village.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		1D34E0FB202C47D900FA3170 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +137,7 @@
 			children = (
 				1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */,
 				1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */,
+				1D221E732082FBFD00210E52 /* StringUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -153,6 +180,7 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				1D221E7020825E7A00210E52 /* ListVillageAPI */,
 				F0286BF52006472100FE615C /* LoginAPI */,
 				ADEA5212200460EB00E284C6 /* GenericAPI */,
 			);
@@ -372,11 +400,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D221E7920831D2500210E52 /* ListVillageResponse.swift in Sources */,
 				F0286BF920064A0300FE615C /* LoginDelegate.swift in Sources */,
+				1D221E7220825EBB00210E52 /* ListVillageAPI.swift in Sources */,
 				F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */,
 				1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */,
 				ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */,
 				F0286BFE20064DEE00FE615C /* Detail.swift in Sources */,
+				1D221E742082FBFD00210E52 /* StringUtils.swift in Sources */,
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
 				1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
@@ -390,6 +421,7 @@
 				1D573E6A2056744100341603 /* NotificationDetailViewController.swift in Sources */,
 				ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */,
 				F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */,
+				1D221E7820831D2500210E52 /* Village.swift in Sources */,
 				1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */,
 				1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
