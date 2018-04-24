@@ -11,6 +11,9 @@
 		1D221E742082FBFD00210E52 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E732082FBFD00210E52 /* StringUtils.swift */; };
 		1D221E7820831D2500210E52 /* Village.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7620831D2500210E52 /* Village.swift */; };
 		1D221E7920831D2500210E52 /* ListVillageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7720831D2500210E52 /* ListVillageResponse.swift */; };
+		1D221E7E2084722300210E52 /* ListZoneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7D2084722300210E52 /* ListZoneAPI.swift */; };
+		1D221E822084740300210E52 /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E802084740300210E52 /* Zone.swift */; };
+		1D221E832084740300210E52 /* ListZoneResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E812084740300210E52 /* ListZoneResponse.swift */; };
 		1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */; };
 		1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */; };
 		1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */; };
@@ -18,6 +21,7 @@
 		1D573E6A2056744100341603 /* NotificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E692056744100341603 /* NotificationDetailViewController.swift */; };
 		1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */; };
 		1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */; };
+		1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98729C208B9E9D002533DA /* DateTimeUtils.swift */; };
 		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
 		ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */; };
 		ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA5213200460EB00E284C6 /* GenericApi.swift */; };
@@ -45,6 +49,9 @@
 		1D221E732082FBFD00210E52 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		1D221E7620831D2500210E52 /* Village.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Village.swift; sourceTree = "<group>"; };
 		1D221E7720831D2500210E52 /* ListVillageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVillageResponse.swift; sourceTree = "<group>"; };
+		1D221E7D2084722300210E52 /* ListZoneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListZoneAPI.swift; sourceTree = "<group>"; };
+		1D221E802084740300210E52 /* Zone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
+		1D221E812084740300210E52 /* ListZoneResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListZoneResponse.swift; sourceTree = "<group>"; };
 		1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationTableViewCell.swift; path = VillageSecurityAppIos/Views/Notification/NotificationTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 		1D573E692056744100341603 /* NotificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailViewController.swift; sourceTree = "<group>"; };
 		1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryViewController.swift; sourceTree = "<group>"; };
 		1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
+		1D98729C208B9E9D002533DA /* DateTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeUtils.swift; sourceTree = "<group>"; };
 		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
 		8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.debug.xcconfig"; sourceTree = "<group>"; };
 		ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +116,24 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		1D221E7C208471C600210E52 /* ListZoneAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1D221E7F2084733300210E52 /* Response */,
+				1D221E7D2084722300210E52 /* ListZoneAPI.swift */,
+			);
+			path = ListZoneAPI;
+			sourceTree = "<group>";
+		};
+		1D221E7F2084733300210E52 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1D221E812084740300210E52 /* ListZoneResponse.swift */,
+				1D221E802084740300210E52 /* Zone.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		1D34E0FB202C47D900FA3170 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +164,7 @@
 				1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */,
 				1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */,
 				1D221E732082FBFD00210E52 /* StringUtils.swift */,
+				1D98729C208B9E9D002533DA /* DateTimeUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -180,6 +207,7 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				1D221E7C208471C600210E52 /* ListZoneAPI */,
 				1D221E7020825E7A00210E52 /* ListVillageAPI */,
 				F0286BF52006472100FE615C /* LoginAPI */,
 				ADEA5212200460EB00E284C6 /* GenericAPI */,
@@ -409,12 +437,15 @@
 				F0286BFE20064DEE00FE615C /* Detail.swift in Sources */,
 				1D221E742082FBFD00210E52 /* StringUtils.swift in Sources */,
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
+				1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */,
 				1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
 				1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */,
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				1D34E1012035A33500FA3170 /* UserData.swift in Sources */,
 				F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */,
+				1D221E822084740300210E52 /* Zone.swift in Sources */,
+				1D221E832084740300210E52 /* ListZoneResponse.swift in Sources */,
 				F0286C0620064F8500FE615C /* TypeUser.swift in Sources */,
 				F0286C0420064F8500FE615C /* Home.swift in Sources */,
 				F0286BF72006490E00FE615C /* LoginApi.swift in Sources */,
@@ -422,6 +453,7 @@
 				ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */,
 				F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */,
 				1D221E7820831D2500210E52 /* Village.swift in Sources */,
+				1D221E7E2084722300210E52 /* ListZoneAPI.swift in Sources */,
 				1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */,
 				1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,

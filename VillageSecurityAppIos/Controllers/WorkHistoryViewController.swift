@@ -10,24 +10,26 @@ import Foundation
 import UIKit
 import ActionSheetPicker_3_0
 
-class WorkHistoryViewController: UIViewController {
+class WorkHistoryViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var mTimePicker: UITextField!
     @IBOutlet weak var mDatePicker: UITextField!
-    @IBOutlet weak var mBorderPicker: UITextField!
     @IBOutlet weak var mVillagePicker: UITextField!
+    @IBOutlet weak var mZonePicker: UITextField!
     
     @IBOutlet var rootView: UIView!
     
     private var mVillages: [Village]?
+    private var mZones: [Zone]?
+    private var mZoneNames = [String]()
     
     private let mViewControllerUtils : ViewControllerUtils = ViewControllerUtils()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        mTimePicker.tintColor = .clear
-//        mDatePicker.tintColor = .clear
-//        mBorderPicker.tintColor = .clear
+        self.mVillagePicker.delegate = self
+        self.mZonePicker.delegate = self
+        self.mDatePicker.delegate = self
+        mZoneNames.append("ทั้งหมด")
         loadVillageList()
     }
     
@@ -36,67 +38,47 @@ class WorkHistoryViewController: UIViewController {
         ListVillageApi.requestListVillage(self)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func loadZoneList(villageId: Int?) {
+        mViewControllerUtils.showActivityIndicator(uiView: rootView)
+        ListZoneApi.requestListZone(self, villageId: villageId)
     }
     
-    @IBAction func onTimePickerClick(_ sender: Any) {
-        ActionSheetStringPicker.show(withTitle: "เลือกเวลา", rows: ["1 ชั่วโมงก่อนหน้า", "2 ชั่วโมงก่อนหน้า", "3 ชั่วโมงก่อนหน้า"], initialSelection: 0, doneBlock: {
-            picker, indexes, values in
-            
-            print("values = \(String(describing: values))")
-            print("indexes = \(String(describing: indexes))")
-            print("picker = \(String(describing: picker))")
-            self.mTimePicker.endEditing(true)
-            self.mTimePicker.text = values as? String
-            return
-        }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
     @IBAction func onDatePickerClick(_ sender: Any) {
         let datePicker = ActionSheetDatePicker(title: "เลือกวันที่", datePickerMode: UIDatePickerMode.date, selectedDate: Date(), doneBlock: {
             picker, value, index in
-            
-            print("value = \(String(describing: value))")
-            print("index = \(String(describing: index))")
-            print("picker = \(String(describing: picker))")
             self.mDatePicker.endEditing(true)
-            self.mDatePicker.text = value as? String
+            self.mDatePicker.text = DateTimeUtils.getDateString(date: value as! Date)
             return
         }, cancel: { ActionStringCancelBlock in return }, origin: (sender as AnyObject).superview!?.superview)
-//        let secondsInWeek: TimeInterval = 7 * 24 * 60 * 60;
-//        datePicker?.minimumDate = Date(timeInterval: -secondsInWeek, since: Date())
-//        datePicker?.maximumDate = Date(timeInterval: secondsInWeek, since: Date())
         datePicker?.show()
     }
-    
-    @IBAction func onBorderClick(_ sender: Any) {
-        ActionSheetStringPicker.show(withTitle: "เลือกเขต", rows: ["1 ชั่วโมงก่อนหน้า", "2 ชั่วโมงก่อนหน้า", "3 ชั่วโมงก่อนหน้า"], initialSelection: 0, doneBlock: {
+   
+    @IBAction func onZonePickerClick(_ sender: Any) {
+        ActionSheetStringPicker.show(withTitle: "เลือกเขต", rows: mZoneNames, initialSelection: 0, doneBlock: {
             picker, indexes, values in
-            
-            print("values = \(String(describing: values))")
-            print("indexes = \(String(describing: indexes))")
-            print("picker = \(String(describing: picker))")
-            self.mBorderPicker.endEditing(true)
-            self.mBorderPicker.text = values as? String
+            self.mZonePicker.endEditing(true)
+            self.mZonePicker.text = values as? String
             return
         }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
-       
     }
-    
     
     @IBAction func onVillagePickerClick(_ sender: Any) {
         ActionSheetStringPicker.show(withTitle: "เลือกหมู่บ้าน", rows: mVillages?.map({ (village: Village) -> String in
             village.name!
         }), initialSelection: 0, doneBlock: {
             picker, indexes, values in
-            print("values = \(String(describing: values))")
-            print("indexes = \(String(describing: indexes))")
-            print("picker = \(String(describing: picker))")
             self.mVillagePicker.endEditing(true)
             self.mVillagePicker.text = values as? String
             return
         }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return false
     }
 }
 
@@ -106,6 +88,7 @@ extension WorkHistoryViewController: ListVillageDelegate {
         mVillages = response.village
         mVillagePicker.text = mVillages?.first?.name
         print(response)
+        loadZoneList(villageId: mVillages?.first?.pk)
     }
     
     func onRequestListVillageFail(response: ListVillageResponse) {
@@ -114,6 +97,29 @@ extension WorkHistoryViewController: ListVillageDelegate {
     }
     
     func onRequestListVillageError(title: String, message: String) {
+        mViewControllerUtils.hideActivityIndicator(uiView: rootView)
+        print(title+" "+message)
+    }
+}
+
+extension WorkHistoryViewController: ListZoneDelegate {
+    func onRequestListZoneSuccess(response: ListZoneResponse) {
+        mViewControllerUtils.hideActivityIndicator(uiView: rootView)
+        mZones = response.zone
+        mZoneNames += mZones!.map({ (zone: Zone) -> String in
+            zone.name!
+        })
+        mZonePicker.text = mZoneNames.first
+        mDatePicker.text = DateTimeUtils.getCurrentDate()
+        print(response)
+    }
+    
+    func onRequestListZoneFail(response: ListZoneResponse) {
+        mViewControllerUtils.hideActivityIndicator(uiView: rootView)
+        print(response)
+    }
+    
+    func onRequestListZoneError(title: String, message: String) {
         mViewControllerUtils.hideActivityIndicator(uiView: rootView)
         print(title+" "+message)
     }
