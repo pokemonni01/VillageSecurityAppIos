@@ -18,6 +18,13 @@
 		1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */; };
 		1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */; };
 		1D34E1012035A33500FA3170 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E1002035A33500FA3170 /* UserData.swift */; };
+		1D456C0C2097605600DB184B /* ListHistoryGuardAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C0B2097605600DB184B /* ListHistoryGuardAPI.swift */; };
+		1D456C14209763D500DB184B /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C0E209763D400DB184B /* Company.swift */; };
+		1D456C15209763D500DB184B /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C0F209763D400DB184B /* Shift.swift */; };
+		1D456C16209763D500DB184B /* Guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C10209763D400DB184B /* Guard.swift */; };
+		1D456C17209763D500DB184B /* Type_guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C11209763D500DB184B /* Type_guard.swift */; };
+		1D456C19209763D500DB184B /* ListHistoryGuardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C13209763D500DB184B /* ListHistoryGuardResponse.swift */; };
+		1D456C1B20976F5800DB184B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C1A20976F5800DB184B /* Extension.swift */; };
 		1D573E6A2056744100341603 /* NotificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E692056744100341603 /* NotificationDetailViewController.swift */; };
 		1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */; };
 		1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */; };
@@ -56,6 +63,13 @@
 		1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationTableViewCell.swift; path = VillageSecurityAppIos/Views/Notification/NotificationTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		1D34E1002035A33500FA3170 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		1D456C0B2097605600DB184B /* ListHistoryGuardAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHistoryGuardAPI.swift; sourceTree = "<group>"; };
+		1D456C0E209763D400DB184B /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		1D456C0F209763D400DB184B /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		1D456C10209763D400DB184B /* Guard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
+		1D456C11209763D500DB184B /* Type_guard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type_guard.swift; sourceTree = "<group>"; };
+		1D456C13209763D500DB184B /* ListHistoryGuardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHistoryGuardResponse.swift; sourceTree = "<group>"; };
+		1D456C1A20976F5800DB184B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		1D573E692056744100341603 /* NotificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailViewController.swift; sourceTree = "<group>"; };
 		1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryViewController.swift; sourceTree = "<group>"; };
 		1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
@@ -158,6 +172,27 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		1D456C0A20975F1A00DB184B /* ListHistoryGuardAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1D456C0D209763C300DB184B /* Response */,
+				1D456C0B2097605600DB184B /* ListHistoryGuardAPI.swift */,
+			);
+			path = ListHistoryGuardAPI;
+			sourceTree = "<group>";
+		};
+		1D456C0D209763C300DB184B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1D456C0E209763D400DB184B /* Company.swift */,
+				1D456C10209763D400DB184B /* Guard.swift */,
+				1D456C13209763D500DB184B /* ListHistoryGuardResponse.swift */,
+				1D456C0F209763D400DB184B /* Shift.swift */,
+				1D456C11209763D500DB184B /* Type_guard.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		1D78F6F820145CE2008BFE16 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +200,7 @@
 				1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */,
 				1D221E732082FBFD00210E52 /* StringUtils.swift */,
 				1D98729C208B9E9D002533DA /* DateTimeUtils.swift */,
+				1D456C1A20976F5800DB184B /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -207,6 +243,7 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				1D456C0A20975F1A00DB184B /* ListHistoryGuardAPI */,
 				1D221E7C208471C600210E52 /* ListZoneAPI */,
 				1D221E7020825E7A00210E52 /* ListVillageAPI */,
 				F0286BF52006472100FE615C /* LoginAPI */,
@@ -432,21 +469,27 @@
 				F0286BF920064A0300FE615C /* LoginDelegate.swift in Sources */,
 				1D221E7220825EBB00210E52 /* ListVillageAPI.swift in Sources */,
 				F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */,
+				1D456C15209763D500DB184B /* Shift.swift in Sources */,
 				1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */,
 				ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */,
 				F0286BFE20064DEE00FE615C /* Detail.swift in Sources */,
 				1D221E742082FBFD00210E52 /* StringUtils.swift in Sources */,
+				1D456C19209763D500DB184B /* ListHistoryGuardResponse.swift in Sources */,
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
 				1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */,
 				1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */,
+				1D456C1B20976F5800DB184B /* Extension.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
 				1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */,
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				1D34E1012035A33500FA3170 /* UserData.swift in Sources */,
+				1D456C0C2097605600DB184B /* ListHistoryGuardAPI.swift in Sources */,
 				F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */,
 				1D221E822084740300210E52 /* Zone.swift in Sources */,
+				1D456C17209763D500DB184B /* Type_guard.swift in Sources */,
 				1D221E832084740300210E52 /* ListZoneResponse.swift in Sources */,
 				F0286C0620064F8500FE615C /* TypeUser.swift in Sources */,
+				1D456C16209763D500DB184B /* Guard.swift in Sources */,
 				F0286C0420064F8500FE615C /* Home.swift in Sources */,
 				F0286BF72006490E00FE615C /* LoginApi.swift in Sources */,
 				1D573E6A2056744100341603 /* NotificationDetailViewController.swift in Sources */,
@@ -456,6 +499,7 @@
 				1D221E7E2084722300210E52 /* ListZoneAPI.swift in Sources */,
 				1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */,
 				1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */,
+				1D456C14209763D500DB184B /* Company.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
 				F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */,
 				ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */,

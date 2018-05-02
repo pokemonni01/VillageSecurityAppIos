@@ -17,9 +17,14 @@ class DateTimeUtils {
     }
     
     static func getDateString(date: Date) -> String {
-        let date = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy"
         return formatter.string(from: date)
+    }
+
+    static func getDateFromString(date: String?) -> Date {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy"
+        return formatter.date(from: (date ?? "").isEmpty ? getCurrentDate() : date!)!
     }
 }
