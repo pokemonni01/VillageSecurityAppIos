@@ -1,4 +1,6 @@
 import Foundation
+import SwiftyJSON
+
 public struct Zone : Codable {
 	let pk : Int?
 	let name : String?
@@ -26,5 +28,14 @@ public struct Zone : Codable {
 		lat = try values.decodeIfPresent(String.self, forKey: .lat)
 		lon = try values.decodeIfPresent(String.self, forKey: .lon)
 	}
+    
+    init(from json: JSON) {
+        pk = json["pk"].intValue
+        name = json["name"].stringValue
+        number = json["number"].intValue
+        village = json["village"].intValue
+        lat = json["lat"].stringValue
+        lon = json["lon"].stringValue
+    }
 
 }

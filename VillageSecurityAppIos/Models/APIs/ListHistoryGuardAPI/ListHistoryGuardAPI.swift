@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 public class ListHistoryGuardAPI {
     
@@ -27,18 +28,15 @@ public class ListHistoryGuardAPI {
             ]
         Alamofire.request(listHistoryGuardUrl, method: .get,  headers: headers).validate().responseJSON { response in
             switch response.result {
-            case .success:
-                do {
-                    let response = try JSONDecoder().decode(ListHistoryGuardResponse.self, from: response.data!)
-                    if (response.status! == ApiConstants.SUCCESS) {
-                        delegate.onRequestListHistoryGuardSuccess(response: response)
-                    } else {
-                        delegate.onRequestListHistoryGuardSuccess(response: response)
-                    }
-                } catch {
-                    print(error) // any decoding error will be printed here!
+            case .success(let value):
+                let response = ListHistoryGuardResponse(from: JSON(value))
+                if (response.status! == ApiConstants.SUCCESS) {
+                    delegate.onRequestListHistoryGuardSuccess(response: response)
+                } else {
+                    delegate.onRequestListHistoryGuardSuccess(response: response)
                 }
-            case .failure:
+            case .failure(let error):
+                print(error)
                 delegate.onRequestListHistoryGuardError(title: "Error", message: "Message Error")
             }
         }

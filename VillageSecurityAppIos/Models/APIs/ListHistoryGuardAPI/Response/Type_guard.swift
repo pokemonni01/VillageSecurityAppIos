@@ -12,6 +12,8 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
+import SwiftyJSON
+
 struct Type_guard : Codable {
 	let pk : Int?
 	let name : String?
@@ -27,5 +29,10 @@ struct Type_guard : Codable {
 		pk = try values.decodeIfPresent(Int.self, forKey: .pk)
 		name = try values.decodeIfPresent(String.self, forKey: .name)
 	}
+    
+    init(from json: JSON) {
+        pk = json["pk"].intValue
+        name = json["name"].stringValue
+    }
 
 }

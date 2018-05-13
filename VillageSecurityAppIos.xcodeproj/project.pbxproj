@@ -29,6 +29,7 @@
 		1D6E232820A8654200BDA53D /* Type_guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232420A8654200BDA53D /* Type_guard.swift */; };
 		1D6E232920A8654200BDA53D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232520A8654200BDA53D /* Company.swift */; };
 		1D6E232A20A8654200BDA53D /* Guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232620A8654200BDA53D /* Guard.swift */; };
+		1D6E232C20A86CC000BDA53D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6E232B20A86CC000BDA53D /* SwiftyJSON.framework */; };
 		1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */; };
 		1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98729C208B9E9D002533DA /* DateTimeUtils.swift */; };
 		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
@@ -76,6 +77,7 @@
 		1D6E232420A8654200BDA53D /* Type_guard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type_guard.swift; sourceTree = "<group>"; };
 		1D6E232520A8654200BDA53D /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		1D6E232620A8654200BDA53D /* Guard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
+		1D6E232B20A86CC000BDA53D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
 		1D98729C208B9E9D002533DA /* DateTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeUtils.swift; sourceTree = "<group>"; };
 		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6E232C20A86CC000BDA53D /* SwiftyJSON.framework in Frameworks */,
 				62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +290,7 @@
 		ECE32DE5797E1459BC40612C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D6E232B20A86CC000BDA53D /* SwiftyJSON.framework */,
 				C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */,
 			);
 			name = Frameworks;

@@ -12,6 +12,8 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
+import SwiftyJSON
+
 struct ListHistoryGuardResponse : Codable {
 	let status : String?
 	let mGuard : [Guard]?
@@ -33,5 +35,16 @@ struct ListHistoryGuardResponse : Codable {
 		message = try values.decodeIfPresent(String.self, forKey: .message)
 		title = try values.decodeIfPresent(String.self, forKey: .title)
 	}
+    
+    init(from json: JSON) {
+        status = json["status"].stringValue
+        message = json["message"].stringValue
+        title = json["title"].stringValue
+        mGuard = [Guard]()
+        for guardsJson in json["guard"].arrayValue {
+            mGuard?.append(Guard(from: guardsJson))
+        }
+        
+    }
 
 }

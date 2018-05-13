@@ -12,6 +12,8 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
+import SwiftyJSON
+
 struct Shift : Codable {
 	let pk : Int?
 	let name : String?
@@ -33,5 +35,11 @@ struct Shift : Codable {
 		start_time = try values.decodeIfPresent(String.self, forKey: .start_time)
 		end_time = try values.decodeIfPresent(String.self, forKey: .end_time)
 	}
-
+    
+    init(from json: JSON) {
+        pk = json["pk"].intValue
+        name = json["name"].stringValue
+        start_time = json["start_time"].stringValue
+        end_time = json["end_time"].stringValue
+    }
 }

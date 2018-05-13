@@ -12,6 +12,8 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
+import SwiftyJSON
+
 struct Guard : Codable {
 	let pk : Int?
 	let first_name : String?
@@ -45,5 +47,16 @@ struct Guard : Codable {
 		zone = try Zone(from: decoder)
 		status = try values.decodeIfPresent(String.self, forKey: .status)
 	}
+    
+    init(from json: JSON) {
+        pk = json["pk"].intValue
+        first_name = json["first_name"].stringValue
+        last_name = json["last_name"].stringValue
+        company = Company(from: json["Company"])
+        shift = Shift(from: json["shift"])
+        type_guard = Type_guard(from: json["type_guard"])
+        zone = Zone(from: json["zone"])
+        status = json["status"].stringValue
+    }
 
 }
