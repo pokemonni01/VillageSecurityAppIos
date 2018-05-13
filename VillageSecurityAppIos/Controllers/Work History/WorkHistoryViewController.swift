@@ -111,7 +111,7 @@ class WorkHistoryViewController: UIViewController, UITextFieldDelegate, UITableV
         let cellIdentifier = "WorkHistoryTableViewCell"
         let cell = self.tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! WorkHistoryTableViewCell
         let mGuard = self.mGuard![indexPath.row]
-        if (mGuard.status == "NO") {
+        if (mGuard.status == "YES") {
             cell.statusImage.image = UIImage(named: "Green Dot")
         }
         cell.name.text = mGuard.first_name ?? ""
