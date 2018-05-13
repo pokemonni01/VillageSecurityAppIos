@@ -349,14 +349,14 @@
                                         <rect key="frame" x="0.0" y="37" width="375" height="527"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="73" id="WJP-jY-Zz4">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkHistoryTableViewCell" rowHeight="57" id="WJP-jY-Zz4" customClass="WorkHistoryTableViewCell" customModule="VillageSecurityAppIos" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="57"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WJP-jY-Zz4" id="hxc-v8-1Th">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6wp-Nm-tvN">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red Dot" translatesAutoresizingMaskIntoConstraints="NO" id="6wp-Nm-tvN">
                                                             <rect key="frame" x="8" y="8" width="16" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="16" id="GSc-Js-Uxg"/>
@@ -391,18 +391,59 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ในหมู่บ้าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLu-Ek-Wk8">
+                                                            <rect key="frame" x="8" y="33" width="59" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="17" id="bPo-eh-bKF"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เขต : 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh0-Td-zdQ">
+                                                            <rect key="frame" x="75" y="33" width="39.5" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="17" id="jzv-N5-glW"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เวลา : กลางคืน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkh-Kv-UsB">
+                                                            <rect key="frame" x="122.5" y="33" width="87" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="17" id="xRF-1P-6r7"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="Dkb-nJ-uDX" firstAttribute="top" secondItem="hxc-v8-1Th" secondAttribute="top" constant="8" id="3KI-h0-hZK"/>
+                                                        <constraint firstItem="Xh0-Td-zdQ" firstAttribute="top" secondItem="5G3-Jh-tle" secondAttribute="bottom" constant="4" id="3Ki-Mp-olC"/>
+                                                        <constraint firstItem="Jkh-Kv-UsB" firstAttribute="leading" secondItem="Xh0-Td-zdQ" secondAttribute="trailing" constant="8" id="4qi-hB-2tD"/>
                                                         <constraint firstItem="6wp-Nm-tvN" firstAttribute="top" secondItem="hxc-v8-1Th" secondAttribute="top" constant="8" id="66M-Cb-x7X"/>
+                                                        <constraint firstItem="YLu-Ek-Wk8" firstAttribute="top" secondItem="Dkb-nJ-uDX" secondAttribute="bottom" constant="4" id="9DJ-wG-wX6"/>
                                                         <constraint firstItem="5G3-Jh-tle" firstAttribute="top" secondItem="hxc-v8-1Th" secondAttribute="top" constant="8" id="9Dn-63-4r8"/>
                                                         <constraint firstItem="55k-6F-Rny" firstAttribute="leading" secondItem="5G3-Jh-tle" secondAttribute="trailing" constant="8" id="9E4-3a-xOj"/>
                                                         <constraint firstItem="55k-6F-Rny" firstAttribute="top" secondItem="hxc-v8-1Th" secondAttribute="top" constant="8" id="Bcj-wp-OGl"/>
+                                                        <constraint firstItem="YLu-Ek-Wk8" firstAttribute="leading" secondItem="hxc-v8-1Th" secondAttribute="leading" constant="8" id="Bwa-dG-og0"/>
                                                         <constraint firstItem="6wp-Nm-tvN" firstAttribute="leading" secondItem="hxc-v8-1Th" secondAttribute="leading" constant="8" id="NzA-jK-3jg"/>
+                                                        <constraint firstItem="Xh0-Td-zdQ" firstAttribute="leading" secondItem="YLu-Ek-Wk8" secondAttribute="trailing" constant="8" id="Ykw-OB-r6C"/>
                                                         <constraint firstItem="5G3-Jh-tle" firstAttribute="leading" secondItem="Dkb-nJ-uDX" secondAttribute="trailing" id="Ywu-ok-2fI"/>
+                                                        <constraint firstItem="Jkh-Kv-UsB" firstAttribute="top" secondItem="55k-6F-Rny" secondAttribute="bottom" constant="4" id="ZZE-fP-kvx"/>
                                                         <constraint firstItem="Dkb-nJ-uDX" firstAttribute="leading" secondItem="6wp-Nm-tvN" secondAttribute="trailing" constant="8" id="tuO-Op-zH9"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="lastName" destination="55k-6F-Rny" id="0M1-kY-a97"/>
+                                                    <outlet property="mZone" destination="Xh0-Td-zdQ" id="5jd-4L-KiB"/>
+                                                    <outlet property="name" destination="5G3-Jh-tle" id="glf-Od-2Fu"/>
+                                                    <outlet property="side" destination="YLu-Ek-Wk8" id="a1Q-XR-s39"/>
+                                                    <outlet property="statusImage" destination="6wp-Nm-tvN" id="Zia-4u-EvT"/>
+                                                    <outlet property="time" destination="Jkh-Kv-UsB" id="cgt-P3-1dE"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -525,6 +566,7 @@
                         <outlet property="mVillagePicker" destination="Hl7-dv-wdt" id="Ccs-jg-RYJ"/>
                         <outlet property="mZonePicker" destination="fAn-d8-bIz" id="2Hl-TO-Ble"/>
                         <outlet property="rootView" destination="9jW-Fq-OYm" id="tD2-Ch-rY7"/>
+                        <outlet property="tableView" destination="LL4-YJ-gOb" id="T28-QO-XYH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12t-2J-PSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -625,4 +667,7 @@
             <point key="canvasLocation" x="604" y="34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Red Dot" width="25" height="25"/>
+    </resources>
 </document>

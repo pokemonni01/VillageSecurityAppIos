@@ -20,19 +20,19 @@ public class ListVillageApi {
         ]
         Alamofire.request(listVillageUrl, method: .get,  headers: headers).validate().responseJSON { response in
             switch response.result {
-            case .success:
-                do {
-                    let listVillageResponse = try JSONDecoder().decode(ListVillageResponse.self, from: response.data!)
-                    if (listVillageResponse.status! == ApiConstants.SUCCESS) {
-                        delegate.onRequestListVillageSuccess(response: listVillageResponse)
-                    } else {
-                        delegate.onRequestListVillageFail(response: listVillageResponse)
+                case .success:
+                    do {
+                        let listVillageResponse = try JSONDecoder().decode(ListVillageResponse.self, from: response.data!)
+                        if (listVillageResponse.status! == ApiConstants.SUCCESS) {
+                            delegate.onRequestListVillageSuccess(response: listVillageResponse)
+                        } else {
+                            delegate.onRequestListVillageFail(response: listVillageResponse)
+                        }
+                    } catch {
+                        print(error) // any decoding error will be printed here!
                     }
-                } catch {
-                    print(error) // any decoding error will be printed here!
-                }
-            case .failure:
-                delegate.onRequestListVillageError(title: "Error", message: "Message Error")
+                case .failure:
+                    delegate.onRequestListVillageError(title: "Error", message: "Message Error")
             }
         }
     }

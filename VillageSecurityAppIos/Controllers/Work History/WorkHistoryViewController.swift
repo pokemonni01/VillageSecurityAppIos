@@ -10,17 +10,19 @@ import Foundation
 import UIKit
 import ActionSheetPicker_3_0
 
-class WorkHistoryViewController: UIViewController, UITextFieldDelegate {
+class WorkHistoryViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var mDatePicker: UITextField!
     @IBOutlet weak var mVillagePicker: UITextField!
     @IBOutlet weak var mZonePicker: UITextField!
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet var rootView: UIView!
     
     private var mVillages: [Village]?
     private var mZones: [Zone]?
     private var mZoneNames = [String]()
+    private var mGuard : [Guard]?
     
     private let mViewControllerUtils : ViewControllerUtils = ViewControllerUtils()
     
@@ -31,6 +33,8 @@ class WorkHistoryViewController: UIViewController, UITextFieldDelegate {
         self.mDatePicker.delegate = self
 //        mZoneNames.append("ทั้งหมด")
         loadVillageList()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func loadVillageList() {
@@ -98,6 +102,36 @@ class WorkHistoryViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return false
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.mGuard?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellIdentifier = "WorkHistoryTableViewCell"
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! WorkHistoryTableViewCell
+        let mGuard = self.mGuard![indexPath.row]
+        if (mGuard.status == "NO") {
+            cell.statusImage.image = UIImage(named: "Green Dot")
+        }
+        cell.name.text = mGuard.first_name ?? ""
+        cell.lastName.text = mGuard.last_name ?? ""
+        cell.side.text = mGuard.type_guard?.name ?? ""
+        cell.time.text = "เวลา : "+(mGuard.shift?.name ?? "")
+        
+        let zone = mGuard.zone?.number ?? -99
+        if (zone == -99) {
+            cell.mZone.text = "เขต : ไม่มี"
+        } else {
+            cell.mZone.text = "เขต : "+String(zone)
+        }
+        return cell
+    }
+    
+    // method to run when table view cell is tapped
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You tapped cell number \(indexPath.row).")
+    }
 }
 
 extension WorkHistoryViewController: ListVillageDelegate {
@@ -150,6 +184,8 @@ extension WorkHistoryViewController: ListZoneDelegate {
 extension WorkHistoryViewController: ListHistoryGuardDelegate {
     func onRequestListHistoryGuardSuccess(response: ListHistoryGuardResponse) {
         mViewControllerUtils.hideActivityIndicator(uiView: rootView)
+        mGuard = response.mGuard
+        tableView.reloadData()
         print(response)
     }
     
