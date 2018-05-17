@@ -7,12 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D221E7220825EBB00210E52 /* ListVillageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7120825EBB00210E52 /* ListVillageAPI.swift */; };
+		1D221E742082FBFD00210E52 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E732082FBFD00210E52 /* StringUtils.swift */; };
+		1D221E7820831D2500210E52 /* Village.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7620831D2500210E52 /* Village.swift */; };
+		1D221E7920831D2500210E52 /* ListVillageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7720831D2500210E52 /* ListVillageResponse.swift */; };
+		1D221E7E2084722300210E52 /* ListZoneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7D2084722300210E52 /* ListZoneAPI.swift */; };
+		1D221E822084740300210E52 /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E802084740300210E52 /* Zone.swift */; };
+		1D221E832084740300210E52 /* ListZoneResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E812084740300210E52 /* ListZoneResponse.swift */; };
+		1D2BF0C620ADC444001B158D /* ListJobHistoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2BF0C520ADC444001B158D /* ListJobHistoryAPI.swift */; };
+		1D2BF0C920ADC7D1001B158D /* ListJobHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2BF0C820ADC7D1001B158D /* ListJobHistoryResponse.swift */; };
+		1D2BF0CB20ADC808001B158D /* ListGuardHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2BF0CA20ADC808001B158D /* ListGuardHistory.swift */; };
 		1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */; };
 		1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */; };
 		1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */; };
 		1D34E1012035A33500FA3170 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E1002035A33500FA3170 /* UserData.swift */; };
+		1D456C0C2097605600DB184B /* ListHistoryGuardAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C0B2097605600DB184B /* ListHistoryGuardAPI.swift */; };
+		1D456C19209763D500DB184B /* ListHistoryGuardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C13209763D500DB184B /* ListHistoryGuardResponse.swift */; };
+		1D456C1B20976F5800DB184B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456C1A20976F5800DB184B /* Extension.swift */; };
 		1D573E6A2056744100341603 /* NotificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E692056744100341603 /* NotificationDetailViewController.swift */; };
+		1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */; };
+		1D6E231F20A6D75E00BDA53D /* WorkHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E231E20A6D75E00BDA53D /* WorkHistoryTableViewCell.swift */; };
+		1D6E232220A83AFF00BDA53D /* WorkHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232120A83AFF00BDA53D /* WorkHistoryTableViewController.swift */; };
+		1D6E232720A8654200BDA53D /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232320A8654200BDA53D /* Shift.swift */; };
+		1D6E232820A8654200BDA53D /* Type_guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232420A8654200BDA53D /* Type_guard.swift */; };
+		1D6E232920A8654200BDA53D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232520A8654200BDA53D /* Company.swift */; };
+		1D6E232A20A8654200BDA53D /* Guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232620A8654200BDA53D /* Guard.swift */; };
+		1D6E232C20A86CC000BDA53D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6E232B20A86CC000BDA53D /* SwiftyJSON.framework */; };
+		1D6E233120A89BD000BDA53D /* ListJobHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E233020A89BD000BDA53D /* ListJobHistoryTableViewCell.swift */; };
+		1D6E233320A953C800BDA53D /* ListJobHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */; };
 		1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */; };
+		1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98729C208B9E9D002533DA /* DateTimeUtils.swift */; };
 		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
 		ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */; };
 		ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA5213200460EB00E284C6 /* GenericApi.swift */; };
@@ -36,12 +60,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D221E7120825EBB00210E52 /* ListVillageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVillageAPI.swift; sourceTree = "<group>"; };
+		1D221E732082FBFD00210E52 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		1D221E7620831D2500210E52 /* Village.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Village.swift; sourceTree = "<group>"; };
+		1D221E7720831D2500210E52 /* ListVillageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVillageResponse.swift; sourceTree = "<group>"; };
+		1D221E7D2084722300210E52 /* ListZoneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListZoneAPI.swift; sourceTree = "<group>"; };
+		1D221E802084740300210E52 /* Zone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
+		1D221E812084740300210E52 /* ListZoneResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListZoneResponse.swift; sourceTree = "<group>"; };
+		1D2BF0C520ADC444001B158D /* ListJobHistoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJobHistoryAPI.swift; sourceTree = "<group>"; };
+		1D2BF0C820ADC7D1001B158D /* ListJobHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJobHistoryResponse.swift; sourceTree = "<group>"; };
+		1D2BF0CA20ADC808001B158D /* ListGuardHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGuardHistory.swift; sourceTree = "<group>"; };
 		1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationTableViewCell.swift; path = VillageSecurityAppIos/Views/Notification/NotificationTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		1D34E1002035A33500FA3170 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		1D456C0B2097605600DB184B /* ListHistoryGuardAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHistoryGuardAPI.swift; sourceTree = "<group>"; };
+		1D456C13209763D500DB184B /* ListHistoryGuardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHistoryGuardResponse.swift; sourceTree = "<group>"; };
+		1D456C1A20976F5800DB184B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		1D573E692056744100341603 /* NotificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailViewController.swift; sourceTree = "<group>"; };
+		1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryViewController.swift; sourceTree = "<group>"; };
+		1D6E231E20A6D75E00BDA53D /* WorkHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		1D6E232120A83AFF00BDA53D /* WorkHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryTableViewController.swift; sourceTree = "<group>"; };
+		1D6E232320A8654200BDA53D /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		1D6E232420A8654200BDA53D /* Type_guard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type_guard.swift; sourceTree = "<group>"; };
+		1D6E232520A8654200BDA53D /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		1D6E232620A8654200BDA53D /* Guard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
+		1D6E232B20A86CC000BDA53D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6E233020A89BD000BDA53D /* ListJobHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJobHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJobHistoryViewController.swift; sourceTree = "<group>"; };
 		1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
+		1D98729C208B9E9D002533DA /* DateTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeUtils.swift; sourceTree = "<group>"; };
 		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
 		8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.debug.xcconfig"; sourceTree = "<group>"; };
 		ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6E232C20A86CC000BDA53D /* SwiftyJSON.framework in Frameworks */,
 				62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,9 +129,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D221E7020825E7A00210E52 /* ListVillageAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1D221E7520831CFA00210E52 /* Response */,
+				1D221E7120825EBB00210E52 /* ListVillageAPI.swift */,
+			);
+			path = ListVillageAPI;
+			sourceTree = "<group>";
+		};
+		1D221E7520831CFA00210E52 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1D221E7720831D2500210E52 /* ListVillageResponse.swift */,
+				1D221E7620831D2500210E52 /* Village.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		1D221E7C208471C600210E52 /* ListZoneAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1D221E7F2084733300210E52 /* Response */,
+				1D221E7D2084722300210E52 /* ListZoneAPI.swift */,
+			);
+			path = ListZoneAPI;
+			sourceTree = "<group>";
+		};
+		1D221E7F2084733300210E52 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1D221E812084740300210E52 /* ListZoneResponse.swift */,
+				1D221E802084740300210E52 /* Zone.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		1D2BF0C420ADC41F001B158D /* ListJobHistoryAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1D2BF0C720ADC7B4001B158D /* Response */,
+				1D2BF0C520ADC444001B158D /* ListJobHistoryAPI.swift */,
+			);
+			path = ListJobHistoryAPI;
+			sourceTree = "<group>";
+		};
+		1D2BF0C720ADC7B4001B158D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1D2BF0C820ADC7D1001B158D /* ListJobHistoryResponse.swift */,
+				1D2BF0CA20ADC808001B158D /* ListGuardHistory.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		1D34E0FB202C47D900FA3170 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1D6E232F20A89BB700BDA53D /* List Job History */,
+				1D6E231D20A6D74900BDA53D /* Work History */,
 				1D34E0FC202C47EC00FA3170 /* Notification */,
 			);
 			path = Views;
@@ -104,11 +209,60 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		1D456C0A20975F1A00DB184B /* ListHistoryGuardAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1D456C0D209763C300DB184B /* Response */,
+				1D456C0B2097605600DB184B /* ListHistoryGuardAPI.swift */,
+			);
+			path = ListHistoryGuardAPI;
+			sourceTree = "<group>";
+		};
+		1D456C0D209763C300DB184B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1D6E232520A8654200BDA53D /* Company.swift */,
+				1D6E232620A8654200BDA53D /* Guard.swift */,
+				1D6E232320A8654200BDA53D /* Shift.swift */,
+				1D6E232420A8654200BDA53D /* Type_guard.swift */,
+				1D456C13209763D500DB184B /* ListHistoryGuardResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		1D6E231D20A6D74900BDA53D /* Work History */ = {
+			isa = PBXGroup;
+			children = (
+				1D6E231E20A6D75E00BDA53D /* WorkHistoryTableViewCell.swift */,
+			);
+			path = "Work History";
+			sourceTree = "<group>";
+		};
+		1D6E232020A83AD600BDA53D /* Work History */ = {
+			isa = PBXGroup;
+			children = (
+				1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */,
+				1D6E232120A83AFF00BDA53D /* WorkHistoryTableViewController.swift */,
+			);
+			path = "Work History";
+			sourceTree = "<group>";
+		};
+		1D6E232F20A89BB700BDA53D /* List Job History */ = {
+			isa = PBXGroup;
+			children = (
+				1D6E233020A89BD000BDA53D /* ListJobHistoryTableViewCell.swift */,
+			);
+			path = "List Job History";
+			sourceTree = "<group>";
+		};
 		1D78F6F820145CE2008BFE16 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */,
 				1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */,
+				1D221E732082FBFD00210E52 /* StringUtils.swift */,
+				1D98729C208B9E9D002533DA /* DateTimeUtils.swift */,
+				1D456C1A20976F5800DB184B /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -137,12 +291,14 @@
 		AD024C331FF231280092275E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D6E232020A83AD600BDA53D /* Work History */,
 				F0D715341FF14CA60016CFBF /* LoginViewController.swift */,
 				ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */,
 				F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */,
 				F0662F7520162FDB0092071D /* ScanQRController.swift */,
 				1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */,
 				1D573E692056744100341603 /* NotificationDetailViewController.swift */,
+				1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,6 +306,10 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				1D2BF0C420ADC41F001B158D /* ListJobHistoryAPI */,
+				1D456C0A20975F1A00DB184B /* ListHistoryGuardAPI */,
+				1D221E7C208471C600210E52 /* ListZoneAPI */,
+				1D221E7020825E7A00210E52 /* ListVillageAPI */,
 				F0286BF52006472100FE615C /* LoginAPI */,
 				ADEA5212200460EB00E284C6 /* GenericAPI */,
 			);
@@ -169,6 +329,7 @@
 		ECE32DE5797E1459BC40612C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D6E232B20A86CC000BDA53D /* SwiftyJSON.framework */,
 				C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */,
 			);
 			name = Frameworks;
@@ -248,7 +409,6 @@
 				F0D7152C1FF14CA60016CFBF /* Frameworks */,
 				F0D7152D1FF14CA60016CFBF /* Resources */,
 				9F5680923F1968ED2ED3ECFD /* [CP] Embed Pods Frameworks */,
-				3803F983C806F235403911EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,21 +467,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3803F983C806F235403911EC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9F5680923F1968ED2ED3ECFD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,13 +474,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -367,28 +516,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D221E7920831D2500210E52 /* ListVillageResponse.swift in Sources */,
+				1D6E232A20A8654200BDA53D /* Guard.swift in Sources */,
 				F0286BF920064A0300FE615C /* LoginDelegate.swift in Sources */,
+				1D221E7220825EBB00210E52 /* ListVillageAPI.swift in Sources */,
 				F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */,
 				1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */,
+				1D6E231F20A6D75E00BDA53D /* WorkHistoryTableViewCell.swift in Sources */,
 				ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */,
 				F0286BFE20064DEE00FE615C /* Detail.swift in Sources */,
+				1D221E742082FBFD00210E52 /* StringUtils.swift in Sources */,
+				1D456C19209763D500DB184B /* ListHistoryGuardResponse.swift in Sources */,
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
+				1D6E232920A8654200BDA53D /* Company.swift in Sources */,
+				1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */,
 				1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */,
+				1D456C1B20976F5800DB184B /* Extension.swift in Sources */,
+				1D6E233120A89BD000BDA53D /* ListJobHistoryTableViewCell.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
+				1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */,
+				1D6E233320A953C800BDA53D /* ListJobHistoryViewController.swift in Sources */,
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				1D34E1012035A33500FA3170 /* UserData.swift in Sources */,
+				1D6E232220A83AFF00BDA53D /* WorkHistoryTableViewController.swift in Sources */,
+				1D456C0C2097605600DB184B /* ListHistoryGuardAPI.swift in Sources */,
 				F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */,
+				1D221E822084740300210E52 /* Zone.swift in Sources */,
+				1D6E232720A8654200BDA53D /* Shift.swift in Sources */,
+				1D221E832084740300210E52 /* ListZoneResponse.swift in Sources */,
 				F0286C0620064F8500FE615C /* TypeUser.swift in Sources */,
 				F0286C0420064F8500FE615C /* Home.swift in Sources */,
 				F0286BF72006490E00FE615C /* LoginApi.swift in Sources */,
 				1D573E6A2056744100341603 /* NotificationDetailViewController.swift in Sources */,
 				ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */,
 				F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */,
+				1D221E7820831D2500210E52 /* Village.swift in Sources */,
+				1D221E7E2084722300210E52 /* ListZoneAPI.swift in Sources */,
 				1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */,
+				1D2BF0CB20ADC808001B158D /* ListGuardHistory.swift in Sources */,
 				1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
+				1D6E232820A8654200BDA53D /* Type_guard.swift in Sources */,
+				1D2BF0C620ADC444001B158D /* ListJobHistoryAPI.swift in Sources */,
 				F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */,
 				ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */,
+				1D2BF0C920ADC7D1001B158D /* ListJobHistoryResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
