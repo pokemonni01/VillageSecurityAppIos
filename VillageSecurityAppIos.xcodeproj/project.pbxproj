@@ -30,6 +30,8 @@
 		1D6E232920A8654200BDA53D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232520A8654200BDA53D /* Company.swift */; };
 		1D6E232A20A8654200BDA53D /* Guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232620A8654200BDA53D /* Guard.swift */; };
 		1D6E232C20A86CC000BDA53D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6E232B20A86CC000BDA53D /* SwiftyJSON.framework */; };
+		1D6E233120A89BD000BDA53D /* ListJobHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E233020A89BD000BDA53D /* ListJobHistoryTableViewCell.swift */; };
+		1D6E233320A953C800BDA53D /* ListJobHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */; };
 		1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */; };
 		1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98729C208B9E9D002533DA /* DateTimeUtils.swift */; };
 		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
@@ -78,6 +80,8 @@
 		1D6E232520A8654200BDA53D /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		1D6E232620A8654200BDA53D /* Guard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
 		1D6E232B20A86CC000BDA53D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6E233020A89BD000BDA53D /* ListJobHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJobHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJobHistoryViewController.swift; sourceTree = "<group>"; };
 		1D78F6F920145CEF008BFE16 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
 		1D98729C208B9E9D002533DA /* DateTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeUtils.swift; sourceTree = "<group>"; };
 		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 		1D34E0FB202C47D900FA3170 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1D6E232F20A89BB700BDA53D /* List Job History */,
 				1D6E231D20A6D74900BDA53D /* Work History */,
 				1D34E0FC202C47EC00FA3170 /* Notification */,
 			);
@@ -218,6 +223,14 @@
 			path = "Work History";
 			sourceTree = "<group>";
 		};
+		1D6E232F20A89BB700BDA53D /* List Job History */ = {
+			isa = PBXGroup;
+			children = (
+				1D6E233020A89BD000BDA53D /* ListJobHistoryTableViewCell.swift */,
+			);
+			path = "List Job History";
+			sourceTree = "<group>";
+		};
 		1D78F6F820145CE2008BFE16 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +274,7 @@
 				F0662F7520162FDB0092071D /* ScanQRController.swift */,
 				1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */,
 				1D573E692056744100341603 /* NotificationDetailViewController.swift */,
+				1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -493,8 +507,10 @@
 				1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */,
 				1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */,
 				1D456C1B20976F5800DB184B /* Extension.swift in Sources */,
+				1D6E233120A89BD000BDA53D /* ListJobHistoryTableViewCell.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
 				1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */,
+				1D6E233320A953C800BDA53D /* ListJobHistoryViewController.swift in Sources */,
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				1D34E1012035A33500FA3170 /* UserData.swift in Sources */,
 				1D6E232220A83AFF00BDA53D /* WorkHistoryTableViewController.swift in Sources */,

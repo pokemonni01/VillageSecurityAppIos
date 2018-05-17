@@ -125,12 +125,26 @@ class WorkHistoryViewController: UIViewController, UITextFieldDelegate, UITableV
         } else {
             cell.mZone.text = "เขต : "+String(zone)
         }
+        cell.selectionStyle = .none
         return cell
     }
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        let listJobHistoryViewController = self.storyboard?.instantiateViewController(withIdentifier: "ListJobHistoryViewController") as! ListJobHistoryViewController
+        listJobHistoryViewController.mGuard = self.mGuard![indexPath.row]
+        self.navigationController?.pushViewController(listJobHistoryViewController, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.backgroundColor = UIColor.lightGray
+    }
+    
+    func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.backgroundColor = UIColor.white
     }
 }
 
