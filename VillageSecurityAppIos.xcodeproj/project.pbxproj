@@ -14,6 +14,9 @@
 		1D221E7E2084722300210E52 /* ListZoneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E7D2084722300210E52 /* ListZoneAPI.swift */; };
 		1D221E822084740300210E52 /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E802084740300210E52 /* Zone.swift */; };
 		1D221E832084740300210E52 /* ListZoneResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D221E812084740300210E52 /* ListZoneResponse.swift */; };
+		1D2BF0C620ADC444001B158D /* ListJobHistoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2BF0C520ADC444001B158D /* ListJobHistoryAPI.swift */; };
+		1D2BF0C920ADC7D1001B158D /* ListJobHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2BF0C820ADC7D1001B158D /* ListJobHistoryResponse.swift */; };
+		1D2BF0CB20ADC808001B158D /* ListGuardHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2BF0CA20ADC808001B158D /* ListGuardHistory.swift */; };
 		1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */; };
 		1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */; };
 		1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */; };
@@ -64,6 +67,9 @@
 		1D221E7D2084722300210E52 /* ListZoneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListZoneAPI.swift; sourceTree = "<group>"; };
 		1D221E802084740300210E52 /* Zone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
 		1D221E812084740300210E52 /* ListZoneResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListZoneResponse.swift; sourceTree = "<group>"; };
+		1D2BF0C520ADC444001B158D /* ListJobHistoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJobHistoryAPI.swift; sourceTree = "<group>"; };
+		1D2BF0C820ADC7D1001B158D /* ListJobHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJobHistoryResponse.swift; sourceTree = "<group>"; };
+		1D2BF0CA20ADC808001B158D /* ListGuardHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGuardHistory.swift; sourceTree = "<group>"; };
 		1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		1D34E0F8202C474500FA3170 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationTableViewCell.swift; path = VillageSecurityAppIos/Views/Notification/NotificationTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		1D34E0FD2035A0DB00FA3170 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
@@ -155,6 +161,24 @@
 			children = (
 				1D221E812084740300210E52 /* ListZoneResponse.swift */,
 				1D221E802084740300210E52 /* Zone.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		1D2BF0C420ADC41F001B158D /* ListJobHistoryAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1D2BF0C720ADC7B4001B158D /* Response */,
+				1D2BF0C520ADC444001B158D /* ListJobHistoryAPI.swift */,
+			);
+			path = ListJobHistoryAPI;
+			sourceTree = "<group>";
+		};
+		1D2BF0C720ADC7B4001B158D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1D2BF0C820ADC7D1001B158D /* ListJobHistoryResponse.swift */,
+				1D2BF0CA20ADC808001B158D /* ListGuardHistory.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -282,6 +306,7 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				1D2BF0C420ADC41F001B158D /* ListJobHistoryAPI */,
 				1D456C0A20975F1A00DB184B /* ListHistoryGuardAPI */,
 				1D221E7C208471C600210E52 /* ListZoneAPI */,
 				1D221E7020825E7A00210E52 /* ListVillageAPI */,
@@ -528,11 +553,14 @@
 				1D221E7820831D2500210E52 /* Village.swift in Sources */,
 				1D221E7E2084722300210E52 /* ListZoneAPI.swift in Sources */,
 				1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */,
+				1D2BF0CB20ADC808001B158D /* ListGuardHistory.swift in Sources */,
 				1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
 				1D6E232820A8654200BDA53D /* Type_guard.swift in Sources */,
+				1D2BF0C620ADC444001B158D /* ListJobHistoryAPI.swift in Sources */,
 				F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */,
 				ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */,
+				1D2BF0C920ADC7D1001B158D /* ListJobHistoryResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

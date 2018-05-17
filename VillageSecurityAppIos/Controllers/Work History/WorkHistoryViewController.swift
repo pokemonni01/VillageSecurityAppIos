@@ -131,9 +131,10 @@ class WorkHistoryViewController: UIViewController, UITextFieldDelegate, UITableV
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
         let listJobHistoryViewController = self.storyboard?.instantiateViewController(withIdentifier: "ListJobHistoryViewController") as! ListJobHistoryViewController
         listJobHistoryViewController.mGuard = self.mGuard![indexPath.row]
+        listJobHistoryViewController.mPKGuard = self.mGuard![indexPath.row].pk
+        listJobHistoryViewController.mDateSelect = self.mDatePicker.text
         self.navigationController?.pushViewController(listJobHistoryViewController, animated: true)
     }
     
