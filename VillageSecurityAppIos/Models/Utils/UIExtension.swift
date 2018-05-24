@@ -7,7 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
-extension Array {
-    
+extension UITextField {
+    func clearText() {
+        self.text = ""
+    }
 }

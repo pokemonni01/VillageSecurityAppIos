@@ -10,5 +10,16 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "closure #1 in static SetPasswordAPI.requestSetPassword(_:_:_:):SetPasswordAPI.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ShareData.generic?.changePasswordUrl">
+            </PersistentString>
+            <PersistentString
+               value = "ShareData.generic?.changePassword">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

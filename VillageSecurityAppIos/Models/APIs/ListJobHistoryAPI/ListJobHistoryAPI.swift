@@ -29,16 +29,16 @@ public class ListJobHistoryAPI {
             ]
         Alamofire.request(url, method: .post, parameters: parameters, headers: headers).validate().responseJSON { response in
             switch response.result {
-            case .success(let value):
-                let response = ListJobHistoryResponse(from: JSON(value))
-                if (response.status! == ApiConstants.SUCCESS) {
-                    delegate.onRequestListJobHistorySuccess(response: response)
-                } else {
-                    delegate.onRequestListJobHistoryFail(response: response)
-                }
-            case .failure(let error):
-                print(error)
-                delegate.onRequestListJobHistoryError(title: "Error", message: "Message Error")
+                case .success(let value):
+                    let response = ListJobHistoryResponse(from: JSON(value))
+                    if (response.status! == ApiConstants.SUCCESS) {
+                        delegate.onRequestListJobHistorySuccess(response: response)
+                    } else {
+                        delegate.onRequestListJobHistoryFail(response: response)
+                    }
+                case .failure(let error):
+                    print(error)
+                    delegate.onRequestListJobHistoryError(title: "Error", message: "Message Error")
             }
         }
     }
