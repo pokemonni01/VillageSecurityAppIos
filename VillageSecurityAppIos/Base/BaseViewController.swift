@@ -33,4 +33,10 @@ class BaseViewController: UIViewController {
     func showAlertDialog(title: String, message: String) {
         mViewControllerUtils.showAlertDialogOneButton(viewController: self, title: title, message: message)
     }
+    
+    func showDefaultErrorDialog() {
+        let title = "ไม่สามารถติดต่อระบบได้"
+        let message = "ไม่สามารถติดต่อระบบได้ กรุณาลองใหม่ในภายหลัง"
+        showAlertDialog(title: title, message: message)
+    }
 }

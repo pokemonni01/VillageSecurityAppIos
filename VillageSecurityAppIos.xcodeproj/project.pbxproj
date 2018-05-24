@@ -41,6 +41,9 @@
 		1D953D4220B671F600A99AE7 /* SetPasswordAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D953D4120B671F600A99AE7 /* SetPasswordAPI.swift */; };
 		1D953D4520B6756C00A99AE7 /* SetPasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D953D4420B6756C00A99AE7 /* SetPasswordResponse.swift */; };
 		1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98729C208B9E9D002533DA /* DateTimeUtils.swift */; };
+		1DDA495720B7106B0015B0E8 /* VersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA495620B7106B0015B0E8 /* VersionViewController.swift */; };
+		1DDA495B20B71B6B0015B0E8 /* SettingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA495A20B71B6B0015B0E8 /* SettingAPI.swift */; };
+		1DDA495E20B71E6E0015B0E8 /* SettingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA495D20B71E6E0015B0E8 /* SettingResponse.swift */; };
 		62C152DB680DE3E04E7AD7AD /* Pods_VillageSecurityAppIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71552EACC61B24144D1E7F6 /* Pods_VillageSecurityAppIos.framework */; };
 		ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */; };
 		ADEA5215200460EB00E284C6 /* GenericApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA5213200460EB00E284C6 /* GenericApi.swift */; };
@@ -98,6 +101,9 @@
 		1D953D4120B671F600A99AE7 /* SetPasswordAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordAPI.swift; sourceTree = "<group>"; };
 		1D953D4420B6756C00A99AE7 /* SetPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordResponse.swift; sourceTree = "<group>"; };
 		1D98729C208B9E9D002533DA /* DateTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeUtils.swift; sourceTree = "<group>"; };
+		1DDA495620B7106B0015B0E8 /* VersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionViewController.swift; sourceTree = "<group>"; };
+		1DDA495A20B71B6B0015B0E8 /* SettingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAPI.swift; sourceTree = "<group>"; };
+		1DDA495D20B71E6E0015B0E8 /* SettingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingResponse.swift; sourceTree = "<group>"; };
 		6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.release.xcconfig"; sourceTree = "<group>"; };
 		8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VillageSecurityAppIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos.debug.xcconfig"; sourceTree = "<group>"; };
 		ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -300,6 +306,32 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		1DDA495520B710580015B0E8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				1D953CFE20B5703500A99AE7 /* SetPasswordViewController.swift */,
+				1DDA495620B7106B0015B0E8 /* VersionViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		1DDA495820B71B100015B0E8 /* SettingAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA495C20B71E5A0015B0E8 /* Response */,
+				1DDA495A20B71B6B0015B0E8 /* SettingAPI.swift */,
+			);
+			path = SettingAPI;
+			sourceTree = "<group>";
+		};
+		1DDA495C20B71E5A0015B0E8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1DDA495D20B71E6E0015B0E8 /* SettingResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		76D1D60CB79D0BD948C361CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +356,7 @@
 		AD024C331FF231280092275E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1DDA495520B710580015B0E8 /* Setting */,
 				1D6E232020A83AD600BDA53D /* Work History */,
 				F0D715341FF14CA60016CFBF /* LoginViewController.swift */,
 				ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */,
@@ -332,7 +365,6 @@
 				1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */,
 				1D573E692056744100341603 /* NotificationDetailViewController.swift */,
 				1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */,
-				1D953CFE20B5703500A99AE7 /* SetPasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -340,6 +372,7 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				1DDA495820B71B100015B0E8 /* SettingAPI */,
 				1D953D4020B6719900A99AE7 /* SetPasswordAPI */,
 				1D2BF0C420ADC41F001B158D /* ListJobHistoryAPI */,
 				1D456C0A20975F1A00DB184B /* ListHistoryGuardAPI */,
@@ -559,6 +592,7 @@
 				F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */,
 				1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */,
 				1D6E231F20A6D75E00BDA53D /* WorkHistoryTableViewCell.swift in Sources */,
+				1DDA495720B7106B0015B0E8 /* VersionViewController.swift in Sources */,
 				ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */,
 				F0286BFE20064DEE00FE615C /* Detail.swift in Sources */,
 				1D221E742082FBFD00210E52 /* StringUtils.swift in Sources */,
@@ -571,6 +605,7 @@
 				1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */,
 				1D456C1B20976F5800DB184B /* UIExtension.swift in Sources */,
 				1D6E233120A89BD000BDA53D /* ListJobHistoryTableViewCell.swift in Sources */,
+				1DDA495B20B71B6B0015B0E8 /* SettingAPI.swift in Sources */,
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
 				1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */,
 				1D6E233320A953C800BDA53D /* ListJobHistoryViewController.swift in Sources */,
@@ -583,6 +618,7 @@
 				1D953CFF20B5703500A99AE7 /* SetPasswordViewController.swift in Sources */,
 				1D6E232720A8654200BDA53D /* Shift.swift in Sources */,
 				1D221E832084740300210E52 /* ListZoneResponse.swift in Sources */,
+				1DDA495E20B71E6E0015B0E8 /* SettingResponse.swift in Sources */,
 				F0286C0620064F8500FE615C /* TypeUser.swift in Sources */,
 				F0286C0420064F8500FE615C /* Home.swift in Sources */,
 				F0286BF72006490E00FE615C /* LoginApi.swift in Sources */,

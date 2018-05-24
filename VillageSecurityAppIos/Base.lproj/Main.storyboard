@@ -632,6 +632,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftU-Bq-MIZ">
                                         <rect key="frame" x="109" y="38" width="125" height="30"/>
                                         <state key="normal" title="เวอร์ชันแอปพลิเคชัน"/>
+                                        <connections>
+                                            <segue destination="jtH-My-a5D" kind="show" id="6nh-5y-arM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -777,6 +780,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmI-ea-6E0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2068" y="2114.3928035982012"/>
+        </scene>
+        <!--Version View Controller-->
+        <scene sceneID="5dT-FM-1FX">
+            <objects>
+                <viewController id="jtH-My-a5D" customClass="VersionViewController" customModule="VillageSecurityAppIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjc-Xi-pFo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xc1-bd-5gC">
+                                <rect key="frame" x="67.5" y="303.5" width="240" height="124"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secure A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RP-JQ-HoX">
+                                        <rect key="frame" x="58" y="8" width="124" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="fr3-WW-XAD"/>
+                                            <constraint firstAttribute="width" constant="124" id="uBi-Vw-NsU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เวอร์ชัน x.x.x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfy-Re-nD0">
+                                        <rect key="frame" x="74" y="55" width="92" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="ONq-wh-WVV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เวอร์ชันล่าสุด x.x.x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFR-bs-94P">
+                                        <rect key="frame" x="54" y="84" width="132" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="UjV-XW-RbV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bfy-Re-nD0" firstAttribute="centerX" secondItem="xc1-bd-5gC" secondAttribute="centerX" id="6mP-qz-FC3"/>
+                                    <constraint firstItem="8RP-JQ-HoX" firstAttribute="top" secondItem="xc1-bd-5gC" secondAttribute="top" constant="8" id="7yw-eR-1Ah"/>
+                                    <constraint firstItem="bfy-Re-nD0" firstAttribute="top" secondItem="8RP-JQ-HoX" secondAttribute="bottom" constant="8" id="Iwl-z3-WQf"/>
+                                    <constraint firstAttribute="height" constant="124" id="OJE-cD-pVm"/>
+                                    <constraint firstAttribute="width" constant="240" id="PFN-Xb-ZU5"/>
+                                    <constraint firstItem="SFR-bs-94P" firstAttribute="centerX" secondItem="xc1-bd-5gC" secondAttribute="centerX" id="g45-ih-6fd"/>
+                                    <constraint firstItem="8RP-JQ-HoX" firstAttribute="centerX" secondItem="xc1-bd-5gC" secondAttribute="centerX" id="gta-ui-22v"/>
+                                    <constraint firstItem="SFR-bs-94P" firstAttribute="top" secondItem="bfy-Re-nD0" secondAttribute="bottom" constant="8" id="wR0-Dc-Xlu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xc1-bd-5gC" firstAttribute="centerX" secondItem="eAl-ws-Sxi" secondAttribute="centerX" id="A2I-0T-Wie"/>
+                            <constraint firstItem="xc1-bd-5gC" firstAttribute="centerY" secondItem="eAl-ws-Sxi" secondAttribute="centerY" id="FFe-z4-ca8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eAl-ws-Sxi"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelLatestVersion" destination="SFR-bs-94P" id="6eo-uH-L2f"/>
+                        <outlet property="labelVersion" destination="bfy-Re-nD0" id="Lhd-Iv-9G7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jts-wh-dGw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2861.5999999999999" y="2113.4932533733136"/>
         </scene>
         <!--List Job History View Controller-->
         <scene sceneID="mFN-bw-y1e">
