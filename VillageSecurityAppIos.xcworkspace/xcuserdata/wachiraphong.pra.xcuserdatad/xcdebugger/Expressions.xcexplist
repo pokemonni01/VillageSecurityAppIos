@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "VersionViewController.viewDidLoad():VersionViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ShareData.setting">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in WorkHistoryViewController.onDatePickerClick(_:):WorkHistoryViewController.swift">
          <PersistentStrings>
             <PersistentString

@@ -15,7 +15,7 @@ class VersionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let latestVersion = ShareData.setting?.versionApp ?? "-"
+        let latestVersion = ShareData.setting?.versionApp ?? ""
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
             labelVersion.text = "เวอร์ชัน \(version)"
         }

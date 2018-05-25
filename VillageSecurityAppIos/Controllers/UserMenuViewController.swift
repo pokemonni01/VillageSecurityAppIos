@@ -9,11 +9,26 @@ import UIKit
 import QRCodeReader
 import Foundation
 
-class UserMenuViewController: UIViewController {
-    
+class UserMenuViewController: BaseViewController, SettingDelegate {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        loadSetting()
+    }
+    
+    private func loadSetting() {
+        showProgress()
+        SettingAPI.requestSetting(self)
+    }
+    
+    func onRequestSettingSuccess(response: SettingResponse) {
+        hideProgress()
+        ShareData.setting = response
+    }
+    
+    func onRequestSettingError() {
+        hideProgress()
+        showDefaultErrorDialog()
     }
     
     override func didReceiveMemoryWarning() {
