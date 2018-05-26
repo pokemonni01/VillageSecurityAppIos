@@ -12,6 +12,8 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
+import SwiftyJSON
+
 struct Home : Codable {
 	let pk : Int?
 	let number : String?
@@ -21,7 +23,6 @@ struct Home : Codable {
 	let lon : String?
 
 	enum CodingKeys: String, CodingKey {
-
 		case pk = "pk"
 		case number = "number"
 		case address = "address"
@@ -39,5 +40,14 @@ struct Home : Codable {
 		lat = try values.decodeIfPresent(String.self, forKey: .lat)
 		lon = try values.decodeIfPresent(String.self, forKey: .lon)
 	}
+    
+    init(from json: JSON) {
+        pk = json["pk"].intValue
+        number = json["number"].stringValue
+        address = json["address"].stringValue
+        zone = json["name"].intValue
+        lat = json["lat"].stringValue
+        lon = json["lon"].stringValue
+    }
 
 }

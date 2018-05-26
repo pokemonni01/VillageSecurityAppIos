@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -185,7 +186,7 @@
                                                 </constraints>
                                                 <state key="normal" title="แจ้งเตือน"/>
                                                 <connections>
-                                                    <action selector="onNotificationButtonClick:" destination="Y4M-pz-8nY" eventType="touchUpInside" id="SLo-B4-mFV"/>
+                                                    <segue destination="ewM-uC-7T8" kind="show" id="LJD-NC-ZRE"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -268,8 +269,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ประวัติการแจ้งเตือน" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQn-ly-cfR">
-                                <rect key="frame" x="8" y="28" width="367" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายการแจ้งเตือน" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQn-ly-cfR">
+                                <rect key="frame" x="8" y="72" width="367" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6D0-CP-5ze"/>
                                 </constraints>
@@ -277,63 +278,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5Y-zV-98b">
-                                <rect key="frame" x="0.0" y="57" width="375" height="610"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5Y-zV-98b">
+                                <rect key="frame" x="0.0" y="101" width="375" height="566"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" rowHeight="70" id="PwF-Ru-0Ja" customClass="NotificationTableViewCell" customModule="VillageSecurityAppIos" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationTableViewCell" rowHeight="70" id="PwF-Ru-0Ja" customClass="NotificationTableViewCell" customModule="VillageSecurityAppIos" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PwF-Ru-0Ja" id="NS4-g6-5at">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYH-aR-ck3">
-                                                    <rect key="frame" x="8" y="8" width="359" height="53.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="มีรถกำลังเข้าไปเยี่ยมที่บ้าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yH-q4-oeS">
-                                                            <rect key="frame" x="0.0" y="0.0" width="251.5" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="หมายเหตุคร่าวๆ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNd-1E-GRW">
-                                                            <rect key="frame" x="0.0" y="29" width="251.5" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เวลา 12.00 น." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5d-5E-DAv">
-                                                            <rect key="frame" x="260.5" y="32" width="98.5" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="แจ้งเตือนรถเข้าเยี่ยมบ้าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yH-q4-oeS">
+                                                    <rect key="frame" x="23" y="11" width="172.5" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="q5d-5E-DAv" secondAttribute="trailing" id="4dS-fH-jlx"/>
-                                                        <constraint firstItem="6yH-q4-oeS" firstAttribute="width" secondItem="yYH-aR-ck3" secondAttribute="width" multiplier="0.7" id="9Ka-YR-CfN"/>
-                                                        <constraint firstItem="6yH-q4-oeS" firstAttribute="leading" secondItem="yYH-aR-ck3" secondAttribute="leading" id="Sit-K2-Zcb"/>
-                                                        <constraint firstAttribute="bottom" secondItem="q5d-5E-DAv" secondAttribute="bottom" id="aG2-sP-E6d"/>
-                                                        <constraint firstItem="cNd-1E-GRW" firstAttribute="leading" secondItem="yYH-aR-ck3" secondAttribute="leading" id="iH3-Nm-ehM"/>
-                                                        <constraint firstItem="cNd-1E-GRW" firstAttribute="top" secondItem="6yH-q4-oeS" secondAttribute="bottom" constant="8" id="ioX-g7-cfg"/>
-                                                        <constraint firstItem="cNd-1E-GRW" firstAttribute="width" secondItem="yYH-aR-ck3" secondAttribute="width" multiplier="0.7" id="jAg-MR-DUp"/>
-                                                        <constraint firstItem="6yH-q4-oeS" firstAttribute="top" secondItem="yYH-aR-ck3" secondAttribute="top" id="uQM-d5-OJK"/>
+                                                        <constraint firstAttribute="height" constant="21" id="7iC-qo-dzj"/>
                                                     </constraints>
-                                                </view>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วันที่" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5d-5E-DAv">
+                                                    <rect key="frame" x="322" y="40" width="30" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="faL-jI-TAz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yYH-aR-ck3" firstAttribute="top" secondItem="NS4-g6-5at" secondAttribute="top" constant="8" id="Dmx-x6-51Z"/>
-                                                <constraint firstAttribute="bottom" secondItem="yYH-aR-ck3" secondAttribute="bottom" constant="8" id="NDr-JB-6Sv"/>
-                                                <constraint firstAttribute="trailing" secondItem="yYH-aR-ck3" secondAttribute="trailing" constant="8" id="OCe-d1-rH2"/>
-                                                <constraint firstItem="yYH-aR-ck3" firstAttribute="leading" secondItem="NS4-g6-5at" secondAttribute="leading" constant="8" id="REb-LM-pxe"/>
+                                                <constraint firstItem="6yH-q4-oeS" firstAttribute="top" secondItem="NS4-g6-5at" secondAttribute="topMargin" id="4tg-x4-ngw"/>
+                                                <constraint firstItem="q5d-5E-DAv" firstAttribute="top" secondItem="6yH-q4-oeS" secondAttribute="bottom" constant="8" id="KtI-U0-gOZ"/>
+                                                <constraint firstItem="6yH-q4-oeS" firstAttribute="leading" secondItem="NS4-g6-5at" secondAttribute="leadingMargin" constant="8" id="cyv-Jc-mls"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="q5d-5E-DAv" secondAttribute="trailing" constant="8" id="l22-OC-fKc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="descLabel" destination="cNd-1E-GRW" id="yAP-IO-s6q"/>
-                                            <outlet property="timeLabel" destination="q5d-5E-DAv" id="pZr-Ir-1yh"/>
-                                            <outlet property="titleLabel" destination="6yH-q4-oeS" id="21d-6n-HJb"/>
+                                            <outlet property="dateTimeNotification" destination="q5d-5E-DAv" id="WRf-9J-y2f"/>
+                                            <outlet property="titleNotification" destination="6yH-q4-oeS" id="Dq4-Oq-f8R"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -357,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGc-Lg-Lu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1279" y="728"/>
+            <point key="canvasLocation" x="1277.5999999999999" y="727.28635682158927"/>
         </scene>
         <!--Work History View Controller-->
         <scene sceneID="O6T-FY-0ZB">
@@ -966,7 +950,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Ock-f9-dne"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1002,6 +986,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hQZ-rN-tmT"/>
                     </view>
+                    <connections>
+                        <outlet property="annotationLabel" destination="KLI-Uw-N0x" id="VPT-vo-DmE"/>
+                        <outlet property="dateLabel" destination="ydb-xm-WIg" id="qd8-hc-UO3"/>
+                        <outlet property="rootView" destination="0jn-wO-aah" id="SMC-cf-PMF"/>
+                        <outlet property="titleLable" destination="Vzd-Ce-6Dk" id="7fF-e3-xQF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOt-uo-S8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

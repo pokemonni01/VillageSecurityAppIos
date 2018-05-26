@@ -27,7 +27,6 @@
 		1D573E6A2056744100341603 /* NotificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E692056744100341603 /* NotificationDetailViewController.swift */; };
 		1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */; };
 		1D6E231F20A6D75E00BDA53D /* WorkHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E231E20A6D75E00BDA53D /* WorkHistoryTableViewCell.swift */; };
-		1D6E232220A83AFF00BDA53D /* WorkHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232120A83AFF00BDA53D /* WorkHistoryTableViewController.swift */; };
 		1D6E232720A8654200BDA53D /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232320A8654200BDA53D /* Shift.swift */; };
 		1D6E232820A8654200BDA53D /* Type_guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232420A8654200BDA53D /* Type_guard.swift */; };
 		1D6E232920A8654200BDA53D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E232520A8654200BDA53D /* Company.swift */; };
@@ -59,6 +58,9 @@
 		F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F571FFB4689009EA5F8 /* ShareData.swift */; };
 		F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0662F7520162FDB0092071D /* ScanQRController.swift */; };
 		F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */; };
+		F0D0875020B9602100A48111 /* NotificationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0874F20B9602100A48111 /* NotificationAPI.swift */; };
+		F0D0875420B960B500A48111 /* GetNotificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0875320B960B500A48111 /* GetNotificationResponse.swift */; };
+		F0D0875620B9638A00A48111 /* Notic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0875520B9638A00A48111 /* Notic.swift */; };
 		F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715321FF14CA60016CFBF /* AppDelegate.swift */; };
 		F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715341FF14CA60016CFBF /* LoginViewController.swift */; };
 		F0D715381FF14CA60016CFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D715361FF14CA60016CFBF /* Main.storyboard */; };
@@ -87,7 +89,6 @@
 		1D573E692056744100341603 /* NotificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailViewController.swift; sourceTree = "<group>"; };
 		1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryViewController.swift; sourceTree = "<group>"; };
 		1D6E231E20A6D75E00BDA53D /* WorkHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryTableViewCell.swift; sourceTree = "<group>"; };
-		1D6E232120A83AFF00BDA53D /* WorkHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHistoryTableViewController.swift; sourceTree = "<group>"; };
 		1D6E232320A8654200BDA53D /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
 		1D6E232420A8654200BDA53D /* Type_guard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type_guard.swift; sourceTree = "<group>"; };
 		1D6E232520A8654200BDA53D /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -121,6 +122,9 @@
 		F04D3F571FFB4689009EA5F8 /* ShareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
 		F0662F7520162FDB0092071D /* ScanQRController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRController.swift; sourceTree = "<group>"; };
 		F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
+		F0D0874F20B9602100A48111 /* NotificationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAPI.swift; sourceTree = "<group>"; };
+		F0D0875320B960B500A48111 /* GetNotificationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotificationResponse.swift; sourceTree = "<group>"; };
+		F0D0875520B9638A00A48111 /* Notic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notic.swift; sourceTree = "<group>"; };
 		F0D7152F1FF14CA60016CFBF /* VillageSecurityAppIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VillageSecurityAppIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D715321FF14CA60016CFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D715341FF14CA60016CFBF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -256,7 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */,
-				1D6E232120A83AFF00BDA53D /* WorkHistoryTableViewController.swift */,
 			);
 			path = "Work History";
 			sourceTree = "<group>";
@@ -356,14 +359,13 @@
 		AD024C331FF231280092275E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0D0874D20B95E2100A48111 /* Notification */,
 				1DDA495520B710580015B0E8 /* Setting */,
 				1D6E232020A83AD600BDA53D /* Work History */,
 				F0D715341FF14CA60016CFBF /* LoginViewController.swift */,
 				ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */,
 				F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */,
 				F0662F7520162FDB0092071D /* ScanQRController.swift */,
-				1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */,
-				1D573E692056744100341603 /* NotificationDetailViewController.swift */,
 				1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */,
 			);
 			path = Controllers;
@@ -372,6 +374,7 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				F0D0874E20B95F9900A48111 /* NotificationAPI */,
 				1DDA495820B71B100015B0E8 /* SettingAPI */,
 				1D953D4020B6719900A99AE7 /* SetPasswordAPI */,
 				1D2BF0C420ADC41F001B158D /* ListJobHistoryAPI */,
@@ -430,6 +433,41 @@
 				F04D3F531FF7556D009EA5F8 /* Generic.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		F0D0874D20B95E2100A48111 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				1D34E0F4202C2C6900FA3170 /* NotificationViewController.swift */,
+				1D573E692056744100341603 /* NotificationDetailViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		F0D0874E20B95F9900A48111 /* NotificationAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0875120B9609200A48111 /* Response */,
+				F0D0874F20B9602100A48111 /* NotificationAPI.swift */,
+			);
+			path = NotificationAPI;
+			sourceTree = "<group>";
+		};
+		F0D0875120B9609200A48111 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0875220B960A200A48111 /* GetNotificationResponse */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		F0D0875220B960A200A48111 /* GetNotificationResponse */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0875320B960B500A48111 /* GetNotificationResponse.swift */,
+				F0D0875520B9638A00A48111 /* Notic.swift */,
+			);
+			path = GetNotificationResponse;
 			sourceTree = "<group>";
 		};
 		F0D715261FF14CA60016CFBF = {
@@ -587,7 +625,9 @@
 			files = (
 				1D221E7920831D2500210E52 /* ListVillageResponse.swift in Sources */,
 				1D6E232A20A8654200BDA53D /* Guard.swift in Sources */,
+				F0D0875020B9602100A48111 /* NotificationAPI.swift in Sources */,
 				F0286BF920064A0300FE615C /* LoginDelegate.swift in Sources */,
+				F0D0875420B960B500A48111 /* GetNotificationResponse.swift in Sources */,
 				1D221E7220825EBB00210E52 /* ListVillageAPI.swift in Sources */,
 				F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */,
 				1D34E0FE2035A0DC00FA3170 /* UserDefaultsUtils.swift in Sources */,
@@ -611,7 +651,6 @@
 				1D6E233320A953C800BDA53D /* ListJobHistoryViewController.swift in Sources */,
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				1D34E1012035A33500FA3170 /* UserData.swift in Sources */,
-				1D6E232220A83AFF00BDA53D /* WorkHistoryTableViewController.swift in Sources */,
 				1D456C0C2097605600DB184B /* ListHistoryGuardAPI.swift in Sources */,
 				F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */,
 				1D221E822084740300210E52 /* Zone.swift in Sources */,
@@ -628,6 +667,7 @@
 				1D221E7820831D2500210E52 /* Village.swift in Sources */,
 				1D221E7E2084722300210E52 /* ListZoneAPI.swift in Sources */,
 				1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */,
+				F0D0875620B9638A00A48111 /* Notic.swift in Sources */,
 				1D2BF0CB20ADC808001B158D /* ListGuardHistory.swift in Sources */,
 				1D953D4220B671F600A99AE7 /* SetPasswordAPI.swift in Sources */,
 				1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */,

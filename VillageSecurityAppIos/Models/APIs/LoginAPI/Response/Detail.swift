@@ -12,6 +12,8 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
+import SwiftyJSON
+
 struct Detail : Codable {
 	let pk : Int?
 	let firstName : String?
@@ -35,5 +37,16 @@ struct Detail : Codable {
         typeUser = try values.decodeIfPresent(TypeUser.self, forKey: .typeUser)
         home = try values.decodeIfPresent([Home].self, forKey: .home)
 	}
+    
+    init(from json: JSON) {
+        pk = json["pk"].intValue
+        firstName = json["first_name"].stringValue
+        lastName = json["last_name"].stringValue
+        typeUser = TypeUser(from: json["type_user"])
+        home = [Home]()
+        for oneHome in json["home"].arrayValue {
+            home?.append(Home(from: oneHome))
+        }
+    }
 
 }
