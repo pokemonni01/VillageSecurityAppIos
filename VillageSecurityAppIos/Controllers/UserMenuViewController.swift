@@ -66,10 +66,5 @@ class UserMenuViewController: BaseViewController, SettingDelegate {
             return false
         }
     }
-    
-    @IBAction func onWorkHistoryButtonClick(_ sender: Any) {
-        let workHistoryViewController = self.storyboard?.instantiateViewController(withIdentifier: IdentifierNames.workHistoryViewController) as! WorkHistoryViewController
-        self.navigationController?.pushViewController(workHistoryViewController, animated: true)
-    }
 }
 

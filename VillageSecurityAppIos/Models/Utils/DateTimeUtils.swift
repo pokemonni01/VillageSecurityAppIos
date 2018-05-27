@@ -13,18 +13,21 @@ class DateTimeUtils {
         let date = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy"
+        formatter.locale = Locale(identifier: "uk")
         return formatter.string(from: date)
     }
     
     static func getDateString(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy"
+        formatter.locale = Locale(identifier: "uk")
         return formatter.string(from: date)
     }
 
     static func getDateFromString(date: String?) -> Date {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy"
+        formatter.locale = Locale(identifier: "uk")
         return formatter.date(from: (date ?? "").isEmpty ? getCurrentDate() : date!)!
     }
 }
