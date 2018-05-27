@@ -9,7 +9,7 @@
 import UIKit
 import ActionSheetPicker_3_0
 
-class HistoryCarViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class HistoryCarViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var villageLabel: UITextField!
@@ -23,8 +23,14 @@ class HistoryCarViewController: BaseViewController, UITableViewDelegate, UITable
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.villageLabel.delegate = self
+        self.dateLabel.delegate = self
         dateLabel.text = DateTimeUtils.getCurrentDate()
         loadVillage()
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return false
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +44,9 @@ class HistoryCarViewController: BaseViewController, UITableViewDelegate, UITable
     }
     
     private func loadHistoryCarList() {
+        if ( (villageLabel.text ?? "").isEmpty || (dateLabel.text ?? "").isEmpty ) {
+            return
+        }
         showProgress()
         let villageId = mVillages.first(where: { (village) -> Bool in
             village.name == villageLabel.text
@@ -48,13 +57,6 @@ class HistoryCarViewController: BaseViewController, UITableViewDelegate, UITable
         HistoryCarAPI.requestNotificationList(self, villageId: villageId, time: date)
     }
     
-    @IBAction func onTextFieldChanged(_ sender: Any) {
-        if ( (villageLabel.text ?? "").isEmpty || (dateLabel.text ?? "").isEmpty ) {
-            return
-        }
-        loadHistoryCarList()
-    }
-    
     @IBAction func onVillagePickerClick(_ sender: Any) {
         ActionSheetStringPicker.show(withTitle: "เลือกหมู่บ้าน", rows: mVillages.map({ (village: Village) -> String in
             village.name!
@@ -62,6 +64,7 @@ class HistoryCarViewController: BaseViewController, UITableViewDelegate, UITable
             picker, indexes, values in
             self.villageLabel.text = values as? String
             self.villageLabel.endEditing(true)
+            self.loadHistoryCarList()
             return
         }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
     }
@@ -71,6 +74,7 @@ class HistoryCarViewController: BaseViewController, UITableViewDelegate, UITable
             picker, value, index in
             self.dateLabel.text = DateTimeUtils.getDateString(date: value as! Date)
             self.dateLabel.endEditing(true)
+            self.loadHistoryCarList()
             return
         }, cancel: { ActionStringCancelBlock in return }, origin: (sender as AnyObject).superview!?.superview)
         datePicker?.show()

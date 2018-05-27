@@ -364,7 +364,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="onTextFieldChanged:" destination="LMF-3y-PkP" eventType="editingDidEnd" id="QIi-es-HOs"/>
                                     <action selector="onVillagePickerClick:" destination="LMF-3y-PkP" eventType="touchDown" id="8he-N1-MkT"/>
                                 </connections>
                             </textField>
@@ -379,7 +378,6 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="onDatePickerClick:" destination="LMF-3y-PkP" eventType="touchDown" id="LcY-Rd-LFX"/>
-                                    <action selector="onTextFieldChanged:" destination="LMF-3y-PkP" eventType="editingDidEnd" id="eYu-gB-fjU"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วันที่" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMW-BJ-wh6">
