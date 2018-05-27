@@ -242,9 +242,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2UL-CN-2eZ" customClass="QRCodeReaderView" customModule="VillageSecurityAppIos" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2UL-CN-2eZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6e-QS-FG9">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="400"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ja-qj-f5S">
+                                        <rect key="frame" x="0.0" y="420" width="375" height="247"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ยังไม่แสกน QR Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7V-4t-sOR">
+                                                <rect key="frame" x="100" y="16" width="175" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="N2j-of-2fO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.95294117647058818" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="แสกน QR Code สำเร็จ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yo-e9-3za">
+                                                <rect key="frame" x="95" y="16" width="185" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="idJ-a5-wTT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.82745098039215681" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="แสกน Qr Code ก่อนจึงจะสามารถส่งข้อมูลได้" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAS-HJ-mqR">
+                                                <rect key="frame" x="32" y="113" width="311" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Z06-RY-Zi7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIx-0A-hVL">
+                                                <rect key="frame" x="161" y="201" width="52" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="5yq-A5-tmI"/>
+                                                </constraints>
+                                                <state key="normal" title="ส่งข้อมูล"/>
+                                                <connections>
+                                                    <action selector="onSendDataClick:" destination="XHL-j6-hc9" eventType="touchUpInside" id="dWE-BW-zmc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="zAS-HJ-mqR" firstAttribute="centerX" secondItem="4Ja-qj-f5S" secondAttribute="centerX" id="2rb-0a-3c0"/>
+                                            <constraint firstItem="9Yo-e9-3za" firstAttribute="top" secondItem="4Ja-qj-f5S" secondAttribute="top" constant="16" id="Ar2-MV-RNJ"/>
+                                            <constraint firstItem="X7V-4t-sOR" firstAttribute="top" secondItem="4Ja-qj-f5S" secondAttribute="top" constant="16" id="GN5-L3-4XV"/>
+                                            <constraint firstItem="X7V-4t-sOR" firstAttribute="centerX" secondItem="4Ja-qj-f5S" secondAttribute="centerX" id="KPM-HI-eHF"/>
+                                            <constraint firstItem="zAS-HJ-mqR" firstAttribute="centerY" secondItem="4Ja-qj-f5S" secondAttribute="centerY" id="Mug-6u-nmL"/>
+                                            <constraint firstItem="9Yo-e9-3za" firstAttribute="centerX" secondItem="4Ja-qj-f5S" secondAttribute="centerX" id="lwB-l4-qFS"/>
+                                            <constraint firstItem="CIx-0A-hVL" firstAttribute="centerX" secondItem="4Ja-qj-f5S" secondAttribute="centerX" id="p0I-xZ-RCw"/>
+                                            <constraint firstAttribute="bottom" secondItem="CIx-0A-hVL" secondAttribute="bottom" constant="16" id="wBR-1K-6eh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="r6e-QS-FG9" firstAttribute="height" secondItem="2UL-CN-2eZ" secondAttribute="height" multiplier="0.6" id="0qN-OO-nMg"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Ja-qj-f5S" secondAttribute="trailing" id="1qW-Oh-RV4"/>
+                                    <constraint firstAttribute="trailing" secondItem="r6e-QS-FG9" secondAttribute="trailing" id="620-dc-l8l"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Ja-qj-f5S" secondAttribute="bottom" id="9M0-Cu-cgs"/>
+                                    <constraint firstItem="4Ja-qj-f5S" firstAttribute="leading" secondItem="2UL-CN-2eZ" secondAttribute="leading" id="Hoz-Yb-N20"/>
+                                    <constraint firstItem="r6e-QS-FG9" firstAttribute="top" secondItem="2UL-CN-2eZ" secondAttribute="top" constant="20" id="MHa-tG-e2X"/>
+                                    <constraint firstItem="r6e-QS-FG9" firstAttribute="leading" secondItem="2UL-CN-2eZ" secondAttribute="leading" id="S3Q-bq-6tP"/>
+                                    <constraint firstItem="4Ja-qj-f5S" firstAttribute="top" secondItem="r6e-QS-FG9" secondAttribute="bottom" id="rg6-xH-yuq"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -257,7 +326,11 @@
                         <viewLayoutGuide key="safeArea" id="c2U-Zm-DH8"/>
                     </view>
                     <connections>
-                        <outlet property="previewView" destination="2UL-CN-2eZ" id="3lU-r9-Dwn"/>
+                        <outlet property="cameraView" destination="r6e-QS-FG9" id="e2p-Lz-GeE"/>
+                        <outlet property="noScanLabel" destination="X7V-4t-sOR" id="MZc-6f-B7H"/>
+                        <outlet property="rootView" destination="2UL-CN-2eZ" id="swa-5b-9D9"/>
+                        <outlet property="scanSuccessLabel" destination="9Yo-e9-3za" id="kwh-rM-W2z"/>
+                        <outlet property="sendDataButton" destination="CIx-0A-hVL" id="AWi-ec-uJx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uam-OS-2tD" userLabel="First Responder" sceneMemberID="firstResponder"/>

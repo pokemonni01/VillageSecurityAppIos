@@ -50,6 +50,9 @@ struct QrCode {
     let statusUser, statusHome, codeStatus, activeSleep: String
     let village: Int?
     let timeOut, time: String
+    let status : String?
+    let message : String?
+    let title : String?
     
     init(from json: JSON) {
         pk = json["pk"].intValue
@@ -70,5 +73,8 @@ struct QrCode {
         village = json["village"].intValue
         timeOut = json["time_out"].stringValue
         time = json["time"].stringValue
+        status = json["status"].stringValue
+        message = json["message"].stringValue
+        title = json["title"].stringValue
     }
 }

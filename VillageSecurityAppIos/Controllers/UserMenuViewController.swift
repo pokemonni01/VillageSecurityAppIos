@@ -13,6 +13,7 @@ class UserMenuViewController: BaseViewController, SettingDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Secure A"
         loadSetting()
     }
     
