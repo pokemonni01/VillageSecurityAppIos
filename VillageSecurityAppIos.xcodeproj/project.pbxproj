@@ -61,6 +61,11 @@
 		F0D0875020B9602100A48111 /* NotificationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0874F20B9602100A48111 /* NotificationAPI.swift */; };
 		F0D0875420B960B500A48111 /* GetNotificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0875320B960B500A48111 /* GetNotificationResponse.swift */; };
 		F0D0875620B9638A00A48111 /* Notic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0875520B9638A00A48111 /* Notic.swift */; };
+		F0D0875C20BA8BCB00A48111 /* HistoryCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0875B20BA8BCB00A48111 /* HistoryCarTableViewCell.swift */; };
+		F0D0875E20BA8BE400A48111 /* HistoryCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0875D20BA8BE400A48111 /* HistoryCarViewController.swift */; };
+		F0D0876120BAA22F00A48111 /* HistoryCarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0876020BAA22F00A48111 /* HistoryCarAPI.swift */; };
+		F0D0876420BAA2ED00A48111 /* HistoryCarResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0876320BAA2ED00A48111 /* HistoryCarResponse.swift */; };
+		F0D0876620BAA34200A48111 /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0876520BAA34200A48111 /* QrCode.swift */; };
 		F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715321FF14CA60016CFBF /* AppDelegate.swift */; };
 		F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715341FF14CA60016CFBF /* LoginViewController.swift */; };
 		F0D715381FF14CA60016CFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D715361FF14CA60016CFBF /* Main.storyboard */; };
@@ -125,6 +130,11 @@
 		F0D0874F20B9602100A48111 /* NotificationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAPI.swift; sourceTree = "<group>"; };
 		F0D0875320B960B500A48111 /* GetNotificationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotificationResponse.swift; sourceTree = "<group>"; };
 		F0D0875520B9638A00A48111 /* Notic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notic.swift; sourceTree = "<group>"; };
+		F0D0875B20BA8BCB00A48111 /* HistoryCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCarTableViewCell.swift; sourceTree = "<group>"; };
+		F0D0875D20BA8BE400A48111 /* HistoryCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCarViewController.swift; sourceTree = "<group>"; };
+		F0D0876020BAA22F00A48111 /* HistoryCarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCarAPI.swift; sourceTree = "<group>"; };
+		F0D0876320BAA2ED00A48111 /* HistoryCarResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCarResponse.swift; sourceTree = "<group>"; };
+		F0D0876520BAA34200A48111 /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
 		F0D7152F1FF14CA60016CFBF /* VillageSecurityAppIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VillageSecurityAppIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D715321FF14CA60016CFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D715341FF14CA60016CFBF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +214,7 @@
 		1D34E0FB202C47D900FA3170 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F0D0875A20BA8BAE00A48111 /* History Car */,
 				1D6E232F20A89BB700BDA53D /* List Job History */,
 				1D6E231D20A6D74900BDA53D /* Work History */,
 				1D34E0FC202C47EC00FA3170 /* Notification */,
@@ -359,6 +370,7 @@
 		AD024C331FF231280092275E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0D0875920BA8BA400A48111 /* History Car */,
 				F0D0874D20B95E2100A48111 /* Notification */,
 				1DDA495520B710580015B0E8 /* Setting */,
 				1D6E232020A83AD600BDA53D /* Work History */,
@@ -374,6 +386,7 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				F0D0875F20BAA22300A48111 /* HistoryCarAPI */,
 				F0D0874E20B95F9900A48111 /* NotificationAPI */,
 				1DDA495820B71B100015B0E8 /* SettingAPI */,
 				1D953D4020B6719900A99AE7 /* SetPasswordAPI */,
@@ -468,6 +481,40 @@
 				F0D0875520B9638A00A48111 /* Notic.swift */,
 			);
 			path = GetNotificationResponse;
+			sourceTree = "<group>";
+		};
+		F0D0875920BA8BA400A48111 /* History Car */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0875D20BA8BE400A48111 /* HistoryCarViewController.swift */,
+			);
+			path = "History Car";
+			sourceTree = "<group>";
+		};
+		F0D0875A20BA8BAE00A48111 /* History Car */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0875B20BA8BCB00A48111 /* HistoryCarTableViewCell.swift */,
+			);
+			path = "History Car";
+			sourceTree = "<group>";
+		};
+		F0D0875F20BAA22300A48111 /* HistoryCarAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0876220BAA27200A48111 /* Response */,
+				F0D0876020BAA22F00A48111 /* HistoryCarAPI.swift */,
+			);
+			path = HistoryCarAPI;
+			sourceTree = "<group>";
+		};
+		F0D0876220BAA27200A48111 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0876320BAA2ED00A48111 /* HistoryCarResponse.swift */,
+				F0D0876520BAA34200A48111 /* QrCode.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		F0D715261FF14CA60016CFBF = {
@@ -636,10 +683,12 @@
 				ADEA5216200460EB00E284C6 /* GenericDelegate.swift in Sources */,
 				F0286BFE20064DEE00FE615C /* Detail.swift in Sources */,
 				1D221E742082FBFD00210E52 /* StringUtils.swift in Sources */,
+				F0D0875C20BA8BCB00A48111 /* HistoryCarTableViewCell.swift in Sources */,
 				1D456C19209763D500DB184B /* ListHistoryGuardResponse.swift in Sources */,
 				F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */,
 				1D953D4520B6756C00A99AE7 /* SetPasswordResponse.swift in Sources */,
 				1D953D0220B572F800A99AE7 /* BaseViewController.swift in Sources */,
+				F0D0876420BAA2ED00A48111 /* HistoryCarResponse.swift in Sources */,
 				1D6E232920A8654200BDA53D /* Company.swift in Sources */,
 				1D98729D208B9E9D002533DA /* DateTimeUtils.swift in Sources */,
 				1D78F6FA20145CEF008BFE16 /* ViewControllerUtils.swift in Sources */,
@@ -649,6 +698,7 @@
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
 				1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */,
 				1D6E233320A953C800BDA53D /* ListJobHistoryViewController.swift in Sources */,
+				F0D0876620BAA34200A48111 /* QrCode.swift in Sources */,
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				1D34E1012035A33500FA3170 /* UserData.swift in Sources */,
 				1D456C0C2097605600DB184B /* ListHistoryGuardAPI.swift in Sources */,
@@ -662,6 +712,7 @@
 				F0286C0420064F8500FE615C /* Home.swift in Sources */,
 				F0286BF72006490E00FE615C /* LoginApi.swift in Sources */,
 				1D573E6A2056744100341603 /* NotificationDetailViewController.swift in Sources */,
+				F0D0875E20BA8BE400A48111 /* HistoryCarViewController.swift in Sources */,
 				ADD99DF31FFCC78100AFEB70 /* SplashScreenViewController.swift in Sources */,
 				F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */,
 				1D221E7820831D2500210E52 /* Village.swift in Sources */,
@@ -671,6 +722,7 @@
 				1D2BF0CB20ADC808001B158D /* ListGuardHistory.swift in Sources */,
 				1D953D4220B671F600A99AE7 /* SetPasswordAPI.swift in Sources */,
 				1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */,
+				F0D0876120BAA22F00A48111 /* HistoryCarAPI.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
 				1D6E232820A8654200BDA53D /* Type_guard.swift in Sources */,
 				1D2BF0C620ADC444001B158D /* ListJobHistoryAPI.swift in Sources */,
