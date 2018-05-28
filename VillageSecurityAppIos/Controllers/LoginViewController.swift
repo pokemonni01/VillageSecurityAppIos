@@ -9,15 +9,13 @@
 import UIKit
 import Alamofire
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
     
     @IBOutlet weak var mUsernameTextField: UITextField!
     
     @IBOutlet weak var mPasswordTextField: UITextField!
 
     @IBOutlet var mRootView: UIView!
-    
-    private let mViewControllerUtils : ViewControllerUtils = ViewControllerUtils()
     
     @IBAction func login(_ sender: UIButton) {
         let username = mUsernameTextField.text!
@@ -37,7 +35,7 @@ class LoginViewController: UIViewController {
     }
     
     private func login(username: String, password: String) {
-        mViewControllerUtils.showActivityIndicator(uiView: mRootView)
+        showProgress()
         LoginApi.requestLogin(self, username, password)
     }
     
@@ -45,7 +43,7 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginDelegate {
     func onRequestLoginSuccess(response: LoginResponse) {
-        mViewControllerUtils.hideActivityIndicator(uiView: mRootView)
+        hideProgress()
         let userMenuViewController = self.storyboard?.instantiateViewController(withIdentifier: IdentifierNames.userMenuNavigationViewController) as! UINavigationController
         self.present(userMenuViewController, animated: true)
         let userData = UserData(
@@ -59,16 +57,16 @@ extension LoginViewController: LoginDelegate {
     }
     
     func onRequestLoginFail(response: LoginResponse) {
-        mViewControllerUtils.hideActivityIndicator(uiView: mRootView)
+        hideProgress()
         let title = response.title!
         let message = response.message!
-        mViewControllerUtils.showAlertDialogOneButton(viewController: self, title: title, message: message)
+        showAlertDialog(title: title, message: message)
         print(response)
     }
     
     func onRequestLoginError(title: String, message: String) {
-        mViewControllerUtils.hideActivityIndicator(uiView: mRootView)
-        print(title+" "+message)
+        hideProgress()
+        showDefaultErrorDialog()
     }    
 }
 
