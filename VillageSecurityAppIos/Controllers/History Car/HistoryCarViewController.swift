@@ -21,6 +21,7 @@ class HistoryCarViewController: BaseViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "ดูประวัติรถเข้าหมู่บ้าน"
         tableView.delegate = self
         tableView.dataSource = self
         self.villageLabel.delegate = self
