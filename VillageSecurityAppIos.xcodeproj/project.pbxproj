@@ -66,6 +66,10 @@
 		F0D0876120BAA22F00A48111 /* HistoryCarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0876020BAA22F00A48111 /* HistoryCarAPI.swift */; };
 		F0D0876420BAA2ED00A48111 /* HistoryCarResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0876320BAA2ED00A48111 /* HistoryCarResponse.swift */; };
 		F0D0876620BAA34200A48111 /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0876520BAA34200A48111 /* QrCode.swift */; };
+		F0D0876820BD89F800A48111 /* DetailHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0876720BD89F800A48111 /* DetailHistoryViewController.swift */; };
+		F0D0876C20BD9C2800A48111 /* HistoryGuardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0876B20BD9C2800A48111 /* HistoryGuardResponse.swift */; };
+		F0D0876F20BD9D8100A48111 /* ListHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0876E20BD9D8100A48111 /* ListHistory.swift */; };
+		F0D0877120BD9EA900A48111 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0877020BD9EA900A48111 /* Point.swift */; };
 		F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715321FF14CA60016CFBF /* AppDelegate.swift */; };
 		F0D715351FF14CA60016CFBF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D715341FF14CA60016CFBF /* LoginViewController.swift */; };
 		F0D715381FF14CA60016CFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D715361FF14CA60016CFBF /* Main.storyboard */; };
@@ -135,6 +139,10 @@
 		F0D0876020BAA22F00A48111 /* HistoryCarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCarAPI.swift; sourceTree = "<group>"; };
 		F0D0876320BAA2ED00A48111 /* HistoryCarResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCarResponse.swift; sourceTree = "<group>"; };
 		F0D0876520BAA34200A48111 /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
+		F0D0876720BD89F800A48111 /* DetailHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryViewController.swift; sourceTree = "<group>"; };
+		F0D0876B20BD9C2800A48111 /* HistoryGuardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryGuardResponse.swift; sourceTree = "<group>"; };
+		F0D0876E20BD9D8100A48111 /* ListHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHistory.swift; sourceTree = "<group>"; };
+		F0D0877020BD9EA900A48111 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		F0D7152F1FF14CA60016CFBF /* VillageSecurityAppIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VillageSecurityAppIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D715321FF14CA60016CFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D715341FF14CA60016CFBF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -250,11 +258,8 @@
 		1D456C0D209763C300DB184B /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				1D6E232520A8654200BDA53D /* Company.swift */,
-				1D6E232620A8654200BDA53D /* Guard.swift */,
-				1D6E232320A8654200BDA53D /* Shift.swift */,
-				1D6E232420A8654200BDA53D /* Type_guard.swift */,
-				1D456C13209763D500DB184B /* ListHistoryGuardResponse.swift */,
+				F0D0876A20BD9C0100A48111 /* HistoryGuardResponse */,
+				F0D0876920BD9BED00A48111 /* ListHistoryGuardResponse */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -271,6 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */,
+				1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */,
+				F0D0876720BD89F800A48111 /* DetailHistoryViewController.swift */,
 			);
 			path = "Work History";
 			sourceTree = "<group>";
@@ -378,7 +385,6 @@
 				ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */,
 				F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */,
 				F0662F7520162FDB0092071D /* ScanQRController.swift */,
-				1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -517,6 +523,28 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		F0D0876920BD9BED00A48111 /* ListHistoryGuardResponse */ = {
+			isa = PBXGroup;
+			children = (
+				1D6E232520A8654200BDA53D /* Company.swift */,
+				1D6E232620A8654200BDA53D /* Guard.swift */,
+				1D6E232320A8654200BDA53D /* Shift.swift */,
+				1D6E232420A8654200BDA53D /* Type_guard.swift */,
+				1D456C13209763D500DB184B /* ListHistoryGuardResponse.swift */,
+			);
+			path = ListHistoryGuardResponse;
+			sourceTree = "<group>";
+		};
+		F0D0876A20BD9C0100A48111 /* HistoryGuardResponse */ = {
+			isa = PBXGroup;
+			children = (
+				F0D0876B20BD9C2800A48111 /* HistoryGuardResponse.swift */,
+				F0D0876E20BD9D8100A48111 /* ListHistory.swift */,
+				F0D0877020BD9EA900A48111 /* Point.swift */,
+			);
+			path = HistoryGuardResponse;
+			sourceTree = "<group>";
+		};
 		F0D715261FF14CA60016CFBF = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +591,7 @@
 				F0D7152C1FF14CA60016CFBF /* Frameworks */,
 				F0D7152D1FF14CA60016CFBF /* Resources */,
 				9F5680923F1968ED2ED3ECFD /* [CP] Embed Pods Frameworks */,
+				22C57EAE5C8F9461A3256AC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -621,6 +650,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		22C57EAE5C8F9461A3256AC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VillageSecurityAppIos/Pods-VillageSecurityAppIos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9F5680923F1968ED2ED3ECFD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -706,7 +755,10 @@
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				1D34E1012035A33500FA3170 /* UserData.swift in Sources */,
 				1D456C0C2097605600DB184B /* ListHistoryGuardAPI.swift in Sources */,
+				F0D0877120BD9EA900A48111 /* Point.swift in Sources */,
+				F0D0876820BD89F800A48111 /* DetailHistoryViewController.swift in Sources */,
 				F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */,
+				F0D0876F20BD9D8100A48111 /* ListHistory.swift in Sources */,
 				1D221E822084740300210E52 /* Zone.swift in Sources */,
 				1D953CFF20B5703500A99AE7 /* SetPasswordViewController.swift in Sources */,
 				1D6E232720A8654200BDA53D /* Shift.swift in Sources */,
@@ -724,6 +776,7 @@
 				1D34E0F5202C2C6900FA3170 /* NotificationViewController.swift in Sources */,
 				F0D0875620B9638A00A48111 /* Notic.swift in Sources */,
 				1D2BF0CB20ADC808001B158D /* ListGuardHistory.swift in Sources */,
+				F0D0876C20BD9C2800A48111 /* HistoryGuardResponse.swift in Sources */,
 				1D953D4220B671F600A99AE7 /* SetPasswordAPI.swift in Sources */,
 				1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */,
 				F0D0876120BAA22F00A48111 /* HistoryCarAPI.swift in Sources */,

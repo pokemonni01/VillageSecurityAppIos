@@ -1,6 +1,13 @@
 PODS:
   - ActionSheetPicker-3.0 (2.3.0)
   - Alamofire (4.7.2)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
   - Material (2.15.0):
     - Material/Core (= 2.15.0)
   - Material/Core (2.15.0):
@@ -14,6 +21,8 @@ PODS:
 DEPENDENCIES:
   - ActionSheetPicker-3.0 (~> 2.3.0)
   - Alamofire (~> 4.5)
+  - GoogleMaps
+  - GooglePlaces
   - Material (~> 2.0)
   - QRCodeReader.swift (~> 8.0.3)
   - SwiftyJSON (~> 4.0)
@@ -22,6 +31,8 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ActionSheetPicker-3.0
     - Alamofire
+    - GoogleMaps
+    - GooglePlaces
     - Material
     - Motion
     - QRCodeReader.swift
@@ -30,11 +41,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   Material: 00e32bb5e61b3f749044897b2d93acd8bf33faa4
   Motion: 9f74d115d7f72bb5380a8e3cde2f8a1fc898ac36
   QRCodeReader.swift: 9730cfa7ed5f0dd839765df8cf18d41db20e4081
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 91f8eb85981c35d174ad91b2a03c4e1e44f3cedb
+PODFILE CHECKSUM: c1e94b0dd3612312d34afeaaf4d8f126ec38cdae
 
 COCOAPODS: 1.5.3
