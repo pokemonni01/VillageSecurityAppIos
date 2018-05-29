@@ -8,6 +8,7 @@ target 'VillageSecurityAppIos' do
   pod 'QRCodeReader.swift', '~> 8.0.3'
   pod 'ActionSheetPicker-3.0', '~> 2.3.0'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'Material', '~> 2.0'
 
   # Pods for VillageSecurityAppIos
 
