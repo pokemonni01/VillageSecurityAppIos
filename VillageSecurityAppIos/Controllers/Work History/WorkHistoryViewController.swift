@@ -16,6 +16,7 @@ class WorkHistoryViewController: UIViewController, UITextFieldDelegate, UITableV
     @IBOutlet weak var mVillagePicker: UITextField!
     @IBOutlet weak var mZonePicker: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noDataLabel: UILabel!
     
     @IBOutlet var rootView: UIView!
     
@@ -147,6 +148,16 @@ class WorkHistoryViewController: UIViewController, UITextFieldDelegate, UITableV
         let cell = tableView.cellForRow(at: indexPath)
         cell?.backgroundColor = UIColor.white
     }
+    
+    private func onNoData() {
+        tableView.isHidden = true
+        noDataLabel.isEnabled = false
+    }
+    
+    private func onNotNoData() {
+        tableView.isHidden = false
+        noDataLabel.isEnabled = true
+    }
 }
 
 extension WorkHistoryViewController: ListVillageDelegate {
@@ -200,6 +211,11 @@ extension WorkHistoryViewController: ListHistoryGuardDelegate {
     func onRequestListHistoryGuardSuccess(response: ListHistoryGuardResponse) {
         mViewControllerUtils.hideActivityIndicator(uiView: rootView)
         mGuard = response.mGuard
+        if (mGuard?.count ?? 0 == 0) {
+            onNoData()
+        } else {
+            onNotNoData()
+        }
         tableView.reloadData()
         print(response)
     }
