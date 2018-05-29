@@ -14,49 +14,36 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 import Foundation
 import SwiftyJSON
 
-struct Guard : Codable {
-	let pk : Int?
-	let first_name : String?
-	let last_name : String?
-	let company : Company?
-	let shift : Shift?
-	let type_guard : Type_guard?
-	let zone : Zone?
+struct ListHistoryGuardResponse : Codable {
 	let status : String?
+	let mGuard : [Guard]?
+	let message : String?
+	let title : String?
 
 	enum CodingKeys: String, CodingKey {
 
-		case pk = "pk"
-		case first_name = "first_name"
-		case last_name = "last_name"
-		case company
-		case shift
-		case type_guard
-		case zone
 		case status = "status"
+		case mGuard = "guard"
+		case message = "message"
+		case title = "title"
 	}
 
 	init(from decoder: Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
-		pk = try values.decodeIfPresent(Int.self, forKey: .pk)
-		first_name = try values.decodeIfPresent(String.self, forKey: .first_name)
-		last_name = try values.decodeIfPresent(String.self, forKey: .last_name)
-		company = try Company(from: decoder)
-		shift = try Shift(from: decoder)
-		type_guard = try Type_guard(from: decoder)
-		zone = try Zone(from: decoder)
 		status = try values.decodeIfPresent(String.self, forKey: .status)
+        mGuard = try values.decodeIfPresent([Guard].self, forKey: .mGuard)
+		message = try values.decodeIfPresent(String.self, forKey: .message)
+		title = try values.decodeIfPresent(String.self, forKey: .title)
 	}
     
     init(from json: JSON) {
-        pk = json["pk"].intValue
-        first_name = json["first_name"].stringValue
-        last_name = json["last_name"].stringValue
-        company = Company(from: json["Company"])
-        shift = Shift(from: json["shift"])
-        type_guard = Type_guard(from: json["type_guard"])
-        zone = Zone(from: json["zone"])
         status = json["status"].stringValue
+        message = json["message"].stringValue
+        title = json["title"].stringValue
+        mGuard = [Guard]()
+        for guardsJson in json["guard"].arrayValue {
+            mGuard?.append(Guard(from: guardsJson))
+        }
     }
 
 }

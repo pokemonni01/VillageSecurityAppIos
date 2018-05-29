@@ -40,7 +40,26 @@ class ListJobHistoryViewController: BaseViewController, ListJobHistoryDelegate, 
         let guardLastName = listGuardHistory?.mGuard?.last_name ?? ""
         cell.nameLabel.text = guardFirstName + "   " + guardLastName
         cell.timeLabel.text = listGuardHistory?.timeShow ?? ""
+        cell.selectionStyle = .none
         return cell
+    }
+    
+    // method to run when table view cell is tapped
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailHistoryViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailHistoryViewController") as! DetailHistoryViewController
+        detailHistoryViewController.listGuardHistory = response?.mListGuardHistory![indexPath.row]
+        self.navigationController?.pushViewController(detailHistoryViewController, animated: true)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.backgroundColor = UIColor.lightGray
+    }
+    
+    func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.backgroundColor = UIColor.white
     }
     
     func onRequestListJobHistorySuccess(response: ListJobHistoryResponse) {
