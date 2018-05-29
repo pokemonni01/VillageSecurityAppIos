@@ -29,6 +29,7 @@ class WorkHistoryViewController: UIViewController, UITextFieldDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "ดูประวัติการทำงานรายคน"
         self.mVillagePicker.delegate = self
         self.mZonePicker.delegate = self
         self.mDatePicker.delegate = self

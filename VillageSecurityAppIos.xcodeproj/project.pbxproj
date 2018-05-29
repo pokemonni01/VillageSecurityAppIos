@@ -271,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				1D573E6B2056837F00341603 /* WorkHistoryViewController.swift */,
+				1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */,
 			);
 			path = "Work History";
 			sourceTree = "<group>";
@@ -378,7 +379,6 @@
 				ADD99DF21FFCC78100AFEB70 /* SplashScreenViewController.swift */,
 				F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */,
 				F0662F7520162FDB0092071D /* ScanQRController.swift */,
-				1D6E233220A953C800BDA53D /* ListJobHistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

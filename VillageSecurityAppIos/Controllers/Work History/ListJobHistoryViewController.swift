@@ -1,18 +1,19 @@
 import UIKit
 
-class ListJobHistoryViewController: UIViewController, ListJobHistoryDelegate, UITableViewDelegate, UITableViewDataSource {
+class ListJobHistoryViewController: BaseViewController, ListJobHistoryDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var rootView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noDataLabel: UILabel!
     
     var mGuard: Guard?
     var mPKGuard: Int?
     var mDateSelect: String?
     var response: ListJobHistoryResponse?
-    private let mViewControllerUtils : ViewControllerUtils = ViewControllerUtils()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "ดูประวัติการทำงานรายคน"
         tableView.delegate = self
         tableView.dataSource = self
         getListJobHistory()
@@ -23,7 +24,7 @@ class ListJobHistoryViewController: UIViewController, ListJobHistoryDelegate, UI
     }
     
     private func getListJobHistory() {
-        mViewControllerUtils.showActivityIndicator(uiView: rootView)
+        showProgress()
         ListJobHistoryAPI.requestListJobHistory(self, pkGuard: mPKGuard ?? 0, type: "oneday", date: mDateSelect ?? DateTimeUtils.getCurrentDate())
     }
     
@@ -44,18 +45,35 @@ class ListJobHistoryViewController: UIViewController, ListJobHistoryDelegate, UI
     
     func onRequestListJobHistorySuccess(response: ListJobHistoryResponse) {
         print(response)
-        mViewControllerUtils.hideActivityIndicator(uiView: rootView)
+        hideProgress()
         self.response = response
+        if (self.response?.mListGuardHistory?.count ?? 0 == 0) {
+            onNoData()
+        } else {
+            onNotNoData()
+        }
         tableView.reloadData()
     }
     
     func onRequestListJobHistoryFail(response: ListJobHistoryResponse) {
         print(response)
-        mViewControllerUtils.hideActivityIndicator(uiView: rootView)
+        showAlertDialog(title: response.title ?? "", message: response.message ?? "")
+        hideProgress()
     }
     
     func onRequestListJobHistoryError(title: String, message: String) {
         print(title+" "+message)
-        mViewControllerUtils.hideActivityIndicator(uiView: rootView)
+        hideProgress()
+        showDefaultErrorDialog()
+    }
+    
+    private func onNoData() {
+        tableView.isHidden = true
+        noDataLabel.isEnabled = false
+    }
+    
+    private func onNotNoData() {
+        tableView.isHidden = false
+        noDataLabel.isEnabled = true
     }
 }
