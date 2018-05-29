@@ -18,7 +18,7 @@ class SetPasswordViewController: BaseViewController, SetPasswordDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = "เปลี่ยนรหัสผ่าน"
     }
 
     override func didReceiveMemoryWarning() {
