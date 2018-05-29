@@ -433,52 +433,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายการแจ้งเตือน" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQn-ly-cfR">
-                                <rect key="frame" x="8" y="72" width="367" height="21"/>
+                                <rect key="frame" x="8" y="72" width="367" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="6D0-CP-5ze"/>
+                                    <constraint firstAttribute="height" constant="29" id="eyV-K1-1xO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5Y-zV-98b">
-                                <rect key="frame" x="0.0" y="101" width="375" height="566"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="96" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5Y-zV-98b">
+                                <rect key="frame" x="0.0" y="109" width="375" height="558"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationTableViewCell" rowHeight="70" id="PwF-Ru-0Ja" customClass="NotificationTableViewCell" customModule="VillageSecurityAppIos" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationTableViewCell" rowHeight="96" id="PwF-Ru-0Ja" customClass="NotificationTableViewCell" customModule="VillageSecurityAppIos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PwF-Ru-0Ja" id="NS4-g6-5at">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="แจ้งเตือนรถเข้าเยี่ยมบ้าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yH-q4-oeS">
-                                                    <rect key="frame" x="23" y="11" width="172.5" height="21"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGS-kC-d9K">
+                                                    <rect key="frame" x="8" y="8" width="359" height="80"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="แจ้งเตือนรถเข้าเยี่ยมบ้าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yH-q4-oeS">
+                                                            <rect key="frame" x="8" y="8" width="172.5" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วันที่" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5d-5E-DAv">
+                                                            <rect key="frame" x="321" y="51" width="30" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="7iC-qo-dzj"/>
+                                                        <constraint firstItem="q5d-5E-DAv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bGS-kC-d9K" secondAttribute="leading" constant="20" symbolic="YES" id="4yp-qT-Scj"/>
+                                                        <constraint firstAttribute="bottom" secondItem="q5d-5E-DAv" secondAttribute="bottom" constant="8" id="Biu-xB-sYX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="q5d-5E-DAv" secondAttribute="trailing" constant="8" id="biA-2p-MxT"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วันที่" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5d-5E-DAv">
-                                                    <rect key="frame" x="322" y="40" width="30" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="faL-jI-TAz"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="6yH-q4-oeS" firstAttribute="top" secondItem="NS4-g6-5at" secondAttribute="topMargin" id="4tg-x4-ngw"/>
-                                                <constraint firstItem="q5d-5E-DAv" firstAttribute="top" secondItem="6yH-q4-oeS" secondAttribute="bottom" constant="8" id="KtI-U0-gOZ"/>
-                                                <constraint firstItem="6yH-q4-oeS" firstAttribute="leading" secondItem="NS4-g6-5at" secondAttribute="leadingMargin" constant="8" id="cyv-Jc-mls"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="q5d-5E-DAv" secondAttribute="trailing" constant="8" id="l22-OC-fKc"/>
+                                                <constraint firstItem="bGS-kC-d9K" firstAttribute="top" secondItem="NS4-g6-5at" secondAttribute="top" constant="8" id="9mF-Yr-vKz"/>
+                                                <constraint firstAttribute="trailing" secondItem="bGS-kC-d9K" secondAttribute="trailing" constant="8" id="hNM-23-SR7"/>
+                                                <constraint firstAttribute="bottom" secondItem="bGS-kC-d9K" secondAttribute="bottom" constant="8" id="jY4-BC-2xa"/>
+                                                <constraint firstItem="bGS-kC-d9K" firstAttribute="leading" secondItem="NS4-g6-5at" secondAttribute="leading" constant="8" id="yPb-Ls-1V3"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                    <color key="value" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="containerView" destination="bGS-kC-d9K" id="SbW-sw-idL"/>
                                             <outlet property="dateTimeNotification" destination="q5d-5E-DAv" id="WRf-9J-y2f"/>
                                             <outlet property="titleNotification" destination="6yH-q4-oeS" id="Dq4-Oq-f8R"/>
                                         </connections>
@@ -504,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGc-Lg-Lu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2466" y="1987"/>
+            <point key="canvasLocation" x="2464.8000000000002" y="1986.656671664168"/>
         </scene>
         <!--History Car View Controller-->
         <scene sceneID="y2Q-rD-fl3">

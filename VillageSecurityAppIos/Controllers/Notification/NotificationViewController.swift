@@ -18,6 +18,7 @@ class NotificationViewController: BaseViewController, UITableViewDelegate, UITab
     // cell reuse id (cells that scroll out of view can be reused)
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "รายการแจ้งเตือน"
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -49,10 +50,6 @@ class NotificationViewController: BaseViewController, UITableViewDelegate, UITab
         cell.dateTimeNotification.text = "วันที่ \(notic.time ?? "") น."
         cell.selectionStyle = .none
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
     }
     
     // method to run when table view cell is tapped

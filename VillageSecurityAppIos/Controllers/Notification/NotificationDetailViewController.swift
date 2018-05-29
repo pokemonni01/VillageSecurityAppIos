@@ -20,6 +20,7 @@ class NotificationDetailViewController: BaseViewController, RequestNotificationD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "รายการแจ้งเตือน"
         rootView.isHidden = true
         loadNotification()
     }

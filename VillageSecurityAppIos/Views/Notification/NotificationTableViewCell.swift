@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Material
 
 class NotificationTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var titleNotification: UILabel!
     @IBOutlet weak var dateTimeNotification: UILabel!
+    @IBOutlet weak var containerView: UIView!
 }
