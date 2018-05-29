@@ -28,4 +28,11 @@ class UserDefaultsUtils {
         }
         return nil
     }
+    
+    static func removeUserData() {
+        let preferences = UserDefaults.standard
+        let userDataKey = "UserData"
+        preferences.removeObject(forKey: userDataKey)
+        preferences.synchronize()
+    }
 }

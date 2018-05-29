@@ -67,5 +67,11 @@ class UserMenuViewController: BaseViewController, SettingDelegate {
             return false
         }
     }
+    
+    @IBAction func onLogoutClick(_ sender: Any) {
+        UserDefaultsUtils.removeUserData()
+        self.dismiss(animated: true)
+    }
+    
 }
 

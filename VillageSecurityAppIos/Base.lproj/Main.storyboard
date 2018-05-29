@@ -155,8 +155,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A41-AS-44C">
                                 <rect key="frame" x="16" y="80" width="343" height="571"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cm6-AT-uQl">
-                                        <rect key="frame" x="16" y="172" width="311" height="257"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cm6-AT-uQl">
+                                        <rect key="frame" x="16" y="172" width="311" height="258"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0G-VX-dpG" customClass="RaisedButton" customModule="Material">
                                                 <rect key="frame" x="24" y="75" width="263" height="30"/>
@@ -209,20 +209,6 @@
                                                     <segue destination="Etu-Ik-keW" kind="show" id="vUb-E2-FqD"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdm-3z-qb7" customClass="RaisedButton" customModule="Material">
-                                                <rect key="frame" x="24" y="227" width="263" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="1F1-1e-2T4"/>
-                                                </constraints>
-                                                <state key="normal" title="ออกจากระบบ">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                        <color key="value" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tm-N0-sEE" customClass="RaisedButton" customModule="Material">
                                                 <rect key="frame" x="24" y="151" width="263" height="30"/>
                                                 <constraints>
@@ -241,7 +227,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ลูกบ้าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-AQ-I5D">
-                                                <rect key="frame" x="120" y="0.0" width="72" height="29"/>
+                                                <rect key="frame" x="119.5" y="0.0" width="72" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="29" id="QCQ-4F-rze"/>
                                                 </constraints>
@@ -266,6 +252,20 @@
                                                     <action selector="onGoToScanQRClick:" destination="Y4M-pz-8nY" eventType="touchUpInside" id="V6V-AL-h5o"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCB-2j-h29" customClass="RaisedButton" customModule="Material">
+                                                <rect key="frame" x="24" y="227" width="263" height="30"/>
+                                                <state key="normal" title="ออกจากระบบ">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                        <color key="value" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onLogoutClick:" destination="Y4M-pz-8nY" eventType="touchUpInside" id="V5l-Xe-Bae"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -273,23 +273,23 @@
                                             <constraint firstAttribute="trailing" secondItem="6Tm-N0-sEE" secondAttribute="trailing" constant="24" id="8VB-my-8UY"/>
                                             <constraint firstAttribute="trailing" secondItem="02O-0E-UCW" secondAttribute="trailing" constant="24" id="AmA-89-pD0"/>
                                             <constraint firstAttribute="trailing" secondItem="m9z-Ry-QMP" secondAttribute="trailing" constant="24" id="BHO-CQ-BOz"/>
+                                            <constraint firstItem="MCB-2j-h29" firstAttribute="top" secondItem="02O-0E-UCW" secondAttribute="bottom" constant="8" id="EyI-Vd-sud"/>
+                                            <constraint firstItem="MCB-2j-h29" firstAttribute="centerX" secondItem="Cm6-AT-uQl" secondAttribute="centerX" id="GfM-Nq-NPh"/>
                                             <constraint firstItem="wOm-QT-oRG" firstAttribute="top" secondItem="o0G-VX-dpG" secondAttribute="bottom" constant="8" id="HmW-Zi-go7"/>
                                             <constraint firstItem="02O-0E-UCW" firstAttribute="centerX" secondItem="Cm6-AT-uQl" secondAttribute="centerX" id="Hyh-Mx-NzJ"/>
-                                            <constraint firstItem="Zdm-3z-qb7" firstAttribute="leading" secondItem="Cm6-AT-uQl" secondAttribute="leading" constant="24" id="Nif-Ul-Ohf"/>
                                             <constraint firstItem="02O-0E-UCW" firstAttribute="top" secondItem="6Tm-N0-sEE" secondAttribute="bottom" constant="8" id="Omy-bK-tT4"/>
                                             <constraint firstAttribute="width" constant="311" id="RZY-cE-8Lk"/>
                                             <constraint firstItem="o0G-VX-dpG" firstAttribute="centerX" secondItem="Cm6-AT-uQl" secondAttribute="centerX" id="RuG-FZ-c16"/>
-                                            <constraint firstItem="Zdm-3z-qb7" firstAttribute="centerX" secondItem="Cm6-AT-uQl" secondAttribute="centerX" id="SD5-6C-luJ"/>
-                                            <constraint firstItem="Zdm-3z-qb7" firstAttribute="top" secondItem="02O-0E-UCW" secondAttribute="bottom" constant="8" id="SLT-be-R4b"/>
                                             <constraint firstItem="02O-0E-UCW" firstAttribute="leading" secondItem="Cm6-AT-uQl" secondAttribute="leading" constant="24" id="ThZ-gt-1xt"/>
-                                            <constraint firstAttribute="trailing" secondItem="Zdm-3z-qb7" secondAttribute="trailing" constant="24" id="ZGk-F1-Teb"/>
+                                            <constraint firstItem="MCB-2j-h29" firstAttribute="leading" secondItem="Cm6-AT-uQl" secondAttribute="leading" constant="24" id="cjB-AO-CQg"/>
                                             <constraint firstItem="o0G-VX-dpG" firstAttribute="top" secondItem="m9z-Ry-QMP" secondAttribute="bottom" constant="8" id="dB4-vT-9CE"/>
                                             <constraint firstAttribute="trailing" secondItem="o0G-VX-dpG" secondAttribute="trailing" constant="24" id="dE2-Ni-o5a"/>
                                             <constraint firstItem="m9z-Ry-QMP" firstAttribute="leading" secondItem="Cm6-AT-uQl" secondAttribute="leading" constant="24" id="ejj-vf-pqv"/>
                                             <constraint firstItem="m9z-Ry-QMP" firstAttribute="top" secondItem="hhh-AQ-I5D" secondAttribute="bottom" constant="8" id="evI-Po-jgB"/>
                                             <constraint firstItem="hhh-AQ-I5D" firstAttribute="top" secondItem="Cm6-AT-uQl" secondAttribute="top" id="g8a-7U-6Bw"/>
                                             <constraint firstItem="o0G-VX-dpG" firstAttribute="leading" secondItem="Cm6-AT-uQl" secondAttribute="leading" constant="24" id="gcS-Kk-Esn"/>
-                                            <constraint firstAttribute="height" constant="228" id="ji6-eJ-6wh"/>
+                                            <constraint firstAttribute="trailing" secondItem="MCB-2j-h29" secondAttribute="trailing" constant="24" id="hGK-sg-cTY"/>
+                                            <constraint firstAttribute="height" constant="258" id="ji6-eJ-6wh"/>
                                             <constraint firstItem="wOm-QT-oRG" firstAttribute="leading" secondItem="Cm6-AT-uQl" secondAttribute="leading" constant="24" id="kjZ-Zf-B5c"/>
                                             <constraint firstItem="6Tm-N0-sEE" firstAttribute="leading" secondItem="Cm6-AT-uQl" secondAttribute="leading" constant="24" id="oEd-Lz-gbz"/>
                                             <constraint firstItem="6Tm-N0-sEE" firstAttribute="top" secondItem="wOm-QT-oRG" secondAttribute="bottom" constant="8" id="osq-RO-Jik"/>
@@ -301,7 +301,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Cm6-AT-uQl" firstAttribute="centerY" secondItem="A41-AS-44C" secondAttribute="centerY" id="EJV-BS-LFC"/>
+                                    <constraint firstItem="Cm6-AT-uQl" firstAttribute="centerY" secondItem="A41-AS-44C" secondAttribute="centerY" constant="15.5" id="EJV-BS-LFC"/>
                                     <constraint firstItem="Cm6-AT-uQl" firstAttribute="centerX" secondItem="A41-AS-44C" secondAttribute="centerX" id="ggp-bW-XUN"/>
                                 </constraints>
                             </view>
