@@ -8,6 +8,7 @@
 import AVFoundation
 import QRCodeReader
 import UIKit
+import CoreLocation
 
 class ScanQRController: BaseViewController, AVCaptureMetadataOutputObjectsDelegate, SendQrCodeDataDelegate {
 
@@ -15,6 +16,7 @@ class ScanQRController: BaseViewController, AVCaptureMetadataOutputObjectsDelega
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     let captureSession = AVCaptureSession()
     var currentQr = ""
+    var locManager = CLLocationManager()
     
     @IBOutlet weak var rootView: UIView!
     @IBOutlet weak var cameraView: UIView!
@@ -24,7 +26,7 @@ class ScanQRController: BaseViewController, AVCaptureMetadataOutputObjectsDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        locManager.requestWhenInUseAuthorization()
         navigationItem.title = "Scanner"
         cameraView.backgroundColor = .white
         
@@ -74,10 +76,7 @@ class ScanQRController: BaseViewController, AVCaptureMetadataOutputObjectsDelega
 //        if stringCodeValue == currentQr { return }
         currentQr = stringCodeValue
         onScanSuccess()
-        // Create some label and assign returned string value to it
         print(stringCodeValue)
-        // Perform further logic needed (ex. redirect to other ViewController)
-        
     }
     
     @IBAction func onSendDataClick(_ sender: Any) {
@@ -85,8 +84,18 @@ class ScanQRController: BaseViewController, AVCaptureMetadataOutputObjectsDelega
     }
     
     private func sendQrData() {
-        showProgress()
-        HistoryCarAPI.sendQrCodeData(self, code: currentQr, lat: "100", lon: "100")
+        var currentLocation: CLLocation!
+        
+        if( CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
+            CLLocationManager.authorizationStatus() ==  .authorizedAlways){
+            currentLocation = locManager.location
+            showProgress()
+            let lat = String(currentLocation.coordinate.latitude)
+            let lon = String(currentLocation.coordinate.longitude)
+            HistoryCarAPI.sendQrCodeData(self, code: currentQr, lat: lat, lon: lon)
+        } else {
+            showAlertDialog(title: "ไม่สามารถส่งข้อมูลได้", message: "ไม่สามารถส่งข้อมูลได้ กรุณาเปิดใช้งานการระบุตำแหน่ง")
+        }
     }
     
     func onSendQrCodeDataSuccess(response: QrCode) {
