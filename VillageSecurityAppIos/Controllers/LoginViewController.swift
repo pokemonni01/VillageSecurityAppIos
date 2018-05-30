@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class LoginViewController: BaseViewController {
+class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     @IBOutlet weak var mUsernameTextField: UITextField!
     
@@ -25,8 +25,29 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.mUsernameTextField.delegate = self
+        self.mUsernameTextField.tag = 0
+        self.mPasswordTextField.delegate = self
+        self.mPasswordTextField.tag = 1
+        self.mUsernameTextField.returnKeyType = .done
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Try to find next responder
+        if textField == mUsernameTextField {
+            mPasswordTextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+            let username = mUsernameTextField.text!
+            let password = mPasswordTextField.text!
+            login(username: username, password: password)
+        }
+        // Do not add a line break
+        return false
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,8 +56,17 @@ class LoginViewController: BaseViewController {
     }
     
     private func login(username: String, password: String) {
+        if username.isEmpty || password.isEmpty {
+            showAlertDialog(title: "Username หรือ Password ไม่ถูกต้อง", message: "กรุณากรอก Username หรือ Password")
+            return
+        }
         showProgress()
         LoginApi.requestLogin(self, username, password)
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        mUsernameTextField.resignFirstResponder()
+        mPasswordTextField.resignFirstResponder()
     }
     
 }
