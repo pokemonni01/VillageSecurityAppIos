@@ -14,7 +14,7 @@ public class SettingAPI {
     
     static func requestSetting(_ delegate: SettingDelegate) {
         let token = StringUtils.getTokenHeader(token: (ShareData.userData?.token)!)
-        let url = ShareData.generic?.settingAppUserUrl ?? ""
+        let url = ShareData.generic?.settingAppUrl ?? ""
         let headers: HTTPHeaders = [
             "Authorization": token,
             ]

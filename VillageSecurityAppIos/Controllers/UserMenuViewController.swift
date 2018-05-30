@@ -9,7 +9,7 @@ import UIKit
 import QRCodeReader
 import Foundation
 
-class UserMenuViewController: BaseViewController, SettingDelegate {
+class UserMenuViewController: BaseViewController, SettingDelegate, RequestNotificationListDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +25,29 @@ class UserMenuViewController: BaseViewController, SettingDelegate {
     func onRequestSettingSuccess(response: SettingResponse) {
         hideProgress()
         ShareData.setting = response
+        loadNotification()
     }
     
     func onRequestSettingError() {
+        hideProgress()
+        showDefaultErrorDialog()
+    }
+    
+    private func loadNotification() {
+        showProgress()
+        NotificationAPI.requestNotificationList(self)
+    }
+    
+    func onRequestNotificationListSuccess(response: GetNotificationResponse) {
+        hideProgress()
+    }
+    
+    func onRequestNotificationListFail(response: GetNotificationResponse) {
+        hideProgress()
+        showAlertDialog(title: response.title ?? "", message: response.message ?? "")
+    }
+    
+    func onRequestNotificationListError() {
         hideProgress()
         showDefaultErrorDialog()
     }
