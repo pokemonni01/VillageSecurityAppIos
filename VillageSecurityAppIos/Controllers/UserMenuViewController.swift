@@ -11,9 +11,15 @@ import Foundation
 
 class UserMenuViewController: BaseViewController, SettingDelegate, RequestNotificationListDelegate {
 
+    @IBOutlet weak var notificationFrame: UIView!
+    @IBOutlet weak var notificationNumberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Secure A"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         loadSetting()
     }
     
@@ -40,6 +46,16 @@ class UserMenuViewController: BaseViewController, SettingDelegate, RequestNotifi
     
     func onRequestNotificationListSuccess(response: GetNotificationResponse) {
         hideProgress()
+        guard let notificationNumber = response.countNotRead else {
+            notificationFrame.isHidden = true
+            return
+        }
+        if (notificationNumber == 0) {
+            notificationFrame.isHidden = true
+        } else {
+            notificationFrame.isHidden = false
+            notificationNumberLabel.text = String(notificationNumber)
+        }
     }
     
     func onRequestNotificationListFail(response: GetNotificationResponse) {
