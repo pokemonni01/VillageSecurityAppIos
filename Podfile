@@ -11,6 +11,8 @@ target 'VillageSecurityAppIos' do
   pod 'Material', '~> 2.0'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
 
   # Pods for VillageSecurityAppIos
 
