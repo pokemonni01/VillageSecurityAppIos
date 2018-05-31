@@ -9,11 +9,17 @@ import UIKit
 import QRCodeReader
 import Foundation
 
-class UserMenuViewController: BaseViewController, SettingDelegate {
+class UserMenuViewController: BaseViewController, SettingDelegate, RequestNotificationListDelegate {
 
+    @IBOutlet weak var notificationFrame: UIView!
+    @IBOutlet weak var notificationNumberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Secure A"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         loadSetting()
     }
     
@@ -25,9 +31,39 @@ class UserMenuViewController: BaseViewController, SettingDelegate {
     func onRequestSettingSuccess(response: SettingResponse) {
         hideProgress()
         ShareData.setting = response
+        loadNotification()
     }
     
     func onRequestSettingError() {
+        hideProgress()
+        showDefaultErrorDialog()
+    }
+    
+    private func loadNotification() {
+        showProgress()
+        NotificationAPI.requestNotificationList(self)
+    }
+    
+    func onRequestNotificationListSuccess(response: GetNotificationResponse) {
+        hideProgress()
+        guard let notificationNumber = response.countNotRead else {
+            notificationFrame.isHidden = true
+            return
+        }
+        if (notificationNumber == 0) {
+            notificationFrame.isHidden = true
+        } else {
+            notificationFrame.isHidden = false
+            notificationNumberLabel.text = String(notificationNumber)
+        }
+    }
+    
+    func onRequestNotificationListFail(response: GetNotificationResponse) {
+        hideProgress()
+        showAlertDialog(title: response.title ?? "", message: response.message ?? "")
+    }
+    
+    func onRequestNotificationListError() {
         hideProgress()
         showDefaultErrorDialog()
     }
