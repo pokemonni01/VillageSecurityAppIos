@@ -65,38 +65,6 @@
             endingLineNumber = "42"
             landmarkName = "sendQrCodeData(_:code:lat:lon:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static VillageSecurityAppIos.HistoryCarAPI.sendQrCodeData(VillageSecurityAppIos.SendQrCodeDataDelegate, code: Swift.String, lat: Swift.String, lon: Swift.String) -&gt; ()"
-                  moduleName = "VillageSecurityAppIos"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wachirapong/VillageSecurityAppIos/VillageSecurityAppIos/Models/APIs/HistoryCarAPI/HistoryCarAPI.swift"
-                  timestampString = "549384529.290373"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static VillageSecurityAppIos.HistoryCarAPI.sendQrCodeData(VillageSecurityAppIos.SendQrCodeDataDelegate, code: Swift.String, lat: Swift.String, lon: Swift.String) -&gt; ()"
-                  moduleName = "VillageSecurityAppIos"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wachirapong/VillageSecurityAppIos/VillageSecurityAppIos/Models/APIs/HistoryCarAPI/HistoryCarAPI.swift"
-                  timestampString = "549384529.292214"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "1876">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

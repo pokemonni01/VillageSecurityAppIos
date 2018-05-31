@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Generic URL</key>
+	<string>http://13.250.9.242/urls/</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string></string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechromes</string>

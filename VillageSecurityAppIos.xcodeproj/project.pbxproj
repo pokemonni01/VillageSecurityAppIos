@@ -56,6 +56,7 @@
 		F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F531FF7556D009EA5F8 /* Generic.swift */; };
 		F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F551FFA9E08009EA5F8 /* Constants.swift */; };
 		F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F571FFB4689009EA5F8 /* ShareData.swift */; };
+		F059919D20BFB69F00C601BB /* release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F059919C20BFB69F00C601BB /* release.plist */; };
 		F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0662F7520162FDB0092071D /* ScanQRController.swift */; };
 		F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */; };
 		F0D0875020B9602100A48111 /* NotificationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0874F20B9602100A48111 /* NotificationAPI.swift */; };
@@ -129,6 +130,7 @@
 		F04D3F531FF7556D009EA5F8 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 		F04D3F551FFA9E08009EA5F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F04D3F571FFB4689009EA5F8 /* ShareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
+		F059919C20BFB69F00C601BB /* release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = release.plist; sourceTree = "<group>"; };
 		F0662F7520162FDB0092071D /* ScanQRController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRController.swift; sourceTree = "<group>"; };
 		F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
 		F0D0874F20B9602100A48111 /* NotificationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAPI.swift; sourceTree = "<group>"; };
@@ -149,7 +151,7 @@
 		F0D715371FF14CA60016CFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0D715391FF14CA60016CFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0D7153C1FF14CA60016CFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F0D7153E1FF14CA60016CFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D7153E1FF14CA60016CFBF /* debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = debug.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -574,7 +576,8 @@
 				F0D715361FF14CA60016CFBF /* Main.storyboard */,
 				F0D715391FF14CA60016CFBF /* Assets.xcassets */,
 				F0D7153B1FF14CA60016CFBF /* LaunchScreen.storyboard */,
-				F0D7153E1FF14CA60016CFBF /* Info.plist */,
+				F0D7153E1FF14CA60016CFBF /* debug.plist */,
+				F059919C20BFB69F00C601BB /* release.plist */,
 			);
 			path = VillageSecurityAppIos;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F059919D20BFB69F00C601BB /* release.plist in Resources */,
 				F0D7153D1FF14CA60016CFBF /* LaunchScreen.storyboard in Resources */,
 				F0D7153A1FF14CA60016CFBF /* Assets.xcassets in Resources */,
 				F0D715381FF14CA60016CFBF /* Main.storyboard in Resources */,
@@ -931,7 +935,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6777ZZ7555;
-				INFOPLIST_FILE = VillageSecurityAppIos/Info.plist;
+				INFOPLIST_FILE = VillageSecurityAppIos/debug.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bf.VillageSecurityAppIos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -947,7 +951,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6777ZZ7555;
-				INFOPLIST_FILE = VillageSecurityAppIos/Info.plist;
+				INFOPLIST_FILE = VillageSecurityAppIos/release.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bf.VillageSecurityAppIos;
 				PRODUCT_NAME = "$(TARGET_NAME)";

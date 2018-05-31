@@ -12,7 +12,9 @@ import Alamofire
 public class GenericApi {
     
     public static func getGeneric(delegate: GenericDelegate) {
-        Alamofire.request(Config.baseURL).validate().responseJSON { response in
+        let url = Bundle.main.infoDictionary?["Generic URL"] as? String
+        print("Generic Url : \(url ?? "")")
+        Alamofire.request(url!).validate().responseJSON { response in
             switch response.result {
             case .success:
                 delegate.onGetGenericSuccess(generic: try! JSONDecoder().decode(Generic.self, from: response.data!))
