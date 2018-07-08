@@ -13,16 +13,17 @@ import SwiftyJSON
 
 public class DeviceApi {
     
-    public static func sendDevice(_ delegate: SendDeviceDelegate, _ username: String) {
+    static func sendDevice(_ delegate: SendDeviceDelegate, _ username: String) {
         let token = StringUtils.getTokenHeader(token: (ShareData.userData?.token)!)
         guard let sendDeviceUrl = ShareData.generic?.deviceUrl else {
             delegate.onSendDeviceError()
             return
         }
         let firebaseToken = InstanceID.instanceID().token() ?? ""
+        let deviceID = UIDevice.current.identifierForVendor!.uuidString
         let parameters: Parameters = [
             "active": true,
-            "device_id": "",
+            "device_id": deviceID,
             "name": username,
             "registration_id": firebaseToken,
             "type": "ios"
@@ -31,19 +32,15 @@ public class DeviceApi {
             "Authorization": token,
             ]
         Alamofire.request(sendDeviceUrl, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate().responseJSON { response in
+            print(response)
             switch response.result {
             case .success(let value):
-                do {
-                    let response = SendDeviceResponse(from: JSON(value))
-                    if (response.status! == ApiConstants.SUCCESS) {
-                        delegate.onSendDeviceSuccess(response: response)
-                    } else {
-                        delegate.onSendDeviceFail(response: response)
-                    }
-                } catch {
-                    print(error) // any decoding error will be printed here!
+                let response = SendDeviceResponse(from: JSON(value))
+                if (response.status! == ApiConstants.SUCCESS) {
+                    delegate.onSendDeviceSuccess(response: response)
+                } else {
+                    delegate.onSendDeviceFail(response: response)
                 }
-                
             case .failure: break
 //                delegate.onRequestLoginError(title: "Error", message: "Message Error")
             }

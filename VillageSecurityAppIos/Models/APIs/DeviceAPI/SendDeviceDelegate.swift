@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol SendDeviceDelegate {
+protocol SendDeviceDelegate {
     func onSendDeviceSuccess(response: SendDeviceResponse)
     func onSendDeviceFail(response: SendDeviceResponse)
     func onSendDeviceError()
