@@ -83,6 +83,7 @@ extension LoginViewController: LoginDelegate {
         )
         ShareData.userData = userData
         UserDefaultsUtils.saveUserData(userdata: userData)
+        DeviceApi.sendDevice(self, response.username ?? "")
         print(response)
     }
     
@@ -100,3 +101,10 @@ extension LoginViewController: LoginDelegate {
     }    
 }
 
+extension LoginViewController: SendDeviceDelegate {
+    func onSendDeviceSuccess(response: SendDeviceResponse) {}
+    
+    func onSendDeviceFail(response: SendDeviceResponse) {}
+    
+    func onSendDeviceError() {}
+}
