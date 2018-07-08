@@ -58,6 +58,7 @@
 		F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F571FFB4689009EA5F8 /* ShareData.swift */; };
 		F059919D20BFB69F00C601BB /* release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F059919C20BFB69F00C601BB /* release.plist */; };
 		F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0662F7520162FDB0092071D /* ScanQRController.swift */; };
+		F06E175A20F20B6D009AA556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F06E175920F20B6D009AA556 /* GoogleService-Info.plist */; };
 		F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */; };
 		F0D0875020B9602100A48111 /* NotificationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0874F20B9602100A48111 /* NotificationAPI.swift */; };
 		F0D0875420B960B500A48111 /* GetNotificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0875320B960B500A48111 /* GetNotificationResponse.swift */; };
@@ -132,6 +133,8 @@
 		F04D3F571FFB4689009EA5F8 /* ShareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
 		F059919C20BFB69F00C601BB /* release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = release.plist; sourceTree = "<group>"; };
 		F0662F7520162FDB0092071D /* ScanQRController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRController.swift; sourceTree = "<group>"; };
+		F06E175920F20B6D009AA556 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F06E175B20F214D6009AA556 /* VillageSecurityAppIos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VillageSecurityAppIos.entitlements; sourceTree = "<group>"; };
 		F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
 		F0D0874F20B9602100A48111 /* NotificationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAPI.swift; sourceTree = "<group>"; };
 		F0D0875320B960B500A48111 /* GetNotificationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotificationResponse.swift; sourceTree = "<group>"; };
@@ -568,6 +571,8 @@
 		F0D715311FF14CA60016CFBF /* VillageSecurityAppIos */ = {
 			isa = PBXGroup;
 			children = (
+				F06E175B20F214D6009AA556 /* VillageSecurityAppIos.entitlements */,
+				F06E175920F20B6D009AA556 /* GoogleService-Info.plist */,
 				1D953D0020B572EC00A99AE7 /* Base */,
 				1D34E0FB202C47D900FA3170 /* Views */,
 				AD024C331FF231280092275E /* Controllers */,
@@ -618,6 +623,11 @@
 					F0D7152E1FF14CA60016CFBF = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -646,6 +656,7 @@
 			files = (
 				F059919D20BFB69F00C601BB /* release.plist in Resources */,
 				F0D7153D1FF14CA60016CFBF /* LaunchScreen.storyboard in Resources */,
+				F06E175A20F20B6D009AA556 /* GoogleService-Info.plist in Resources */,
 				F0D7153A1FF14CA60016CFBF /* Assets.xcassets in Resources */,
 				F0D715381FF14CA60016CFBF /* Main.storyboard in Resources */,
 			);
@@ -933,11 +944,12 @@
 			baseConfigurationReference = 8173C8AC2303860259E676B1 /* Pods-VillageSecurityAppIos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VillageSecurityAppIos/VillageSecurityAppIos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6777ZZ7555;
+				DEVELOPMENT_TEAM = 4T7X2PS55A;
 				INFOPLIST_FILE = VillageSecurityAppIos/debug.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bf.VillageSecurityAppIos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bf.securea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -949,11 +961,12 @@
 			baseConfigurationReference = 6D6E64D97F3AAEA316AD500B /* Pods-VillageSecurityAppIos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VillageSecurityAppIos/VillageSecurityAppIos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6777ZZ7555;
+				DEVELOPMENT_TEAM = 4T7X2PS55A;
 				INFOPLIST_FILE = VillageSecurityAppIos/release.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bf.VillageSecurityAppIos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bf.securea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
