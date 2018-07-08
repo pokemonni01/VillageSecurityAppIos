@@ -59,6 +59,9 @@
 		F059919D20BFB69F00C601BB /* release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F059919C20BFB69F00C601BB /* release.plist */; };
 		F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0662F7520162FDB0092071D /* ScanQRController.swift */; };
 		F06E175A20F20B6D009AA556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F06E175920F20B6D009AA556 /* GoogleService-Info.plist */; };
+		F06E175D20F25DCD009AA556 /* SendDeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06E175C20F25DCD009AA556 /* SendDeviceDelegate.swift */; };
+		F06E176020F25F41009AA556 /* DeviceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06E175F20F25F41009AA556 /* DeviceAPI.swift */; };
+		F06E176320F268CB009AA556 /* SendDeviceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06E176220F268CB009AA556 /* SendDeviceResponse.swift */; };
 		F0AF63FE2003C75700C2F748 /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */; };
 		F0D0875020B9602100A48111 /* NotificationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0874F20B9602100A48111 /* NotificationAPI.swift */; };
 		F0D0875420B960B500A48111 /* GetNotificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D0875320B960B500A48111 /* GetNotificationResponse.swift */; };
@@ -135,6 +138,9 @@
 		F0662F7520162FDB0092071D /* ScanQRController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRController.swift; sourceTree = "<group>"; };
 		F06E175920F20B6D009AA556 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F06E175B20F214D6009AA556 /* VillageSecurityAppIos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VillageSecurityAppIos.entitlements; sourceTree = "<group>"; };
+		F06E175C20F25DCD009AA556 /* SendDeviceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDeviceDelegate.swift; sourceTree = "<group>"; };
+		F06E175F20F25F41009AA556 /* DeviceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAPI.swift; sourceTree = "<group>"; };
+		F06E176220F268CB009AA556 /* SendDeviceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDeviceResponse.swift; sourceTree = "<group>"; };
 		F0AF63FD2003C75700C2F748 /* UserMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
 		F0D0874F20B9602100A48111 /* NotificationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAPI.swift; sourceTree = "<group>"; };
 		F0D0875320B960B500A48111 /* GetNotificationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotificationResponse.swift; sourceTree = "<group>"; };
@@ -397,6 +403,7 @@
 		ADEA5211200460EB00E284C6 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				F06E175E20F25F13009AA556 /* DeviceAPI */,
 				F0D0875F20BAA22300A48111 /* HistoryCarAPI */,
 				F0D0874E20B95F9900A48111 /* NotificationAPI */,
 				1DDA495820B71B100015B0E8 /* SettingAPI */,
@@ -457,6 +464,24 @@
 				F04D3F531FF7556D009EA5F8 /* Generic.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		F06E175E20F25F13009AA556 /* DeviceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F06E176120F26860009AA556 /* Response */,
+				F06E175C20F25DCD009AA556 /* SendDeviceDelegate.swift */,
+				F06E175F20F25F41009AA556 /* DeviceAPI.swift */,
+			);
+			path = DeviceAPI;
+			sourceTree = "<group>";
+		};
+		F06E176120F26860009AA556 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F06E176220F268CB009AA556 /* SendDeviceResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		F0D0874D20B95E2100A48111 /* Notification */ = {
@@ -772,6 +797,7 @@
 				F0D715331FF14CA60016CFBF /* AppDelegate.swift in Sources */,
 				1D573E6C2056837F00341603 /* WorkHistoryViewController.swift in Sources */,
 				1D6E233320A953C800BDA53D /* ListJobHistoryViewController.swift in Sources */,
+				F06E176020F25F41009AA556 /* DeviceAPI.swift in Sources */,
 				F0D0876620BAA34200A48111 /* QrCode.swift in Sources */,
 				F0286C0520064F8500FE615C /* LoginResponse.swift in Sources */,
 				1D34E1012035A33500FA3170 /* UserData.swift in Sources */,
@@ -784,6 +810,7 @@
 				1D953CFF20B5703500A99AE7 /* SetPasswordViewController.swift in Sources */,
 				1D6E232720A8654200BDA53D /* Shift.swift in Sources */,
 				1D221E832084740300210E52 /* ListZoneResponse.swift in Sources */,
+				F06E175D20F25DCD009AA556 /* SendDeviceDelegate.swift in Sources */,
 				1DDA495E20B71E6E0015B0E8 /* SettingResponse.swift in Sources */,
 				F0286C0620064F8500FE615C /* TypeUser.swift in Sources */,
 				F0286C0420064F8500FE615C /* Home.swift in Sources */,
@@ -800,6 +827,7 @@
 				F0D0876C20BD9C2800A48111 /* HistoryGuardResponse.swift in Sources */,
 				1D953D4220B671F600A99AE7 /* SetPasswordAPI.swift in Sources */,
 				1D34E0F9202C474500FA3170 /* NotificationTableViewCell.swift in Sources */,
+				F06E176320F268CB009AA556 /* SendDeviceResponse.swift in Sources */,
 				F0D0876120BAA22F00A48111 /* HistoryCarAPI.swift in Sources */,
 				F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */,
 				1D6E232820A8654200BDA53D /* Type_guard.swift in Sources */,
