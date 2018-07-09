@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "DetailHistoryViewController.onRequestHistoryGuardSuccess(response:):DetailHistoryViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DetailHistoryViewController.viewDidLoad():DetailHistoryViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "listGuardHistory?.mGuard?.company">
+            </PersistentString>
+            <PersistentString
+               value = "listGuardHistory?.mGuard?.company?.name">
+            </PersistentString>
+            <PersistentString
+               value = "listGuardHistory">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

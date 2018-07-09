@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VillageSecurityAppIos/Controllers/ViewController.swift"
+            timestampString = "536084947.126658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "didReceiveMemoryWarning()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VillageSecurityAppIos/Controllers/ViewController.swift"
+            timestampString = "536084947.12736"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "didReceiveMemoryWarning()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VillageSecurityAppIos/Controllers/ViewController.swift"
+            timestampString = "536084947.127555"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VillageSecurityAppIos/Models/APIs/HistoryCarAPI/HistoryCarAPI.swift"
+            timestampString = "549381655.857971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "sendQrCodeData(_:code:lat:lon:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static VillageSecurityAppIos.HistoryCarAPI.sendQrCodeData(VillageSecurityAppIos.SendQrCodeDataDelegate, code: Swift.String, lat: Swift.String, lon: Swift.String) -&gt; ()"
+                  moduleName = "VillageSecurityAppIos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wachirapong/VillageSecurityAppIos/VillageSecurityAppIos/Models/APIs/HistoryCarAPI/HistoryCarAPI.swift"
+                  timestampString = "552738135.608807"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static VillageSecurityAppIos.HistoryCarAPI.sendQrCodeData(VillageSecurityAppIos.SendQrCodeDataDelegate, code: Swift.String, lat: Swift.String, lon: Swift.String) -&gt; ()"
+                  moduleName = "VillageSecurityAppIos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wachirapong/VillageSecurityAppIos/VillageSecurityAppIos/Models/APIs/HistoryCarAPI/HistoryCarAPI.swift"
+                  timestampString = "552738135.612345"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1876">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
