@@ -83,7 +83,7 @@ extension LoginViewController: LoginDelegate {
         )
         ShareData.userData = userData
         UserDefaultsUtils.saveUserData(userdata: userData)
-        DeviceApi.sendDevice(self, response.username ?? "")
+        DeviceApi.sendDevice(self, response.username ?? "", true)
         print(response)
     }
     

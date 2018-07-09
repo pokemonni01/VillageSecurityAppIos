@@ -13,7 +13,7 @@ import SwiftyJSON
 
 public class DeviceApi {
     
-    static func sendDevice(_ delegate: SendDeviceDelegate, _ username: String) {
+    static func sendDevice(_ delegate: SendDeviceDelegate, _ username: String, _ active: Bool) {
         let token = StringUtils.getTokenHeader(token: (ShareData.userData?.token)!)
         guard let sendDeviceUrl = ShareData.generic?.deviceUrl else {
             delegate.onSendDeviceError()
@@ -22,7 +22,7 @@ public class DeviceApi {
         let firebaseToken = InstanceID.instanceID().token() ?? ""
         let deviceID = UIDevice.current.identifierForVendor!.uuidString
         let parameters: Parameters = [
-            "active": true,
+            "active": active,
             "device_id": deviceID,
             "name": username,
             "registration_id": firebaseToken,
