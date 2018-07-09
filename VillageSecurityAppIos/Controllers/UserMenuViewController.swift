@@ -105,7 +105,7 @@ class UserMenuViewController: BaseViewController, SettingDelegate, RequestNotifi
     }
     
     @IBAction func onLogoutClick(_ sender: Any) {
-        DeviceApi.sendDevice(self, ShareData.userData?.username ?? "", true)
+        DeviceApi.sendDevice(self, ShareData.userData?.username ?? "", false)
         UserDefaultsUtils.removeUserData()
         self.dismiss(animated: true)
     }
