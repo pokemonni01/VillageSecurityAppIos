@@ -35,11 +35,11 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME) camera use</string>
+	<string>Village Security App requires access to your phone’s camera for scanning QR code.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string></string>
+	<string>Village Security App send your position for analytic and improvement application.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Village Security App send your position for analytic and improvement application.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

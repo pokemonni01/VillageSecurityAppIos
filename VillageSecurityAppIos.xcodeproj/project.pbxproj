@@ -56,7 +56,6 @@
 		F04D3F541FF7556D009EA5F8 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F531FF7556D009EA5F8 /* Generic.swift */; };
 		F04D3F561FFA9E08009EA5F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F551FFA9E08009EA5F8 /* Constants.swift */; };
 		F04D3F581FFB468A009EA5F8 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D3F571FFB4689009EA5F8 /* ShareData.swift */; };
-		F059919D20BFB69F00C601BB /* release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F059919C20BFB69F00C601BB /* release.plist */; };
 		F0662F7620162FDB0092071D /* ScanQRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0662F7520162FDB0092071D /* ScanQRController.swift */; };
 		F06E175A20F20B6D009AA556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F06E175920F20B6D009AA556 /* GoogleService-Info.plist */; };
 		F06E175D20F25DCD009AA556 /* SendDeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06E175C20F25DCD009AA556 /* SendDeviceDelegate.swift */; };
@@ -642,7 +641,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Wachirapong;
 				TargetAttributes = {
 					F0D7152E1FF14CA60016CFBF = {
@@ -679,7 +678,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F059919D20BFB69F00C601BB /* release.plist in Resources */,
 				F0D7153D1FF14CA60016CFBF /* LaunchScreen.storyboard in Resources */,
 				F06E175A20F20B6D009AA556 /* GoogleService-Info.plist in Resources */,
 				F0D7153A1FF14CA60016CFBF /* Assets.xcassets in Resources */,
@@ -874,6 +872,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -881,6 +880,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -931,6 +931,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -938,6 +939,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -5,9 +5,9 @@
 	<key>Generic URL</key>
 	<string>http://13.250.9.242/urls/</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Village Security App send your position for analytic and improvement application.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string></string>
+	<string>Village Security App send your position for analytic and improvement application.</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechromes</string>
@@ -37,7 +37,7 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME) camera use</string>
+	<string>Village Security App requires access to your phone’s camera for scanning QR code.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
