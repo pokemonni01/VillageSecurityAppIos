@@ -476,6 +476,10 @@ Copyright 2018 Google
    limitations under the License.
 
 
+## GoogleAppMeasurement
+
+Copyright 2018 Google
+
 ## GoogleMaps
 
 Copyright 2018 Google
@@ -484,7 +488,7 @@ Copyright 2018 Google
 
 Copyright 2018 Google
 
-## GoogleToolboxForMac
+## GoogleUtilities
 
 
                                  Apache License
@@ -692,7 +696,7 @@ Copyright 2018 Google
 
 ## Material
 
-Copyright (C) 2015 - 2017, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>. All rights reserved.
+Copyright (C) 2015 - 2018, Daniel Dahan and CosmicMind, Inc. <http://cosmicmind.com>. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -738,17 +742,7 @@ THE SOFTWARE.
 
 ## Protobuf
 
-This license applies to all parts of Protocol Buffers except the following:
-
-  - Atomicops support for generic gcc, located in
-    src/google/protobuf/stubs/atomicops_internals_generic_gcc.h.
-    This file is copyrighted by Red Hat Inc.
-
-  - Atomicops support for AIX/POWER, located in
-    src/google/protobuf/stubs/atomicops_internals_power.h.
-    This file is copyrighted by Bloomberg Finance LP.
-
-Copyright 2014, Google Inc.  All rights reserved.
+Copyright 2008 Google Inc.  All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
