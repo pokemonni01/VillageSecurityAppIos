@@ -76,7 +76,7 @@ class WorkHistoryViewController: UIViewController, UITextFieldDelegate, UITableV
             self.mDatePicker.text = DateTimeUtils.getDateString(date: value as! Date)
             self.loadHistoryGuardList()
             return
-        }, cancel: { ActionStringCancelBlock in return }, origin: (sender as AnyObject).superview!?.superview)
+        }, cancel: { ActionStringCancelBlock in return }, origin: sender as! UIView)
         datePicker?.show()
     }
    

@@ -86,7 +86,7 @@ class UserMenuViewController: BaseViewController, SettingDelegate, RequestNotifi
             let alert: UIAlertController
             switch error.code {
             case -11852:
-                alert = UIAlertController(title: "Error", message: "This app is not authorized to use Back Camera.", preferredStyle: .alert)
+                alert = UIAlertController(title: "เกิดข้อผิดพลาด", message: "แอปพลิเคชันไม่ได้รับอณุญาตให้ใช้กล้องด้านหลัง", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Setting", style: .default, handler: { (_) in
                     DispatchQueue.main.async {
                         if let settingsURL = URL(string: UIApplicationOpenSettingsURLString) {
@@ -96,7 +96,7 @@ class UserMenuViewController: BaseViewController, SettingDelegate, RequestNotifi
                 }))
                 alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             default:
-                alert = UIAlertController(title: "Error", message: "Reader not supported by the current device", preferredStyle: .alert)
+                alert = UIAlertController(title: "เกิดข้อผิดพลาด", message: "อุปกรณ์นี้ไม่รองรับการอ่าน QR Code", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             }
             present(alert, animated: true, completion: nil)

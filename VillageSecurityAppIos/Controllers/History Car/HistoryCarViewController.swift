@@ -77,7 +77,7 @@ class HistoryCarViewController: BaseViewController, UITableViewDelegate, UITable
             self.dateLabel.endEditing(true)
             self.loadHistoryCarList()
             return
-        }, cancel: { ActionStringCancelBlock in return }, origin: (sender as AnyObject).superview!?.superview)
+        }, cancel: { ActionStringCancelBlock in return }, origin: sender as! UIView)
         datePicker?.show()
     }
     
