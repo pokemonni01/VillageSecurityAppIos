@@ -145,7 +145,7 @@
                                             <constraint firstAttribute="height" constant="40" id="mov-4W-3Qa"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="ประวัติการทำงาน รปภ.">
+                                        <state key="normal" title="ประวัติการทำงาน รปภ. ในโซน">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -160,7 +160,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOm-QT-oRG" customClass="RaisedButton" customModule="Material">
                                         <rect key="frame" x="1" y="165" width="330.66666666666669" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="ประวัติรถเข้าหมู่บ้าน">
+                                        <state key="normal" title="ประวัติรถเข้าบ้าน">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
