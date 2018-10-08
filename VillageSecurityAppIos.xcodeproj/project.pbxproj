@@ -153,7 +153,7 @@
 		F0D0876B20BD9C2800A48111 /* HistoryGuardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryGuardResponse.swift; sourceTree = "<group>"; };
 		F0D0876E20BD9D8100A48111 /* ListHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHistory.swift; sourceTree = "<group>"; };
 		F0D0877020BD9EA900A48111 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		F0D7152F1FF14CA60016CFBF /* VillageSecurityAppIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VillageSecurityAppIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D7152F1FF14CA60016CFBF /* Secure A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secure A.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D715321FF14CA60016CFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D715341FF14CA60016CFBF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F0D715371FF14CA60016CFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -587,7 +587,7 @@
 		F0D715301FF14CA60016CFBF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0D7152F1FF14CA60016CFBF /* VillageSecurityAppIos.app */,
+				F0D7152F1FF14CA60016CFBF /* Secure A.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -614,9 +614,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F0D7152E1FF14CA60016CFBF /* VillageSecurityAppIos */ = {
+		F0D7152E1FF14CA60016CFBF /* Secure A */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0D715411FF14CA60016CFBF /* Build configuration list for PBXNativeTarget "VillageSecurityAppIos" */;
+			buildConfigurationList = F0D715411FF14CA60016CFBF /* Build configuration list for PBXNativeTarget "Secure A" */;
 			buildPhases = (
 				BB7063AC16A884A79350B556 /* [CP] Check Pods Manifest.lock */,
 				F0D7152B1FF14CA60016CFBF /* Sources */,
@@ -629,9 +629,9 @@
 			);
 			dependencies = (
 			);
-			name = VillageSecurityAppIos;
+			name = "Secure A";
 			productName = VillageSecurityAppIos;
-			productReference = F0D7152F1FF14CA60016CFBF /* VillageSecurityAppIos.app */;
+			productReference = F0D7152F1FF14CA60016CFBF /* Secure A.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -668,7 +668,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F0D7152E1FF14CA60016CFBF /* VillageSecurityAppIos */,
+				F0D7152E1FF14CA60016CFBF /* Secure A */,
 			);
 		};
 /* End PBXProject section */
@@ -1021,7 +1021,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0D715411FF14CA60016CFBF /* Build configuration list for PBXNativeTarget "VillageSecurityAppIos" */ = {
+		F0D715411FF14CA60016CFBF /* Build configuration list for PBXNativeTarget "Secure A" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0D715421FF14CA60016CFBF /* Debug */,
