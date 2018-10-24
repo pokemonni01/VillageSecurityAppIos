@@ -3,9 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "DetailHistoryViewController.onRequestHistoryGuardSuccess(response:):DetailHistoryViewController.swift">
-      </ContextState>
-      <ContextState
          contextName = "DetailHistoryViewController.viewDidLoad():DetailHistoryViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -18,6 +15,12 @@
                value = "listGuardHistory">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareData.userData.unsafeMutableAddressor [inlined]:ShareData.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DetailHistoryViewController.onRequestHistoryGuardSuccess(response:):DetailHistoryViewController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>
