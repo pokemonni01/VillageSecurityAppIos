@@ -506,6 +506,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="selectHomeNumber:" destination="kdF-Bb-Pac" eventType="touchDown" id="A2C-i0-jz2"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ยี่ห้อรถ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFf-jO-vtb">
                                         <rect key="frame" x="141" y="157.5" width="50" height="21"/>
@@ -536,6 +539,9 @@
                                                 <color key="value" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sendData:" destination="kdF-Bb-Pac" eventType="touchUpInside" id="Nj2-B7-xQ2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -576,6 +582,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L5D-Iv-gzk"/>
                     </view>
+                    <connections>
+                        <outlet property="carBrandText" destination="tGW-aD-od8" id="yWW-Ah-0g6"/>
+                        <outlet property="carColorText" destination="w8B-vX-xMc" id="Plo-TQ-VS6"/>
+                        <outlet property="carIdText" destination="Bak-B2-B2V" id="853-CQ-wjF"/>
+                        <outlet property="homeIdText" destination="Uzc-hS-UFi" id="sdJ-zZ-Aa2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wD-vR-UQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
